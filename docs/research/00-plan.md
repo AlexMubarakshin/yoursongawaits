@@ -10,7 +10,7 @@
 | 4 | Экономика | [04-economics.md](04-economics.md), модель [models/unit_economics.py](models/unit_economics.py), детали в [appendix/](appendix/) | ✅ |
 | 4b | Каналы: Telegram-бот и доставка поздравлений | [appendix/telegram-bot.md](appendix/telegram-bot.md), [appendix/delivery-channels.md](appendix/delivery-channels.md) → решения D14, D15 | ✅ |
 | 5 | Решения и гипотеза (go, стратегия, открытые вопросы) | [05-decisions.md](05-decisions.md) | ✅ |
-| 6 | PRD | [06-prd.md](06-prd.md) | 🟡 черновик v0.3, ждёт утверждения (Q15) |
+| 6 | PRD | [06-prd.md](06-prd.md) | 🟡 черновик v0.4, ждёт утверждения (Q15) |
 
 ## Правила ведения документов
 
