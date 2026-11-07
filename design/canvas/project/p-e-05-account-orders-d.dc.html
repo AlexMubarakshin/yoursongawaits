@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Account: orders, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:1440px;height:760px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #DADADA"><div style="display:flex;align-items:center;gap:48px"><a href="#" class="un fl" style="font-weight:500;font-size:20px;color:#111">openyoursong</a><nav style="display:flex;gap:32px"><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;box-shadow:inset 0 -2px 0 #111;">Orders</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Calendar</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Plan</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Settings</a></nav></div><div style="display:flex;align-items:center;gap:16px"><span class="mut" style="font-size:14px">max.r@mail.com</span><a class="btn bk sm" href="#" style=""><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>New song</a></div></header>
+<main style="padding:48px 120px 0 120px"><div style="display:flex;flex-direction:column;gap:24px;"><div style="display:flex;align-items:center;gap:12px;"><h1 class="un" style="margin:0;font-size:48px;font-weight:500;line-height:1.15;letter-spacing:-.02em;">Your songs</h1><span style="flex:1"></span><span class="mut" style="font-size:13px;line-height:1.4;">4 orders</span></div><div style="display:flex;flex-direction:column;gap:0px;"><div style="display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #DADADA"><div class="ph" style="width:80px;height:80px;border-radius:16px;flex-shrink:0"><img src="/_blob/2892b385f1c5f1e8dedf7df3815e506f" alt="Gift cover" style=""></div><div style="flex:1;display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Anna, 30th birthday</strong><span class="mut" style="font-size:14px">Opens 14 March 09:00 London · bundle</span></div><span style="font-size:14px;font-weight:500;background:#FFD84D;border-radius:8px;padding:6px 12px">Scheduled</span><a class="btn bo sm" href="#" style="">Open order</a></div><div style="display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #DADADA"><div class="ph" style="width:80px;height:80px;border-radius:16px;flex-shrink:0"><img src="/_blob/e0bf68270375990a6c155c753ae64c80" alt="Mum with lemon cake" style=""></div><div style="flex:1;display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Mum, 60th · group of 7</strong><span class="mut" style="font-size:14px">Opened 14 Feb · 1 reaction</span></div><span style="font-size:14px;font-weight:500;background:#F2F2F2;border-radius:8px;padding:6px 12px">Reaction received</span><a class="btn bo sm" href="#" style="">Watch</a></div><div style="display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #DADADA"><div class="ph" style="width:80px;height:80px;border-radius:16px;flex-shrink:0"><img src="/_blob/f2f411ec00795b0ea6ea67c498d9ebd2" alt="Dad with a guitar" style=""></div><div style="flex:1;display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Leo, Father’s Day</strong><span class="mut" style="font-size:14px">Opened 16 June 2026</span></div><span style="font-size:14px;font-weight:500;background:#F2F2F2;border-radius:8px;padding:6px 12px">Opened</span><a class="btn bo sm" href="#" style="">Open order</a></div><div style="display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #DADADA"><div class="ph" style="width:80px;height:80px;border-radius:16px;flex-shrink:0"><img src="/_blob/ca7740159a99c62c8060e76efe18a779" alt="Office team with a cake" style=""></div><div style="flex:1;display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Dee, retirement · group</strong><span class="mut" style="font-size:14px">3 of 9 have written · until 20 March</span></div><span style="font-size:14px;font-weight:500;background:#FFD84D;border-radius:8px;padding:6px 12px">Collecting</span><a class="btn bo sm" href="#" style="">Group page</a></div></div></div></main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":760}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

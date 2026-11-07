@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Solo or together</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><span style="width:44px"></span><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="width:44px;text-align:right;font-size:14px;font-variant-numeric:tabular-nums">1/4</span></header>
+  <div role="progressbar" aria-label="Step 1 of 4" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="display:flex;gap:4px;padding:0 20px 24px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span></div>
+  <main style="padding:0 20px;display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:12px"><h1 class="un h1">Are you giving it alone or together</h1><p class="mut" style="margin:0;font-size:16px;line-height:1.5">No sign-up needed. What you type is saved as you go</p></div>
+    <fieldset style="border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px"><legend style="position:absolute;left:-9999px">Who is giving</legend>
+      <label style="display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:24px;cursor:pointer;background:#FFD84D;border:2px solid #111"><input type="radio" name="mode" checked style="width:22px;height:22px;margin:4px 0 0;accent-color:#111;flex-shrink:0"><span style="display:flex;flex-direction:column;gap:8px"><strong class="un" style="font-size:20px;font-weight:500;line-height:1.2">Just me</strong><span style="font-size:15px;line-height:1.5;color:#4A4A4A">You tell the story, we write the song. About three minutes</span></span><span style="margin-left:auto;flex-shrink:0"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="11" r="5" fill="none" stroke="#111" stroke-width="2"></circle><path d="M7 27c1-5 5-8 9-8s8 3 9 8" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></span></label>
+      <label style="display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:24px;cursor:pointer;background:#F2F2F2;border:2px solid #F2F2F2"><input type="radio" name="mode"  style="width:22px;height:22px;margin:4px 0 0;accent-color:#111;flex-shrink:0"><span style="display:flex;flex-direction:column;gap:8px"><strong class="un" style="font-size:20px;font-weight:500;line-height:1.2">Together</strong><span style="font-size:15px;line-height:1.5;color:#4A4A4A">Friends or family each add a memory and a note. Up to 20 people, one payment</span></span><span style="margin-left:auto;flex-shrink:0"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32"><circle cx="11" cy="12" r="4" fill="none" stroke="#111" stroke-width="2"></circle><circle cx="22" cy="12" r="4" fill="none" stroke="#111" stroke-width="2"></circle><path d="M3 26c1-4 4-7 8-7s7 3 8 7M17 20c1-1 3-1 5-1 4 0 7 3 8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></span></label>
+    </fieldset>
+    <div class="ph" style="height:120px;border-radius:24px"><img src="/_blob/2892b385f1c5f1e8dedf7df3815e506f" alt="A tangerine gift box with a blue ribbon and paper confetti"></div>
+  </main>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn bk" style="width:100%">Continue</button><span class="mut" style="font-size:13px;text-align:center">Free 30–45 s preview · $29 if you love it</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order: ready to send</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none}
+.bk{background:#111;color:#fff}
+.bw{background:#fff;color:#111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+details{border-top:1px solid #DADADA;padding:24px 0}
+summary{cursor:pointer;min-height:44px;font-size:18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+details p{margin:12px 0 0;font-size:16px;line-height:1.6;color:#4A4A4A}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.lbl{display:block;font-size:14px;font-weight:500;margin-bottom:8px}
+.bo{border:2px solid #111;background:#fff;color:#111}
+button.btn{cursor:pointer;font-family:inherit;border:none}
+button.bo{border:2px solid #111}
+.tn{font-variant-numeric:tabular-nums}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px}
+.back{width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#111}
+.row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.ck{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.4}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:1200px;box-sizing:border-box;overflow:hidden">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a><a href="#" style="font-size:14px;color:#4A4A4A;display:flex;align-items:center;min-height:44px;text-decoration:none">Account</a></header>
+<section style="padding:8px 20px 0;display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:8px"><h1 class="un" style="margin:0;font-size:32px;line-height:1.05;font-weight:500;letter-spacing:-.02em">The song for <span style="background:#FFD84D;padding:0 8px;border-radius:4px">Anna</span> is ready</h1><p class="mut tn" style="margin:0;font-size:15px;line-height:1.5">We’ll email her on 14 March at 09:00 London <a href="#">Change</a></p></div>
+  <ol aria-label="Order status" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0"><li style="display:flex;align-items:center;gap:12px;min-height:44px"><span style="width:28px;height:28px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="font-size:16px">Paid</span></li><li style="display:flex;align-items:center;gap:12px;min-height:44px"><span style="width:28px;height:28px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="font-size:16px">Song ready</span></li><li style="display:flex;align-items:center;gap:12px;min-height:44px"><span style="width:28px;height:28px;border-radius:50%;background:#FFD84D;border:2px solid #111;flex-shrink:0"></span><span style="font-size:16px;font-weight:500">Delivery scheduled</span></li><li style="display:flex;align-items:center;gap:12px;min-height:44px"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #DADADA;flex-shrink:0"></span><span style="font-size:16px;color:#4A4A4A">Sent</span></li><li style="display:flex;align-items:center;gap:12px;min-height:44px"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #DADADA;flex-shrink:0"></span><span style="font-size:16px;color:#4A4A4A">Opened</span></li></ol>
+  <div class="tile" style="background:#FFD84D;padding:20px;gap:16px">
+    <div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Gift link</strong><span style="font-size:14px;line-height:1.4">Shows a countdown until 14 March, then the song</span></div>
+    <div style="display:flex;gap:8px"><label for="gl" style="position:absolute;left:-9999px">Gift link</label><input id="gl" class="inp" type="text" value="openyoursong.com/anna-7kq2" readonly style="flex:1;min-width:0;font-size:15px"><button class="btn bk" style="height:52px;padding:0 16px;font-size:15px">Copy</button></div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><a href="#" class="btn bo" style="height:44px;padding:0 12px;font-size:15px;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>WhatsApp</a><a href="#" class="btn bo" style="height:44px;padding:0 12px;font-size:15px;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>SMS</a><a href="#" class="btn bo" style="height:44px;padding:0 12px;font-size:15px;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M3 11l18-7-4 16-5-5-3 4v-6l9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Telegram</a><a href="#" class="btn bo" style="height:44px;padding:0 12px;font-size:15px;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5M5 14v6h14v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Share</a><a href="#" class="btn bo" style="height:44px;padding:0 12px;font-size:15px;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2M18 14h2v2M14 18v2h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>QR</a></div>
+  </div>
+  <div class="frame" style="padding:20px;display:flex;gap:16px;align-items:center">
+    <span style="width:56px;height:72px;border-radius:8px;background:#F2F2F2;border:1px solid #DADADA;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+    <div style="display:flex;flex-direction:column;gap:4px;flex:1"><strong style="font-size:16px">PDF card</strong><span class="mut" style="font-size:14px;line-height:1.4">“For Anna, from Max” with a QR to the gift. A4 and US Letter</span></div>
+    <a href="#" class="back" aria-label="Download PDF card"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+  <div style="border-top:1px solid #DADADA">
+    <div class="row"><button class="play" aria-label="Play the full song" style="width:44px;height:44px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg></button><div style="display:flex;flex-direction:column;gap:4px;flex:1"><strong style="font-size:16px">Full song, take 1</strong><span class="mut" style="font-size:14px">MP3 · lyrics</span></div><span class="tn mut" style="font-size:14px">2:48</span></div>
+    <div class="row"><button class="play" aria-label="Play take 2" style="width:44px;height:44px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg></button><div style="display:flex;flex-direction:column;gap:4px;flex:1"><strong style="font-size:16px">Take 2</strong><span class="mut" style="font-size:14px">Bundle · MP3</span></div><span class="tn mut" style="font-size:14px">2:51</span></div>
+    <a href="#" class="row" style="text-decoration:none"><span style="flex:1;font-size:16px;font-weight:500">Slideshow: add 5–20 photos</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#" class="row" style="text-decoration:none"><span style="flex:1;font-size:16px;font-weight:500">See it as Anna will</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1200}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

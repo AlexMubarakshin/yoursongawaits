@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gift: share consent</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:center;height:76px;padding:0 20px"><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a></header>
+<main style="padding:0px 20px 0;display:flex;flex-direction:column;gap:24px"><div style="display:flex;flex-direction:column;gap:20px;"><h1 class="un" style="margin:0;font-size:26px;font-weight:500;line-height:1.15;letter-spacing:0;">Can we show your reaction to other people</h1><p class="mut" style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">Your video is already on its way to Max. This is a separate question</p><div style="display:flex;flex-direction:column;gap:12px;"><div style="display:flex;align-items:center;gap:12px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" fill="none" stroke="#111" stroke-width="1.8"></path><circle cx="12" cy="12" r="3" fill="none" stroke="#111" stroke-width="1.8"></circle></svg><p style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">On openyoursong’s site, social posts and ads, next to the song</p></div><div style="display:flex;align-items:center;gap:12px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2" fill="none" stroke="#111" stroke-width="1.8"></rect><path d="M8 11V8a4 4 0 018 0v3" fill="none" stroke="#111" stroke-width="1.8"></path></svg><p style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">Saying no changes nothing: Max still gets your video</p></div></div><label style="display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.45;cursor:pointer"><input type="checkbox" class="chk" id="a18" style="margin-top:1px"><span>I’m 18 or older and everyone in the video agrees</span></label><span class="mut" style="font-size:13px;line-height:1.4;">You can take it back any time. We can’t delete copies other people already saved</span></div></main>
+<div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn by" style="width:100%;border:2px solid #111">Yes, show my video</button><button class="btn bo" style="width:100%;">No, keep it private</button></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

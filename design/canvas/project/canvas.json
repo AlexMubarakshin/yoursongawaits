@@ -1,0 +1,1479 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "03-cut-paper-desktop.dc.html": {
+      "h": 2720,
+      "page": "flows",
+      "title": "Desktop: landing, create, gift",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "03-cut-paper-landing-mobile.dc.html": {
+      "h": 7992,
+      "page": "landing",
+      "title": "0.1  Landing · mobile",
+      "w": 390,
+      "x": 1520,
+      "y": 0
+    },
+    "03-cut-paper-landing.dc.html": {
+      "h": 6592,
+      "page": "landing",
+      "title": "0.1  Landing · desktop",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "03-cut-paper-mobile.dc.html": {
+      "h": 900,
+      "page": "flows",
+      "title": "Mobile flows",
+      "w": 2040,
+      "x": 1520,
+      "y": 0
+    },
+    "p-a-01-brand.dc.html": {
+      "h": 5404,
+      "page": "landing",
+      "title": "0.2  Brand language",
+      "w": 1440,
+      "x": 2000,
+      "y": 0
+    },
+    "p-a-02-ui-kit.dc.html": {
+      "h": 6824,
+      "page": "landing",
+      "title": "0.3  UI kit",
+      "w": 1440,
+      "x": 3520,
+      "y": 0
+    },
+    "p-b-01-solo-or-together-d.dc.html": {
+      "x": 0,
+      "y": 15016,
+      "w": 1440,
+      "h": 880,
+      "page": "landing",
+      "title": "1.2.1  Alone or together · desktop"
+    },
+    "p-b-01-solo-or-together.dc.html": {
+      "x": 0,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.1  Solo or together · mobile"
+    },
+    "p-b-02-who-is-it-for-d.dc.html": {
+      "x": 1520,
+      "y": 15016,
+      "w": 1440,
+      "h": 880,
+      "page": "landing",
+      "title": "1.2.2  Who is it for · desktop"
+    },
+    "p-b-02-who-is-it-for.dc.html": {
+      "x": 1520,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.2  Who is it for · mobile"
+    },
+    "p-b-03-their-story-d.dc.html": {
+      "x": 3040,
+      "y": 15016,
+      "w": 1440,
+      "h": 880,
+      "page": "landing",
+      "title": "1.2.3  Their story · desktop"
+    },
+    "p-b-03-their-story.dc.html": {
+      "x": 3040,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.3  Their story · mobile"
+    },
+    "p-b-04-genre-and-voice-d.dc.html": {
+      "x": 6080,
+      "y": 15016,
+      "w": 1440,
+      "h": 896,
+      "page": "landing",
+      "title": "1.2.5  Sound · desktop"
+    },
+    "p-b-04-genre-and-voice.dc.html": {
+      "x": 6080,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.5  Genre and voice · mobile"
+    },
+    "p-b-05-lyrics-ready-d.dc.html": {
+      "x": 7600,
+      "y": 15016,
+      "w": 1440,
+      "h": 1000,
+      "page": "landing",
+      "title": "1.2.6  Lyrics · desktop"
+    },
+    "p-b-05-lyrics-ready.dc.html": {
+      "x": 7600,
+      "y": 13776,
+      "w": 390,
+      "h": 1040,
+      "page": "landing",
+      "title": "1.2.6  Lyrics ready · mobile"
+    },
+    "p-b-06-email-d.dc.html": {
+      "x": 9120,
+      "y": 15016,
+      "w": 1440,
+      "h": 896,
+      "page": "landing",
+      "title": "1.2.7  Email · desktop"
+    },
+    "p-b-06-email.dc.html": {
+      "x": 9120,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.7  Email before generation · mobile"
+    },
+    "p-b-07-moderation-d.dc.html": {
+      "x": 4560,
+      "y": 15016,
+      "w": 1440,
+      "h": 872,
+      "page": "landing",
+      "title": "1.2.4  Story needs a change · desktop"
+    },
+    "p-b-07-moderation.dc.html": {
+      "x": 4560,
+      "y": 13776,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.2.4  Story needs a change · mobile"
+    },
+    "p-c-01-generating-d.dc.html": {
+      "x": 0,
+      "y": 17660,
+      "w": 1440,
+      "h": 776,
+      "page": "landing",
+      "title": "1.3.1  Making the music · desktop"
+    },
+    "p-c-01-generating.dc.html": {
+      "x": 0,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.1  Generating the preview · mobile"
+    },
+    "p-c-02-name-check-d.dc.html": {
+      "x": 3040,
+      "y": 17660,
+      "w": 1440,
+      "h": 792,
+      "page": "landing",
+      "title": "1.3.3  Name check · desktop"
+    },
+    "p-c-02-name-check.dc.html": {
+      "x": 3040,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.3  Check the name · mobile"
+    },
+    "p-c-03-preview-d.dc.html": {
+      "x": 4560,
+      "y": 17660,
+      "w": 1440,
+      "h": 800,
+      "page": "landing",
+      "title": "1.3.4  Preview · desktop"
+    },
+    "p-c-03-preview.dc.html": {
+      "x": 4560,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.4  Preview and takes · mobile"
+    },
+    "p-c-04-choose-d.dc.html": {
+      "x": 7600,
+      "y": 17660,
+      "w": 1440,
+      "h": 760,
+      "page": "landing",
+      "title": "1.3.6  Song or bundle · desktop"
+    },
+    "p-c-04-choose.dc.html": {
+      "x": 7600,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.6  Song or bundle · mobile"
+    },
+    "p-c-05-checkout-d.dc.html": {
+      "x": 10640,
+      "y": 17660,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "1.3.8  Checkout · desktop"
+    },
+    "p-c-05-checkout.dc.html": {
+      "x": 10640,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.8  Checkout · mobile"
+    },
+    "p-c-06-delivery-d.dc.html": {
+      "x": 0,
+      "y": 22076,
+      "w": 1440,
+      "h": 840,
+      "page": "landing",
+      "title": "2.1.1  Delivery · desktop"
+    },
+    "p-c-06-delivery.dc.html": {
+      "x": 0,
+      "y": 20676,
+      "w": 390,
+      "h": 1200,
+      "page": "landing",
+      "title": "2.1.1  When and how to deliver · mobile"
+    },
+    "p-c-07-ready-d.dc.html": {
+      "x": 3040,
+      "y": 22076,
+      "w": 1440,
+      "h": 1064,
+      "page": "landing",
+      "title": "2.1.3  Ready to send · desktop"
+    },
+    "p-c-07-ready.dc.html": {
+      "x": 3040,
+      "y": 20676,
+      "w": 390,
+      "h": 1200,
+      "page": "landing",
+      "title": "2.1.3  Ready to send · mobile"
+    },
+    "p-c-08-delayed-d.dc.html": {
+      "x": 1520,
+      "y": 17660,
+      "w": 1440,
+      "h": 816,
+      "page": "landing",
+      "title": "1.3.2  Taking longer · desktop"
+    },
+    "p-c-08-delayed.dc.html": {
+      "x": 1520,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.2  Taking longer · mobile"
+    },
+    "p-c-09-tries-used-d.dc.html": {
+      "x": 6080,
+      "y": 17660,
+      "w": 1440,
+      "h": 728,
+      "page": "landing",
+      "title": "1.3.5  Free tries used · desktop"
+    },
+    "p-c-09-tries-used.dc.html": {
+      "x": 6080,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.5  Free tries used · mobile"
+    },
+    "p-c-10-pay-with-credit-d.dc.html": {
+      "x": 9120,
+      "y": 17660,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "1.3.7  Subscriber with credit · desktop"
+    },
+    "p-c-10-pay-with-credit.dc.html": {
+      "x": 9120,
+      "y": 16616,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.3.7  Subscriber with credit · mobile"
+    },
+    "p-c-11-send-myself-d.dc.html": {
+      "x": 1520,
+      "y": 22076,
+      "w": 1440,
+      "h": 1008,
+      "page": "landing",
+      "title": "2.1.2  I’ll send it myself · desktop"
+    },
+    "p-c-11-send-myself.dc.html": {
+      "x": 1520,
+      "y": 20676,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "2.1.2  I’ll send it myself · mobile"
+    },
+    "p-c-12-after-opened-d.dc.html": {
+      "x": 6080,
+      "y": 22076,
+      "w": 1440,
+      "h": 880,
+      "page": "landing",
+      "title": "2.1.5  After Anna opened it · desktop"
+    },
+    "p-c-12-after-opened.dc.html": {
+      "x": 6080,
+      "y": 20676,
+      "w": 390,
+      "h": 920,
+      "page": "landing",
+      "title": "2.1.5  After Anna opened it · mobile"
+    },
+    "p-c-13-slideshow-d.dc.html": {
+      "x": 4560,
+      "y": 22076,
+      "w": 1440,
+      "h": 776,
+      "page": "landing",
+      "title": "2.1.4  Slideshow photos · desktop"
+    },
+    "p-c-13-slideshow.dc.html": {
+      "x": 4560,
+      "y": 20676,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "2.1.4  Slideshow photos · mobile"
+    },
+    "p-d-01-waiting-d.dc.html": {
+      "x": 1520,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.2  Waiting screen · desktop"
+    },
+    "p-d-01-waiting.dc.html": {
+      "x": 1520,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.2  Gift waiting screen · mobile"
+    },
+    "p-d-02-gift-first-screen-d.dc.html": {
+      "x": 3040,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.3  First screen · desktop"
+    },
+    "p-d-02-gift-first-screen.dc.html": {
+      "x": 3040,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.3  Gift first screen · mobile"
+    },
+    "p-d-03-reaction-consent-d.dc.html": {
+      "x": 7600,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.6  Reaction consent · desktop"
+    },
+    "p-d-03-reaction-consent.dc.html": {
+      "x": 7600,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.6  Reaction video consent · mobile"
+    },
+    "p-d-04-song-playing-d.dc.html": {
+      "x": 12160,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.9  Song playing · desktop"
+    },
+    "p-d-04-song-playing.dc.html": {
+      "x": 12160,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.9  Song playing with lyrics · mobile"
+    },
+    "p-d-05-review-reaction-d.dc.html": {
+      "x": 0,
+      "y": 29324,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.2.1  Review reaction · desktop"
+    },
+    "p-d-05-review-reaction.dc.html": {
+      "x": 0,
+      "y": 27884,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.2.1  Review your reaction · mobile"
+    },
+    "p-d-06-song-ended-d.dc.html": {
+      "x": 4560,
+      "y": 29324,
+      "w": 1440,
+      "h": 1040,
+      "page": "landing",
+      "title": "3.2.4  Song ended · desktop"
+    },
+    "p-d-06-song-ended.dc.html": {
+      "x": 4560,
+      "y": 27884,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.2.4  Song ended · mobile"
+    },
+    "p-d-07-link-preview.dc.html": {
+      "x": 0,
+      "y": 26384,
+      "w": 1200,
+      "h": 630,
+      "page": "landing",
+      "title": "3.1.1  Link preview image, 1200×630 · link preview"
+    },
+    "p-d-08-reveal-d.dc.html": {
+      "x": 10640,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.8  Reveal moment · desktop"
+    },
+    "p-d-08-reveal.dc.html": {
+      "x": 10640,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.8  Reveal moment · mobile"
+    },
+    "p-d-09-no-camera-d.dc.html": {
+      "x": 9120,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.7  Camera unavailable · desktop"
+    },
+    "p-d-09-no-camera.dc.html": {
+      "x": 9120,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.7  Camera unavailable · mobile"
+    },
+    "p-d-10-share-consent-d.dc.html": {
+      "x": 1520,
+      "y": 29324,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.2.2  Share consent · desktop"
+    },
+    "p-d-10-share-consent.dc.html": {
+      "x": 1520,
+      "y": 27884,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.2.2  Share consent · mobile"
+    },
+    "p-d-11-group-first-d.dc.html": {
+      "x": 4560,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.4  First screen, group · desktop"
+    },
+    "p-d-11-group-first.dc.html": {
+      "x": 4560,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.4  First screen, group · mobile"
+    },
+    "p-d-12-group-notes-d.dc.html": {
+      "x": 6080,
+      "y": 29324,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.2.5  Notes from everyone · desktop"
+    },
+    "p-d-12-group-notes.dc.html": {
+      "x": 6080,
+      "y": 27884,
+      "w": 390,
+      "h": 1240,
+      "page": "landing",
+      "title": "3.2.5  Notes from everyone · mobile"
+    },
+    "p-d-13-my-video-d.dc.html": {
+      "x": 7600,
+      "y": 29324,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.2.6  Remove my video · desktop"
+    },
+    "p-d-13-my-video.dc.html": {
+      "x": 7600,
+      "y": 27884,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.2.6  Remove my video · mobile"
+    },
+    "p-d-14-preview-mode-d.dc.html": {
+      "x": 6080,
+      "y": 26384,
+      "w": 1440,
+      "h": 900,
+      "page": "landing",
+      "title": "3.1.5  Preview mode for Max · desktop"
+    },
+    "p-d-14-preview-mode.dc.html": {
+      "x": 6080,
+      "y": 25340,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "3.1.5  Preview mode for Max · mobile"
+    },
+    "p-d-15-post-reaction-d.dc.html": {
+      "x": 3040,
+      "y": 29324,
+      "w": 1440,
+      "h": 980,
+      "page": "landing",
+      "title": "3.2.3  Post your reaction · desktop"
+    },
+    "p-d-15-post-reaction.dc.html": {
+      "x": 3040,
+      "y": 27884,
+      "w": 390,
+      "h": 1080,
+      "page": "landing",
+      "title": "3.2.3  Post your reaction · mobile"
+    },
+    "p-d-16-story-song.dc.html": {
+      "x": 9120,
+      "y": 27884,
+      "w": 540,
+      "h": 960,
+      "page": "landing",
+      "title": "3.2.7  Story card: the song, 1080×1920 · Story 1080×1920"
+    },
+    "p-d-17-story-reaction.dc.html": {
+      "x": 10640,
+      "y": 27884,
+      "w": 540,
+      "h": 960,
+      "page": "landing",
+      "title": "3.2.8  Story card: the reaction, 1080×1920 · Story 1080×1920"
+    },
+    "p-e-00-group-setup-d.dc.html": {
+      "x": 0,
+      "y": 33728,
+      "w": 1440,
+      "h": 944,
+      "page": "landing",
+      "title": "4.1.1  Set deadline and invite · desktop"
+    },
+    "p-e-00-group-setup.dc.html": {
+      "x": 0,
+      "y": 32564,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "4.1.1  Set deadline and invite · mobile"
+    },
+    "p-e-01-organizer-d.dc.html": {
+      "x": 1520,
+      "y": 33728,
+      "w": 1440,
+      "h": 960,
+      "page": "landing",
+      "title": "4.1.2  Organizer page · desktop"
+    },
+    "p-e-01-organizer.dc.html": {
+      "x": 1520,
+      "y": 32564,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "4.1.2  Group gift, organizer page · mobile"
+    },
+    "p-e-02-invite-d.dc.html": {
+      "x": 3040,
+      "y": 33728,
+      "w": 1440,
+      "h": 840,
+      "page": "landing",
+      "title": "4.1.3  Invite landing · desktop"
+    },
+    "p-e-02-invite.dc.html": {
+      "x": 3040,
+      "y": 32564,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "4.1.3  Group gift, invite landing · mobile"
+    },
+    "p-e-03-contribute-d.dc.html": {
+      "x": 4560,
+      "y": 33728,
+      "w": 1440,
+      "h": 904,
+      "page": "landing",
+      "title": "4.1.4  Add your part · desktop"
+    },
+    "p-e-03-contribute.dc.html": {
+      "x": 4560,
+      "y": 32564,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "4.1.4  Group gift, add your part · mobile"
+    },
+    "p-e-04-done-d.dc.html": {
+      "x": 6080,
+      "y": 33728,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "4.1.5  Part sent · desktop"
+    },
+    "p-e-04-done.dc.html": {
+      "x": 6080,
+      "y": 32564,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "4.1.5  Group gift, contributor done · mobile"
+    },
+    "p-e-05-account-orders-d.dc.html": {
+      "x": 0,
+      "y": 38472,
+      "w": 1440,
+      "h": 760,
+      "page": "landing",
+      "title": "5.1.1  Orders · desktop"
+    },
+    "p-e-05-account-orders.dc.html": {
+      "x": 0,
+      "y": 36952,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "5.1.1  Account, my orders · mobile"
+    },
+    "p-e-06-reaction-d.dc.html": {
+      "x": 1520,
+      "y": 38472,
+      "w": 1440,
+      "h": 952,
+      "page": "landing",
+      "title": "5.1.2  Reaction received · desktop"
+    },
+    "p-e-06-reaction.dc.html": {
+      "x": 1520,
+      "y": 36952,
+      "w": 390,
+      "h": 1252,
+      "page": "landing",
+      "title": "5.1.2  Reaction received · mobile"
+    },
+    "p-e-07-calendar-d.dc.html": {
+      "x": 3040,
+      "y": 38472,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "5.1.3  Calendar and plan · desktop"
+    },
+    "p-e-07-calendar.dc.html": {
+      "x": 3040,
+      "y": 36952,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "5.1.3  Occasions calendar and subscription · mobile"
+    },
+    "p-e-08-remake-refund-d.dc.html": {
+      "x": 4560,
+      "y": 38472,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "5.1.4  Remake or refund · desktop"
+    },
+    "p-e-08-remake-refund.dc.html": {
+      "x": 4560,
+      "y": 36952,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "5.1.4  Remake or refund · mobile"
+    },
+    "p-e-09-participant-later-d.dc.html": {
+      "x": 7600,
+      "y": 33728,
+      "w": 1440,
+      "h": 1024,
+      "page": "landing",
+      "title": "4.1.6  Participant page after opening · desktop"
+    },
+    "p-e-09-participant-later.dc.html": {
+      "x": 7600,
+      "y": 32564,
+      "w": 390,
+      "h": 896,
+      "page": "landing",
+      "title": "4.1.6  Participant page after opening · mobile"
+    },
+    "p-e-10-settings-d.dc.html": {
+      "x": 6080,
+      "y": 38472,
+      "w": 1440,
+      "h": 720,
+      "page": "landing",
+      "title": "5.1.5  Settings · desktop"
+    },
+    "p-e-10-settings.dc.html": {
+      "x": 6080,
+      "y": 36952,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "5.1.5  Settings · mobile"
+    },
+    "p-e-mail-01-opened.dc.html": {
+      "x": 2720,
+      "y": 40152,
+      "w": 600,
+      "h": 900,
+      "page": "landing",
+      "title": "5.2.5  Email, gift opened · email"
+    },
+    "p-e-mail-02-reaction.dc.html": {
+      "x": 3400,
+      "y": 40152,
+      "w": 600,
+      "h": 960,
+      "page": "landing",
+      "title": "5.2.6  Email, reaction received · email"
+    },
+    "p-e-mail-03-preview-ready.dc.html": {
+      "x": 0,
+      "y": 40152,
+      "w": 600,
+      "h": 760,
+      "page": "landing",
+      "title": "5.2.1  Preview ready · email"
+    },
+    "p-e-mail-04-paid.dc.html": {
+      "x": 680,
+      "y": 40152,
+      "w": 600,
+      "h": 568,
+      "page": "landing",
+      "title": "5.2.2  Order paid · email"
+    },
+    "p-e-mail-05-gift-for-you.dc.html": {
+      "x": 1360,
+      "y": 40152,
+      "w": 600,
+      "h": 728,
+      "page": "landing",
+      "title": "5.2.3  Gift for the recipient · email"
+    },
+    "p-e-mail-06-time-to-send.dc.html": {
+      "x": 2040,
+      "y": 40152,
+      "w": 600,
+      "h": 712,
+      "page": "landing",
+      "title": "5.2.4  Time to send · email"
+    },
+    "p-e-mail-07-calendar.dc.html": {
+      "x": 4080,
+      "y": 40152,
+      "w": 600,
+      "h": 716,
+      "page": "landing",
+      "title": "5.2.7  Calendar reminder · email"
+    },
+    "p-e-mail-08-login.dc.html": {
+      "x": 4760,
+      "y": 40152,
+      "w": 600,
+      "h": 440,
+      "page": "landing",
+      "title": "5.2.8  Log-in link · email"
+    },
+    "p-e-mail-09-video-expiring.dc.html": {
+      "x": 5440,
+      "y": 40152,
+      "w": 600,
+      "h": 748,
+      "page": "landing",
+      "title": "5.2.9  Reaction video expiring · email"
+    },
+    "p-e-mail-10-new-part.dc.html": {
+      "x": 6120,
+      "y": 40152,
+      "w": 600,
+      "h": 560,
+      "page": "landing",
+      "title": "5.2.10  Group: new part · email"
+    },
+    "p-e-mail-11-scheduled.dc.html": {
+      "x": 6800,
+      "y": 40152,
+      "w": 600,
+      "h": 716,
+      "page": "landing",
+      "title": "5.2.11  Group: gift scheduled · email"
+    },
+    "p-f-01-login-d.dc.html": {
+      "x": 3040,
+      "y": 12320,
+      "w": 1440,
+      "h": 840,
+      "page": "landing",
+      "title": "1.1.3  Log in · desktop"
+    },
+    "p-f-01-login.dc.html": {
+      "x": 3040,
+      "y": 10192,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.1.3  Log in · mobile"
+    },
+    "p-f-02-link-sent-d.dc.html": {
+      "x": 4560,
+      "y": 12320,
+      "w": 1440,
+      "h": 840,
+      "page": "landing",
+      "title": "1.1.4  Link sent · desktop"
+    },
+    "p-f-02-link-sent.dc.html": {
+      "x": 4560,
+      "y": 10192,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.1.4  Link sent · mobile"
+    },
+    "p-f-03-pricing-d.dc.html": {
+      "x": 1520,
+      "y": 12320,
+      "w": 1440,
+      "h": 856,
+      "page": "landing",
+      "title": "1.1.2  Pricing · desktop"
+    },
+    "p-f-03-pricing.dc.html": {
+      "x": 1520,
+      "y": 10192,
+      "w": 390,
+      "h": 1928,
+      "page": "landing",
+      "title": "1.1.2  Pricing · mobile"
+    },
+    "p-f-04-occasion-d.dc.html": {
+      "x": 0,
+      "y": 12320,
+      "w": 1440,
+      "h": 792,
+      "page": "landing",
+      "title": "1.1.1  Occasion page · desktop"
+    },
+    "p-f-04-occasion.dc.html": {
+      "x": 0,
+      "y": 10192,
+      "w": 390,
+      "h": 844,
+      "page": "landing",
+      "title": "1.1.1  Occasion page · mobile"
+    },
+    "p-g-01-growth-loop.dc.html": {
+      "h": 968,
+      "page": "landing",
+      "title": "0.4  Growth loop",
+      "w": 1440,
+      "x": 5880,
+      "y": 0
+    },
+    "p-h-01-ideas-hub-d.dc.html": {
+      "x": 0,
+      "y": 46828,
+      "w": 1440,
+      "h": 1744,
+      "page": "landing",
+      "title": "6.1.1  Ideas hub · desktop"
+    },
+    "p-h-01-ideas-hub.dc.html": {
+      "x": 0,
+      "y": 43712,
+      "w": 390,
+      "h": 2120,
+      "page": "landing",
+      "title": "6.1.1  Ideas hub · mobile"
+    },
+    "p-h-02-vs-songfinch-d.dc.html": {
+      "x": 1520,
+      "y": 46828,
+      "w": 1440,
+      "h": 2560,
+      "page": "landing",
+      "title": "6.1.2  Openyoursong vs Songfinch · desktop"
+    },
+    "p-h-02-vs-songfinch.dc.html": {
+      "x": 1520,
+      "y": 43712,
+      "w": 390,
+      "h": 2916,
+      "page": "landing",
+      "title": "6.1.2  Openyoursong vs Songfinch · mobile"
+    },
+    "p-h-03-guide-cost-d.dc.html": {
+      "x": 3040,
+      "y": 46828,
+      "w": 1440,
+      "h": 1952,
+      "page": "landing",
+      "title": "6.1.3  How much does a custom song cost · desktop"
+    },
+    "p-h-03-guide-cost.dc.html": {
+      "x": 3040,
+      "y": 43712,
+      "w": 390,
+      "h": 2284,
+      "page": "landing",
+      "title": "6.1.3  How much does a custom song cost · mobile"
+    },
+    "p-h-04-songs-for-sister-d.dc.html": {
+      "x": 4560,
+      "y": 46828,
+      "w": 1440,
+      "h": 1592,
+      "page": "landing",
+      "title": "6.1.4  Sister · desktop"
+    },
+    "p-h-04-songs-for-sister.dc.html": {
+      "x": 4560,
+      "y": 43712,
+      "w": 390,
+      "h": 1296,
+      "page": "landing",
+      "title": "6.1.4  Sister · mobile"
+    },
+    "p-h-05-birthday-song-name-d.dc.html": {
+      "x": 6080,
+      "y": 46828,
+      "w": 1440,
+      "h": 1712,
+      "page": "landing",
+      "title": "6.1.5  Birthday song with name · desktop"
+    },
+    "p-h-05-birthday-song-name.dc.html": {
+      "x": 6080,
+      "y": 43712,
+      "w": 390,
+      "h": 1536,
+      "page": "landing",
+      "title": "6.1.5  Birthday song with name · mobile"
+    },
+    "p-h-06-love-song-tool-d.dc.html": {
+      "x": 7600,
+      "y": 46828,
+      "w": 1440,
+      "h": 1624,
+      "page": "landing",
+      "title": "6.1.6  Love song generator · desktop"
+    },
+    "p-h-06-love-song-tool.dc.html": {
+      "x": 7600,
+      "y": 43712,
+      "w": 390,
+      "h": 1716,
+      "page": "landing",
+      "title": "6.1.6  Love song generator · mobile"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-06T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "page": "landing",
+    "view": "canvas"
+  },
+  "noteOrder": [
+    "t03",
+    "s03",
+    "tbrand",
+    "tland",
+    "seo1",
+    "seo2",
+    "seo3",
+    "seo4",
+    "tf0",
+    "tf1",
+    "tf2",
+    "tf3",
+    "tf4",
+    "tf5",
+    "tf6",
+    "tmail",
+    "tloop",
+    "tcontent",
+    "t_p1_0",
+    "t_p1_1",
+    "t_p1_2",
+    "t_p2_0",
+    "t_p3_0",
+    "t_p3_1",
+    "t_p4_0",
+    "t_p5_0",
+    "t_p6_0",
+    "t_p5_mail",
+    "t_p6_seo",
+    "tmap",
+    "sec_p1",
+    "sec_p2",
+    "sec_p3",
+    "sec_p4",
+    "sec_p5",
+    "sec_p6"
+  ],
+  "notes": {
+    "s03": {
+      "fill": "orange",
+      "page": "flows",
+      "text": "Cut Paper. Flat confetti shapes as the brand pattern. Tangerine #FF7A00, sky #69B7FF, butter #FFD84D, grass #2FB36B on white, ink #111. Unbounded + Inter. Most festive; risk is noise, so content areas stay plain white.",
+      "w": 760,
+      "x": 1520,
+      "y": 980
+    },
+    "seo1": {
+      "fill": "blue",
+      "page": "landing",
+      "size": 24,
+      "text": "SEO · Home  /\nTitle: Custom Song Gift With Their Name | openyoursong\nDescription: A personalized song gift made from your story, with their name sung in it. Hear a free preview, then send it on the day. From $29.\nH1: A custom song gift with their name in it\nMain keys: custom song gift, personalized song gift (personalised song gift for GB/AU), custom song\nAlso in copy: song with their name, custom song examples, how much does a custom song cost (FAQ)\nSchema: Product + FAQPage",
+      "w": 760,
+      "x": 5040,
+      "y": 0
+    },
+    "seo2": {
+      "fill": "blue",
+      "page": "landing",
+      "size": 24,
+      "text": "SEO · Pricing  /pricing\nTitle: How Much Does a Custom Song Cost? $29 | openyoursong\nDescription: A personalized song with their name costs $29, or $55 with a second version, photo slideshow and lyrics poster. Free preview before you pay.\nH1: How much does a custom song cost\nMain keys: how much does a custom song cost, song gift, custom song price\nSchema: Product with Offer, FAQPage",
+      "w": 760,
+      "x": 5040,
+      "y": 1040
+    },
+    "seo3": {
+      "fill": "blue",
+      "page": "landing",
+      "size": 24,
+      "text": "SEO · Occasion  /occasions/mothers-day (GB: personalised, US: personalized + Mom)\nTitle: Mother's Day Song With Mum's Name | openyoursong\nDescription: A personalised Mother's Day song for Mum, made from your story and sent on the day. Free preview, then $29.\nH1: A Mother's Day song with Mum's name in it\nMain keys: mother's day song, song for mum / song for mom, personalised song gift\nSame template for /occasions/{birthday, anniversary, wedding, fathers-day, valentines-day, retirement} and /for/{wife, husband, mom, dad, …}; each page needs its own audio example",
+      "w": 760,
+      "x": 5040,
+      "y": 2080
+    },
+    "seo4": {
+      "fill": "gray",
+      "page": "landing",
+      "size": 24,
+      "text": "SEO · Not indexed (noindex, out of sitemap, FR-1.9)\nQuestionnaire, preview, checkout, order pages, gift links and waiting screens, invite and participant pages, account, log-in.\nLink previews of gift links use the neutral cover only: no lyrics, no song title",
+      "w": 760,
+      "x": 5040,
+      "y": 3120
+    },
+    "t03": {
+      "kind": "title1",
+      "maxW": 3560,
+      "page": "flows",
+      "text": "Cut Paper: flows",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "tbrand": {
+      "kind": "title1",
+      "maxW": 2960,
+      "page": "landing",
+      "text": "Brand language and UI kit",
+      "w": 240,
+      "x": 2000,
+      "y": -300
+    },
+    "tland": {
+      "kind": "title1",
+      "maxW": 1910,
+      "page": "landing",
+      "text": "Landing",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "tloop": {
+      "kind": "title1",
+      "maxW": 1440,
+      "page": "landing",
+      "text": "Growth loop",
+      "w": 240,
+      "x": 5880,
+      "y": -300
+    },
+    "t_p1_0": {
+      "x": 0,
+      "y": 9892,
+      "text": "Entry points",
+      "kind": "title1",
+      "maxW": 6000,
+      "page": "landing"
+    },
+    "t_p1_1": {
+      "x": 0,
+      "y": 13476,
+      "text": "Questionnaire",
+      "kind": "title1",
+      "maxW": 10560,
+      "page": "landing"
+    },
+    "t_p1_2": {
+      "x": 0,
+      "y": 16316,
+      "text": "Generate, preview and pay",
+      "kind": "title1",
+      "maxW": 12080,
+      "page": "landing"
+    },
+    "t_p2_0": {
+      "x": 0,
+      "y": 20376,
+      "text": "Order page",
+      "kind": "title1",
+      "maxW": 7520,
+      "page": "landing"
+    },
+    "t_p3_0": {
+      "x": 0,
+      "y": 25040,
+      "text": "Opening the gift",
+      "kind": "title1",
+      "maxW": 13600,
+      "page": "landing"
+    },
+    "t_p3_1": {
+      "x": 0,
+      "y": 27584,
+      "text": "Reaction and sharing",
+      "kind": "title1",
+      "maxW": 12080,
+      "page": "landing"
+    },
+    "t_p4_0": {
+      "x": 0,
+      "y": 32264,
+      "text": "Organizer and participants",
+      "kind": "title1",
+      "maxW": 9040,
+      "page": "landing"
+    },
+    "t_p5_0": {
+      "x": 0,
+      "y": 36652,
+      "text": "Account",
+      "kind": "title1",
+      "maxW": 7520,
+      "page": "landing"
+    },
+    "t_p6_0": {
+      "x": 0,
+      "y": 43412,
+      "text": "Ideas hub, comparisons, guides, free tools",
+      "kind": "title1",
+      "maxW": 9040,
+      "page": "landing"
+    },
+    "t_p5_mail": {
+      "x": 0,
+      "y": 39852,
+      "text": "Emails",
+      "kind": "title1",
+      "maxW": 7400,
+      "page": "landing"
+    },
+    "t_p6_seo": {
+      "x": 0,
+      "y": 43012,
+      "text": "SEO notes for these templates live on the overview page, next to the UI kit",
+      "w": 900,
+      "size": "m",
+      "fill": "gray",
+      "page": "landing"
+    },
+    "tmap": {
+      "x": 5880,
+      "y": 1200,
+      "w": 1440,
+      "size": "m",
+      "fill": "gray",
+      "page": "landing",
+      "text": "How this page is organised (top to bottom)\n0 · Overview: landing, brand, UI kit, growth loop, SEO notes\n1 · Create and pay: entry pages, questionnaire, preview, payment\n2 · Order and delivery: what the giver does after paying\n3 · Recipient and sharing: opening the gift, reaction, posting\n4 · Group gift: organiser and participants\n5 · Account and emails\n6 · Content and SEO: ideas hub, comparisons, guides, tools\nIn every flow the mobile screen sits directly above its desktop version. Board names start with page.flow.step"
+    },
+    "sec_p1": {
+      "x": -40,
+      "y": 9192,
+      "text": "1 · Create and pay",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    },
+    "sec_p2": {
+      "x": -40,
+      "y": 19676,
+      "text": "2 · Order and delivery",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    },
+    "sec_p3": {
+      "x": -40,
+      "y": 24340,
+      "text": "3 · Recipient and sharing",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    },
+    "sec_p4": {
+      "x": -40,
+      "y": 31564,
+      "text": "4 · Group gift",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    },
+    "sec_p5": {
+      "x": -40,
+      "y": 35952,
+      "text": "5 · Account and emails",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    },
+    "sec_p6": {
+      "x": -40,
+      "y": 42312,
+      "text": "6 · Content and SEO",
+      "kind": "title1",
+      "maxW": 6000,
+      "size": "xxl",
+      "page": "landing"
+    }
+  },
+  "order": [
+    "03-cut-paper-desktop.dc.html",
+    "03-cut-paper-mobile.dc.html",
+    "03-cut-paper-landing.dc.html",
+    "03-cut-paper-landing-mobile.dc.html",
+    "p-a-01-brand.dc.html",
+    "p-a-02-ui-kit.dc.html",
+    "p-b-01-solo-or-together.dc.html",
+    "p-b-02-who-is-it-for.dc.html",
+    "p-b-03-their-story.dc.html",
+    "p-b-04-genre-and-voice.dc.html",
+    "p-b-05-lyrics-ready.dc.html",
+    "p-b-06-email.dc.html",
+    "p-c-01-generating.dc.html",
+    "p-c-02-name-check.dc.html",
+    "p-c-03-preview.dc.html",
+    "p-c-04-choose.dc.html",
+    "p-c-05-checkout.dc.html",
+    "p-c-06-delivery.dc.html",
+    "p-c-07-ready.dc.html",
+    "p-d-01-waiting.dc.html",
+    "p-d-02-gift-first-screen.dc.html",
+    "p-d-03-reaction-consent.dc.html",
+    "p-d-04-song-playing.dc.html",
+    "p-d-05-review-reaction.dc.html",
+    "p-d-06-song-ended.dc.html",
+    "p-e-01-organizer.dc.html",
+    "p-e-02-invite.dc.html",
+    "p-e-03-contribute.dc.html",
+    "p-e-04-done.dc.html",
+    "p-e-05-account-orders.dc.html",
+    "p-e-06-reaction.dc.html",
+    "p-e-07-calendar.dc.html",
+    "p-e-08-remake-refund.dc.html",
+    "p-e-mail-01-opened.dc.html",
+    "p-e-mail-02-reaction.dc.html",
+    "p-f-04-occasion.dc.html",
+    "p-f-04-occasion-d.dc.html",
+    "p-f-03-pricing.dc.html",
+    "p-f-03-pricing-d.dc.html",
+    "p-f-01-login.dc.html",
+    "p-f-01-login-d.dc.html",
+    "p-f-02-link-sent.dc.html",
+    "p-f-02-link-sent-d.dc.html",
+    "p-b-01-solo-or-together-d.dc.html",
+    "p-b-02-who-is-it-for-d.dc.html",
+    "p-b-03-their-story-d.dc.html",
+    "p-b-07-moderation.dc.html",
+    "p-b-07-moderation-d.dc.html",
+    "p-b-04-genre-and-voice-d.dc.html",
+    "p-b-05-lyrics-ready-d.dc.html",
+    "p-b-06-email-d.dc.html",
+    "p-c-01-generating-d.dc.html",
+    "p-c-08-delayed.dc.html",
+    "p-c-08-delayed-d.dc.html",
+    "p-c-02-name-check-d.dc.html",
+    "p-c-03-preview-d.dc.html",
+    "p-c-09-tries-used.dc.html",
+    "p-c-09-tries-used-d.dc.html",
+    "p-c-04-choose-d.dc.html",
+    "p-c-10-pay-with-credit.dc.html",
+    "p-c-10-pay-with-credit-d.dc.html",
+    "p-c-05-checkout-d.dc.html",
+    "p-c-06-delivery-d.dc.html",
+    "p-c-11-send-myself.dc.html",
+    "p-c-11-send-myself-d.dc.html",
+    "p-c-07-ready-d.dc.html",
+    "p-c-13-slideshow.dc.html",
+    "p-c-13-slideshow-d.dc.html",
+    "p-c-12-after-opened.dc.html",
+    "p-c-12-after-opened-d.dc.html",
+    "p-d-07-link-preview.dc.html",
+    "p-d-01-waiting-d.dc.html",
+    "p-d-02-gift-first-screen-d.dc.html",
+    "p-d-11-group-first.dc.html",
+    "p-d-11-group-first-d.dc.html",
+    "p-d-14-preview-mode.dc.html",
+    "p-d-14-preview-mode-d.dc.html",
+    "p-d-03-reaction-consent-d.dc.html",
+    "p-d-09-no-camera.dc.html",
+    "p-d-09-no-camera-d.dc.html",
+    "p-d-08-reveal.dc.html",
+    "p-d-08-reveal-d.dc.html",
+    "p-d-04-song-playing-d.dc.html",
+    "p-d-05-review-reaction-d.dc.html",
+    "p-d-10-share-consent.dc.html",
+    "p-d-10-share-consent-d.dc.html",
+    "p-d-06-song-ended-d.dc.html",
+    "p-d-12-group-notes.dc.html",
+    "p-d-12-group-notes-d.dc.html",
+    "p-d-13-my-video.dc.html",
+    "p-d-13-my-video-d.dc.html",
+    "p-e-00-group-setup.dc.html",
+    "p-e-00-group-setup-d.dc.html",
+    "p-e-01-organizer-d.dc.html",
+    "p-e-02-invite-d.dc.html",
+    "p-e-03-contribute-d.dc.html",
+    "p-e-04-done-d.dc.html",
+    "p-e-09-participant-later.dc.html",
+    "p-e-09-participant-later-d.dc.html",
+    "p-e-05-account-orders-d.dc.html",
+    "p-e-06-reaction-d.dc.html",
+    "p-e-07-calendar-d.dc.html",
+    "p-e-08-remake-refund-d.dc.html",
+    "p-e-10-settings.dc.html",
+    "p-e-10-settings-d.dc.html",
+    "p-e-mail-03-preview-ready.dc.html",
+    "p-e-mail-04-paid.dc.html",
+    "p-e-mail-05-gift-for-you.dc.html",
+    "p-e-mail-06-time-to-send.dc.html",
+    "p-e-mail-07-calendar.dc.html",
+    "p-e-mail-08-login.dc.html",
+    "p-e-mail-09-video-expiring.dc.html",
+    "p-e-mail-10-new-part.dc.html",
+    "p-e-mail-11-scheduled.dc.html",
+    "p-d-15-post-reaction.dc.html",
+    "p-d-15-post-reaction-d.dc.html",
+    "p-d-16-story-song.dc.html",
+    "p-d-17-story-reaction.dc.html",
+    "p-g-01-growth-loop.dc.html",
+    "p-h-01-ideas-hub.dc.html",
+    "p-h-01-ideas-hub-d.dc.html",
+    "p-h-02-vs-songfinch.dc.html",
+    "p-h-02-vs-songfinch-d.dc.html",
+    "p-h-03-guide-cost.dc.html",
+    "p-h-03-guide-cost-d.dc.html",
+    "p-h-04-songs-for-sister.dc.html",
+    "p-h-04-songs-for-sister-d.dc.html",
+    "p-h-05-birthday-song-name.dc.html",
+    "p-h-05-birthday-song-name-d.dc.html",
+    "p-h-06-love-song-tool.dc.html",
+    "p-h-06-love-song-tool-d.dc.html"
+  ],
+  "pages": [
+    {
+      "id": "flows",
+      "name": "[RESEARCH] Flows"
+    },
+    {
+      "id": "landing",
+      "name": "Actual flows"
+    }
+  ],
+  "title": "OpenYourSong — Cut Paper"
+}

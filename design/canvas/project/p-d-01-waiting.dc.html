@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gift waiting screen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none}
+.bk{background:#111;color:#fff}
+.bw{background:#fff;color:#111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+details{border-top:1px solid #DADADA;padding:24px 0}
+summary{cursor:pointer;min-height:44px;font-size:18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+details p{margin:12px 0 0;font-size:16px;line-height:1.6;color:#4A4A4A}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.cp svg{flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:16px;font-size:14px;font-weight:500}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.tn{font-variant-numeric:tabular-nums}
+.ob{border:2px solid #111;color:#111;background:#fff}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:center;height:76px;padding:0 20px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a></header>
+<section style="padding:8px 20px 0;display:flex;flex-direction:column;gap:20px">
+  <div class="ph" style="height:260px;border-radius:28px"><img src="/_blob/2892b385f1c5f1e8dedf7df3815e506f" alt="A tangerine gift box with a blue ribbon and paper confetti"></div>
+  <p class="mut" style="margin:-8px 0 0;font-size:14px">A gift for Anna from Max</p>
+  <h1 class="un" style="margin:0;font-size:32px;line-height:1.1;font-weight:500;letter-spacing:-.02em">Something from Max is wrapped and waiting</h1>
+  <div class="tile" style="background:#FFD84D;padding:16px;gap:12px">
+    <div style="display:flex;gap:8px"><div style="flex:1;background:#fff;border-radius:16px;padding:12px 0;display:flex;flex-direction:column;align-items:center;gap:4px"><span class="un tn" style="font-size:28px;font-weight:500;letter-spacing:-.02em">02</span><span class="mut" style="font-size:13px">days</span></div><div style="flex:1;background:#fff;border-radius:16px;padding:12px 0;display:flex;flex-direction:column;align-items:center;gap:4px"><span class="un tn" style="font-size:28px;font-weight:500;letter-spacing:-.02em">14</span><span class="mut" style="font-size:13px">hours</span></div><div style="flex:1;background:#fff;border-radius:16px;padding:12px 0;display:flex;flex-direction:column;align-items:center;gap:4px"><span class="un tn" style="font-size:28px;font-weight:500;letter-spacing:-.02em">37</span><span class="mut" style="font-size:13px">min</span></div></div>
+    <p class="tn" style="margin:0;font-size:16px;font-weight:500;text-align:center">Opens March 14 at 9:00 AM, London time</p>
+  </div>
+  <a class="btn ob" href="#" style="gap:10px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Add to calendar</a>
+  <p class="mut" style="margin:0;font-size:14px;line-height:1.5">No peeking. The song stays wrapped until then, even with this link</p>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

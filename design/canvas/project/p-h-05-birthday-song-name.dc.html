@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Birthday song with name</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:1536px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px"><a href="#" class="un fl" style="font-weight:500;font-size:20px;color:#111">openyoursong</a><button aria-label="Open menu" style="width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></button></header><main style="padding:8px 20px 32px;display:flex;flex-direction:column;gap:20px"><div style="display:flex;flex-direction:column;gap:16px;"><nav aria-label="Breadcrumb" class="mut" style="font-size:14px;display:flex;gap:8px;flex-wrap:wrap"><a href="#" class="mut" style="text-decoration:none">Ideas</a> <span>/</span> <a href="#" class="mut" style="text-decoration:none">Birthday song with name</a></nav><h1 class="un" style="margin:0;font-size:36px;font-weight:500;line-height:1.15;letter-spacing:-.02em;font-weight:800">A birthday song with their name in it</h1><p class="mut" style="margin:0;font-size:16px;line-height:1.5;font-weight:400;">A song with their name, their jokes and their year. Hear a free preview first</p><div><label class="lab" for="bnm">Their name</label><input class="inp" id="bnm" type="text" value="Anna" style="height:52px"></div><button class="btn bk" style="width:100%;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg>Hear how it sounds</button><div style="display:flex;flex-direction:column;gap:8px;"><span class="lab" style="margin:0">Or play an example</span><div style="display:flex;flex-wrap:wrap;gap:8px"><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Anna</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Leo</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Mia</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Olivia</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>James</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Sophie</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Noah</button><button class="chip"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg>Emma</button></div></div><div class="ph" style="height:220px;border-radius:24px;flex-shrink:0"><img src="/_blob/84d89a78197fb53d36fc38f060588b8c" alt="Candles on a birthday cake" style=""></div><div><details open style="border-top:1px solid #DADADA;padding:20px 0"><summary style="cursor:pointer;font-size:18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:16px">Is there a free birthday song with my friend’s name<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></summary><p class="mut" style="margin:12px 0 0;font-size:16px;line-height:1.6">You can hear a free 30–45 second preview with their name. The full song is $29</p></details></div></div></main><footer style="padding:24px 20px 32px;display:flex;flex-direction:column;gap:0"><details style="border-top:1px solid #DADADA"><summary style="min-height:52px;display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:500;cursor:pointer;list-style:none">Occasions<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></summary></details><details style="border-top:1px solid #DADADA"><summary style="min-height:52px;display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:500;cursor:pointer;list-style:none">For<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></summary></details><details style="border-top:1px solid #DADADA"><summary style="min-height:52px;display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:500;cursor:pointer;list-style:none">Compare<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></summary></details><details style="border-top:1px solid #DADADA"><summary style="min-height:52px;display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:500;cursor:pointer;list-style:none">Guides<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></summary></details><div style="border-top:1px solid #DADADA;padding-top:16px;display:flex;flex-direction:column;gap:8px"><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="font-size:13px">Privacy · Terms · Refunds · Contact</span></div></footer><div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:12px 20px 20px"><a class="btn bk" href="#" style="width:100%;">Make yours, free preview</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1536}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Genre and voice</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" aria-label="Back" style="width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;display:flex;align-items:center;justify-content:center;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="width:44px;text-align:right;font-size:14px;font-variant-numeric:tabular-nums">3/4</span></header>
+  <div role="progressbar" aria-label="Step 3 of 4" aria-valuenow="3" aria-valuemin="1" aria-valuemax="4" style="display:flex;gap:4px;padding:0 20px 24px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span></div>
+  <main style="padding:0 20px;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:8px"><h1 class="un h1">How should it sound</h1><p class="mut" style="margin:0;font-size:16px;line-height:1.5">Tap play to hear a 10 s sample of each style</p></div>
+    <fieldset style="border:none;margin:0;padding:0"><legend class="lab" style="padding:0">Style</legend><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;background:#FFD84D;border:2px solid #111"><input type="radio" name="genre" checked style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Pop</span><button class="play" aria-label="Play a 10 s Pop sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Acoustic</span><button class="play" aria-label="Play a 10 s Acoustic sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Ballad</span><button class="play" aria-label="Play a 10 s Ballad sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Country</span><button class="play" aria-label="Play a 10 s Country sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">R&amp;B</span><button class="play" aria-label="Play a 10 s R&amp;B sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Rock</span><button class="play" aria-label="Play a 10 s Rock sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Hip-hop</span><button class="play" aria-label="Play a 10 s Hip-hop sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Jazz</span><button class="play" aria-label="Play a 10 s Jazz sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label><label style="display:flex;align-items:center;gap:8px;height:48px;padding:0 6px 0 14px;border-radius:12px;cursor:pointer;border:1px solid #DADADA"><input type="radio" name="genre"  style="position:absolute;opacity:0;width:1px;height:1px"><span style="flex:1;font-size:15px;font-weight:500">Kids</span><button class="play" aria-label="Play a 10 s Kids sample" style="width:36px;height:36px"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"></path></svg></button></label></div></fieldset>
+    <div><span class="lab">Mood</span><div class="chips"><button class="chip on" aria-pressed="true">Upbeat</button><button class="chip" aria-pressed="false">Warm</button><button class="chip" aria-pressed="false">Funny</button><button class="chip" aria-pressed="false">Tender</button></div></div>
+    <div><span class="lab">Voice</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="chip on" aria-pressed="true" style="height:52px;justify-content:center">Female voice</button><button class="chip" aria-pressed="false" style="height:52px;justify-content:center">Male voice</button></div></div>
+  </main>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn bk" style="width:100%">Write the lyrics</button><span class="mut" style="font-size:13px;text-align:center">In English · takes about 20 s</span></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Group gift, contributor done</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;border:none;font-family:Inter,system-ui,sans-serif;cursor:pointer}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.sm{height:44px;padding:0 16px;font-size:15px}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.tn{font-variant-numeric:tabular-nums}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.lb{font-size:15px;font-weight:500;display:block;margin-bottom:8px}
+.in{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:400 16px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:14px 16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none;display:block}
+.pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:14px;font-size:13px;font-weight:500;white-space:nowrap}
+.row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #DADADA}
+.ib{width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:center;height:76px;padding:0 20px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a></header>
+<section style="padding:12px 20px 0;display:flex;flex-direction:column;gap:24px">
+<div class="tile" style="background:#FFD84D;padding:28px 24px;gap:24px;min-height:260px"><span style="width:56px;height:56px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><div><h1 class="un" style="margin:0;font-size:32px;font-weight:500;line-height:1.1;letter-spacing:-.02em">Thanks, Kate. You’re in the song</h1><p style="margin:12px 0 0;font-size:16px;line-height:1.5">Max builds it after 11 March. Anna opens it on 14 March</p></div></div>
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font-size:18px;font-weight:500">Your page for this gift</h2><p class="mut" style="margin:0;font-size:15px;line-height:1.5">Keep this link. Here you’ll see when Anna opens the gift and, if she records one, her reaction</p>
+<div style="display:flex;gap:8px"><label for="mine" style="position:absolute;left:-9999px">Your page link</label><input id="mine" class="in" readonly value="openyoursong.com/c/r8t4w" style="height:44px;font-size:15px;border-width:1px;flex:1;min-width:0"><button class="btn bk sm" style="gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Copy</button></div></div>
+<ol style="list-style:none;margin:0;padding:0;border-top:1px solid #DADADA">
+<li class="row"><span class="pill tn" style="background:#111;color:#fff">Done</span><span style="font-size:15px">Your part sent</span></li>
+<li class="row"><span class="pill tn" style="background:#F2F2F2;color:#111">Next</span><span class="mut" style="font-size:15px">Song paid and scheduled</span></li>
+<li class="row"><span class="pill tn" style="background:#F2F2F2;color:#111">14 Mar</span><span class="mut" style="font-size:15px">Anna opens it</span></li></ol>
+<a href="#" class="fl" style="font-size:15px;font-weight:500">Make a song for someone of yours</a>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Remake or refund</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;border:none;font-family:Inter,system-ui,sans-serif;cursor:pointer}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.sm{height:44px;padding:0 16px;font-size:15px}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.tn{font-variant-numeric:tabular-nums}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.lb{font-size:15px;font-weight:500;display:block;margin-bottom:8px}
+.in{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:400 16px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:14px 16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none;display:block}
+.pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:14px;font-size:13px;font-weight:500;white-space:nowrap}
+.row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #DADADA}
+.ib{width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a><a href="#" aria-label="Account" style="width:36px;height:36px;border-radius:50%;background:#F2F2F2;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="#111" stroke-width="1.8"></circle><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="#111" stroke-width="1.8" stroke-linecap="round"></path></svg></a></header>
+<section style="padding:4px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px"><span class="mut" style="font-size:14px">Anna’s 30th · paid 1 March · $29</span><h1 class="un" style="margin:0;font-size:28px;font-weight:500;line-height:1.1;letter-spacing:-.02em">Not quite right?</h1></div>
+<div class="tile" style="background:#FFD84D;padding:24px;gap:16px;border-radius:24px"><div style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:18px">Make it again, free</strong><span class="pill tn" style="background:#fff;color:#111">2 of 2 left</span></div><p style="margin:0;font-size:15px;line-height:1.5">Tell us what to change. We keep your story and make a new version</p>
+<label for="why" style="position:absolute;left:-9999px">What should change</label><textarea id="why" class="ta" rows="3" style="border-color:#111">Slower, and more about the yellow bike</textarea>
+<button class="btn bk" style="width:100%;gap:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5l2 2M20 4v5h-5M20 12a8 8 0 01-14 5l-2-2M4 20v-5h5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Make a new version</button></div>
+<details open style="border:1px solid #DADADA;border-radius:24px;padding:4px 20px"><summary style="min-height:56px;font-size:16px;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none">Ask for a refund<span class="mut tn" style="font-size:14px;font-weight:400">until 14 Mar</span></summary><p class="mut" style="margin:0 0 16px;font-size:15px;line-height:1.5">After both free versions you can get a full refund within 14 days of paying, as long as Anna hasn’t opened the gift yet. The gift link stops working</p></details>
+<div style="display:flex;gap:12px;align-items:flex-start;padding-top:4px"><span style="flex-shrink:0;display:flex"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><p style="margin:0;font-size:15px;line-height:1.5">Something else? Write to <a href="#">help@openyoursong.com</a>. We reply within 24 hours</p></div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

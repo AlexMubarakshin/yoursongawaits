@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Group gift, invite landing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;border:none;font-family:Inter,system-ui,sans-serif;cursor:pointer}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.sm{height:44px;padding:0 16px;font-size:15px}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.tn{font-variant-numeric:tabular-nums}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.lb{font-size:15px;font-weight:500;display:block;margin-bottom:8px}
+.in{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:400 16px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:14px 16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none;display:block}
+.pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:14px;font-size:13px;font-weight:500;white-space:nowrap}
+.row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #DADADA}
+.ib{width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:center;height:76px;padding:0 20px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a></header>
+<section style="padding:4px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div class="ph" style="height:228px;border-radius:28px"><img src="/_blob/84d89a78197fb53d36fc38f060588b8c" alt="Birthday cake with lit candles on a table"></div>
+<div style="display:flex;flex-direction:column;gap:12px"><span class="mut" style="font-size:15px">Max invited you</span>
+<h1 class="un" style="margin:0;font-size:32px;font-weight:500;line-height:1.1;letter-spacing:-.02em">We’re making <span style="background:#FFD84D;padding:0 8px;border-radius:4px">Anna</span> a song for her 30th</h1>
+<p style="margin:0;font-size:16px;line-height:1.5" class="mut">Add a memory or a short note. Your words go into the lyrics, and Anna hears them on 14 March</p></div>
+<div class="frame" style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start;border-radius:20px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M6 11h12v9H6zM9 11V8a3 3 0 016 0v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><p style="margin:0;font-size:15px;line-height:1.5">It’s a surprise. Please don’t forward this link to Anna</p></div>
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px">
+<li style="display:flex;gap:12px;align-items:center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>No sign-up, about two minutes</li>
+<li style="display:flex;gap:12px;align-items:center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Open until 11 March · 5 people so far</li></ul>
+</section>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:16px 20px 24px;background:#fff"><a class="btn bk" href="#" style="width:100%">Add your part</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

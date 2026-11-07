@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Growth loop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:1440px;height:968px;box-sizing:border-box;overflow:hidden;position:relative">
+<main style="padding:64px"><div style="display:flex;flex-direction:column;gap:28px;"><h1 class="un" style="margin:0;font-size:48px;font-weight:500;line-height:1.15;letter-spacing:-.02em;">Growth loop: where the user gets value and where we do</h1><span class="mut" style="font-size:13px;line-height:1.4;">Every end screen has one of three exits: share with a tag, make a song for someone, or remember the next date. Group gifts multiply each step by up to 20 people</span><div style="display:flex;align-items:stretch;gap:12px;"><div style="width:270px;border-radius:20px;background:#FFD84D;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Found us</strong><span class="mut" style="font-size:13px;line-height:1.4">Landing, occasion page, a friend’s Story, a gift they received</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · An idea for a gift that feels personal</span><span><strong>We get</strong> · A visitor with gift intent</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#F2F2F2;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Made a song</strong><span class="mut" style="font-size:13px;line-height:1.4">Story, free preview, name check</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · Hears their name sung before paying</span><span><strong>We get</strong> · Email, story, occasion date</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#F2F2F2;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Paid and sent</strong><span class="mut" style="font-size:13px;line-height:1.4">$29 or $55, the day and time they pick</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · A gift that arrives on time</span><span><strong>We get</strong> · Revenue, recipient email</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#FFD84D;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Recipient opens</strong><span class="mut" style="font-size:13px;line-height:1.4">Gift page, song, notes</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · A song with their name, from people who love them</span><span><strong>We get</strong> · A new person sees the product</span></div></div></div><div style="display:flex;justify-content:flex-end;padding-right:140px"><svg aria-hidden="true" width="24" height="56" viewBox="0 0 24 56"><path d="M12 2v48M5 42l7 8 7-8" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="display:flex;align-items:stretch;gap:12px;"><div style="width:270px;border-radius:20px;background:#F2F2F2;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Reaction recorded</strong><span class="mut" style="font-size:13px;line-height:1.4">Two consents, only the giver sees it</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · Their moment saved</span><span><strong>We get</strong> · The strongest proof we have</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#FFD84D;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Shared with a tag</strong><span class="mut" style="font-size:13px;line-height:1.4">Stories, TikTok, X with @openyoursong, from recipient, giver and the group</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · Friends see the moment</span><span><strong>We get</strong> · Free reach and content to repost</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#F2F2F2;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Shown on our site</strong><span class="mut" style="font-size:13px;line-height:1.4">Only with recipient and giver consent</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · Their story featured, if they want it</span><span><strong>We get</strong> · Ads and landing proof</span></div></div><svg aria-hidden="true" width="48" height="24" viewBox="0 0 48 24" style="flex-shrink:0"><path d="M2 12h40M34 5l8 7-8 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="width:270px;border-radius:20px;background:#FFD84D;padding:20px;display:flex;flex-direction:column;gap:10px"><strong class="un" style="font-size:18px;font-weight:500;line-height:1.2">Next song</strong><span class="mut" style="font-size:13px;line-height:1.4">“Make one like this”, remind next year, calendar plan</span><div style="display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid rgba(17,17,17,.12);font-size:13px;line-height:1.4"><span><strong>User gets</strong> · Never miss a date, cheaper songs on a plan</span><span><strong>We get</strong> · Repeat orders and new givers</span></div></div></div><div style="display:flex;align-items:center;gap:12px;padding:16px 20px;border:2px dashed #111;border-radius:20px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2.3 5.7M20 4v7h-7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="font-size:15px;line-height:1.4"><strong>Back to the start.</strong> A shared Story, a “make one like this” tap or a calendar reminder each lands on a page with the occasion and attribution filled in (FR-2.8, FR-12.2)</span></div></div></main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":968}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

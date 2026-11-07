@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Group: set deadline and invite</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><button aria-label="Back" style="width:44px;height:44px;border:none;background:none;display:flex;align-items:center;justify-content:flex-start;cursor:pointer;padding:0"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut tn" style="width:44px;text-align:right;font-size:14px">2/4</span></header><div role="progressbar" aria-label="Step 2 of 4" style="display:flex;gap:4px;padding:0 20px 20px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span></div>
+<main style="padding:0px 20px 0;display:flex;flex-direction:column;gap:24px"><div style="display:flex;flex-direction:column;gap:16px;"><h1 class="un" style="margin:0;font-size:28px;font-weight:500;line-height:1.15;letter-spacing:-.02em;">Invite people to add a memory</h1><p class="mut" style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">You’ve written yours. Pick when collecting ends, then share the link</p><div><span class="lab">Collect until</span><div class="chips"><button class="chip">1 day</button><button class="chip on">3 days</button><button class="chip">1 week</button><button class="chip">Pick a date</button></div></div><span class="mut" style="font-size:13px;line-height:1.4;">Ends Wed 11 March at 20:00 · up to 30 days</span><div style="border-radius:24px;background:#FFD84D;padding:20px;display:flex;flex-direction:column;gap:12px;"><strong style="font-size:16px;line-height:1.3">Invite link</strong><div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:6px 6px 6px 16px"><span class="tn" style="flex:1;font-size:16px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">openyoursong.com/join/k4m9</span><button class="btn bk sm" style=""><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="#fff" stroke-width="1.8"></rect><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3" fill="none" stroke="#fff" stroke-width="1.8"></path></svg>Copy</button></div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px"><button style="height:72px;border-radius:16px;border:none;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M5 19l1.2-3.6A7.5 7.5 0 1112 19.5a7.4 7.4 0 01-3.4-.8z" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"></path><path d="M9.5 9.5c.3 1.8 2.2 3.8 4.2 4.3" fill="none" stroke="#111" stroke-width="1.6" stroke-linecap="round"></path></svg><span>WhatsApp</span></button><button style="height:72px;border-radius:16px;border:none;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M4 6h16v10H10l-4 3.5V16H4z" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"></path></svg><span>Messages</span></button><button style="height:72px;border-radius:16px;border:none;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M3.5 11.5l16-6.5-2.8 14-5-4-2.4 2.6.3-4.2 7-6.4-8.8 5.2z" fill="none" stroke="#111" stroke-width="1.7" stroke-linejoin="round"></path></svg><span>Telegram</span></button><button style="height:72px;border-radius:16px;border:none;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.6" fill="#111"></circle><circle cx="12" cy="12" r="1.6" fill="#111"></circle><circle cx="18" cy="12" r="1.6" fill="#111"></circle></svg><span>More</span></button></div></div><div style="display:flex;gap:12px;align-items:flex-start;background:#F2F2F2;border-radius:16px;padding:16px;font-size:14px;line-height:1.45"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#111" stroke-width="1.8"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg><span>It’s a surprise. The link says not to forward it to Mum</span></div></div></main>
+<div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><a class="btn bk" href="#" style="width:100%;">Go to my group page</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

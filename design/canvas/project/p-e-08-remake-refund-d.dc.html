@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Account: remake or refund, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
+.btn.sm{height:44px;padding:0 20px;font-size:15px}
+.bk{background:#111;color:#fff}
+.bk:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.by{background:#FFD84D;color:#111}
+.bw{background:#fff;color:#111}
+.dis{background:#F2F2F2;color:#8A8A8A;cursor:not-allowed}
+.ph{overflow:hidden;border-radius:24px;background:#F2F2F2}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1m{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.h1d{margin:0;font-size:48px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.h3{margin:0;font-size:20px;font-weight:500;line-height:1.2}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.ta{width:100%;border:2px solid #111;border-radius:12px;padding:16px;font:400 16px/1.5 Inter,system-ui,sans-serif;color:#111;background:#fff;resize:none}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{border-radius:24px;background:#F2F2F2;padding:24px}
+.frame{border:1px solid #DADADA;border-radius:24px;background:#fff}
+.hr{border-top:1px solid #DADADA}
+.tn{font-variant-numeric:tabular-nums}
+.nm{background:#FFD84D;padding:0 8px;border-radius:4px}
+.nmw{background:#fff;padding:0 8px;border-radius:4px}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.chk{width:22px;height:22px;margin:0;accent-color:#111;flex-shrink:0}
+</style>
+</helmet>
+<div class="cp" style="width:1440px;height:720px;box-sizing:border-box;overflow:hidden;position:relative">
+<header style="height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #DADADA"><div style="display:flex;align-items:center;gap:48px"><a href="#" class="un fl" style="font-weight:500;font-size:20px;color:#111">openyoursong</a><nav style="display:flex;gap:32px"><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;box-shadow:inset 0 -2px 0 #111;">Orders</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Calendar</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Plan</a><a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;color:#4A4A4A;">Settings</a></nav></div><div style="display:flex;align-items:center;gap:16px"><span class="mut" style="font-size:14px">max.r@mail.com</span><a class="btn bk sm" href="#" style=""><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>New song</a></div></header>
+<main style="padding:48px 120px 0 120px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:48px"><div style="display:flex;flex-direction:column;gap:20px;"><h1 class="un" style="margin:0;font-size:48px;font-weight:500;line-height:1.15;letter-spacing:-.02em;">Not quite right</h1><p class="mut" style="margin:0;font-size:18px;line-height:1.5;font-weight:400;">Song for Anna · paid 1 March · not opened yet</p><div style="border-radius:28px;background:#F2F2F2;padding:28px;display:flex;flex-direction:column;gap:12px;"><div style="display:flex;align-items:center;gap:12px;"><strong style="font-size:18px;line-height:1.3">Free remake</strong><span style="flex:1"></span><span style="font-size:13px;line-height:1.4;">2 of 2 left</span></div><div><label class="lab" for="rm">What should change</label><textarea class="ta" id="rm" style="height:96px">Make the chorus slower and mention the dog, Biscuit</textarea></div><a class="btn bk sm" href="#" style="">Remake the song</a></div></div><div style="display:flex;flex-direction:column;gap:16px;padding-top:96px"><div class="frame" style="padding:28px;display:flex;flex-direction:column;gap:12px;"><strong style="font-size:18px;line-height:1.3">Refund</strong><p class="mut" style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">Full refund within 14 days of paying, while the gift is unopened. Yours is open until 15 March</p><a class="btn bo sm" href="#" style="">Ask for a refund</a></div><div class="frame" style="padding:28px;display:flex;flex-direction:column;gap:8px;"><strong style="font-size:18px;line-height:1.3">Something else</strong><p class="mut" style="margin:0;font-size:15px;line-height:1.5;font-weight:400;">Email help@openyoursong.com. We reply within 24 hours</p></div></div></div></main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":720}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

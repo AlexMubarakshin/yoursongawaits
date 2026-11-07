@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order: when and how to deliver</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none}
+.bk{background:#111;color:#fff}
+.bw{background:#fff;color:#111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h2{margin:0;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+details{border-top:1px solid #DADADA;padding:24px 0}
+summary{cursor:pointer;min-height:44px;font-size:18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+details p{margin:12px 0 0;font-size:16px;line-height:1.6;color:#4A4A4A}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.lbl{display:block;font-size:14px;font-weight:500;margin-bottom:8px}
+.bo{border:2px solid #111;background:#fff;color:#111}
+button.btn{cursor:pointer;font-family:inherit;border:none}
+button.bo{border:2px solid #111}
+.tn{font-variant-numeric:tabular-nums}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px}
+.back{width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#111}
+.row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #DADADA}
+.ck{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.4}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:1200px;box-sizing:border-box;overflow:hidden">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a><a href="#" style="font-size:14px;color:#4A4A4A;display:flex;align-items:center;min-height:44px;text-decoration:none">Account</a></header>
+<section style="padding:8px 20px 0;display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:8px"><h1 class="un" style="margin:0;font-size:32px;line-height:1.05;font-weight:500;letter-spacing:-.02em">When and how should <span style="background:#FFD84D;padding:0 8px;border-radius:4px">Anna</span> get it</h1><p class="mut" style="margin:0;font-size:15px;line-height:1.5">You can change this any time before the day</p></div>
+  <fieldset style="border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px"><legend class="lbl">How</legend>
+    <label class="frame" style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start;cursor:pointer"><input type="radio" name="how" style="width:22px;height:22px;accent-color:#111;margin:2px 0 0"><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">I’ll send it myself</strong><span class="mut" style="font-size:14px;line-height:1.4">WhatsApp, iMessage, a QR or a printed card. We remind you 10 minutes before</span></span></label>
+    <label style="border-radius:24px;background:#FFD84D;border:2px solid #111;padding:16px 20px;display:flex;gap:12px;align-items:flex-start;cursor:pointer"><input type="radio" name="how" checked style="width:22px;height:22px;accent-color:#111;margin:2px 0 0"><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">We’ll send it</strong><span style="font-size:14px;line-height:1.4">An email from “Max via openyoursong” with an Open your gift button. No lyrics in it</span></span></label>
+  </fieldset>
+  <fieldset style="border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px"><legend class="lbl">When</legend>
+    <div style="display:flex;gap:8px"><button class="btn bo" style="flex:1;height:44px;font-size:15px;border-color:#DADADA;border-width:1px">Now</button><button class="btn bk" style="flex:1;height:44px;font-size:15px">Pick a date</button></div>
+    <div style="display:flex;gap:12px"><div style="flex:1.4"><label for="dd" class="lbl">Date</label><input id="dd" class="inp tn" type="text" value="14 March 2027"></div><div style="flex:1"><label for="tt" class="lbl">Time</label><input id="tt" class="inp tn" type="text" value="09:00"></div></div>
+    <div><label for="tz" class="lbl">Anna’s time zone</label><div style="position:relative"><input id="tz" class="inp" type="text" value="London, UK (GMT)" style="padding-left:44px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="position:absolute;left:16px;top:16px"><circle cx="11" cy="11" r="6" fill="none" stroke="#111" stroke-width="2"></circle><path d="M16 16l4 4" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></div><span class="mut" style="display:block;margin-top:8px;font-size:14px">Search by city. Up to 365 days ahead</span></div>
+  </fieldset>
+  <div><label for="re" class="lbl">Anna’s email</label><input id="re" class="inp" type="email" value="anna.k@mail.com"><span class="mut" style="display:block;margin-top:8px;font-size:14px;line-height:1.5">Emails go out between 08:00 and 21:00 her time. We delete her address 30 days after delivery</span></div>
+  <div class="tile" style="background:#F2F2F2;padding:20px;gap:4px"><span class="mut" style="font-size:14px">Anna opens it</span><strong class="un tn" style="font-size:22px;font-weight:500">Sun 14 March, 09:00 London</strong><span class="mut tn" style="font-size:14px">That’s 10:00 for you in Berlin</span></div>
+  <button class="btn bk" style="width:100%">Save delivery</button>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1200}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>

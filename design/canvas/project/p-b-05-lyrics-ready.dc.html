@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lyrics ready</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none}
+.bk{background:#111;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:1040px;box-sizing:border-box;overflow:hidden;position:relative">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" aria-label="Back" style="width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;display:flex;align-items:center;justify-content:center;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="width:44px;text-align:right;font-size:14px;font-variant-numeric:tabular-nums">4/4</span></header>
+  <div role="progressbar" aria-label="Step 4 of 4" aria-valuenow="4" aria-valuemin="1" aria-valuemax="4" style="display:flex;gap:4px;padding:0 20px 24px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#111"></span></div>
+  <main style="padding:0 20px;display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;flex-direction:column;gap:8px"><h1 class="un h1">Your lyrics are ready</h1><p class="mut" style="margin:0;font-size:15px;line-height:1.5">Change any line you like. The name comes in the first 30 s, so it is in the free preview</p></div>
+    <div style="border-top:2px solid #111">
+      <section style="padding:16px 0;border-bottom:1px solid #DADADA"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span class="mut" style="font-size:14px">Verse 1</span><button aria-label="Edit verse 1" style="height:36px;padding:0 12px;border-radius:10px;border:1px solid #DADADA;background:#fff;font:500 14px Inter,system-ui,sans-serif;color:#111;cursor:pointer;display:flex;align-items:center;gap:6px"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>Edit</button></div><p style="margin:0;font-size:16px;line-height:1.55"><span style="background:#FFD84D;padding:0 6px;border-radius:4px">Anna</span>, you still ride that yellow bike</p><p style="margin:0;font-size:16px;line-height:1.55">Through the rain to work, singing out of sight</p></section>
+      <section style="padding:16px 0;border-bottom:1px solid #DADADA"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span class="mut" style="font-size:14px">Chorus</span><button aria-label="Edit chorus" style="height:36px;padding:0 12px;border-radius:10px;border:1px solid #DADADA;background:#fff;font:500 14px Inter,system-ui,sans-serif;color:#111;cursor:pointer;display:flex;align-items:center;gap:6px"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>Edit</button></div><p style="margin:0;font-size:16px;line-height:1.55">Thirty candles, Nan-Anna, turn it up loud</p><p style="margin:0;font-size:16px;line-height:1.55">Max and the whole flat, singing in a crowd</p></section>
+      <section style="padding:16px 0;border-bottom:1px solid #DADADA"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span class="mut" style="font-size:14px">Verse 2</span></div><textarea aria-label="Verse 2 lines" style="width:100%;height:112px;border:2px solid #111;border-radius:12px;padding:12px 14px;font:400 16px/1.55 Inter,system-ui,sans-serif;color:#111;resize:none;background:#fff">Pancakes on Sunday, plants on the sill
+The whole flat on one sofa, film night still</textarea><div style="display:flex;gap:8px;margin-top:8px"><button class="btn bk" style="height:44px;padding:0 18px;font-size:15px">Save lines</button><button class="btn bo" style="height:44px;padding:0 18px;font-size:15px">Cancel</button></div></section>
+    </div>
+    <div style="background:#F2F2F2;border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:12px"><label class="lab" for="rw" style="margin:0">Rewrite with a wish</label><div style="display:flex;gap:8px"><input id="rw" class="inp" type="text" placeholder="Funnier, add the dog" style="flex:1;min-width:0;height:48px;font-size:16px"><button class="btn bo" style="height:48px;padding:0 16px;font-size:15px">Rewrite</button></div><span class="mut" style="font-size:13px;font-variant-numeric:tabular-nums">Music is not made yet · 9 rewrites left</span></div>
+  </main>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn bk" style="width:100%">Looks good, continue</button></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1040}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>
