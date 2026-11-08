@@ -622,7 +622,7 @@
    "x": 0,
    "y": 34668,
    "w": 1440,
-   "h": 1024,
+   "h": 1100,
    "page": "landing",
    "title": "4.1.1  Set deadline and invite · desktop"
   },
@@ -630,7 +630,7 @@
    "x": 0,
    "y": 33432,
    "w": 390,
-   "h": 900,
+   "h": 1036,
    "page": "landing",
    "title": "4.1.1  Set deadline and invite · mobile"
   },
@@ -646,7 +646,7 @@
    "x": 1520,
    "y": 33432,
    "w": 390,
-   "h": 844,
+   "h": 944,
    "page": "landing",
    "title": "4.1.2  Group gift, organizer page · mobile"
   },
@@ -678,7 +678,7 @@
    "x": 4560,
    "y": 33432,
    "w": 390,
-   "h": 844,
+   "h": 904,
    "page": "landing",
    "title": "4.1.4  Group gift, add your part · mobile"
   },
@@ -822,7 +822,7 @@
    "x": 680,
    "y": 41272,
    "w": 600,
-   "h": 568,
+   "h": 600,
    "page": "landing",
    "title": "5.2.2  Order paid · email"
   },
@@ -1105,6 +1105,22 @@
    "h": 880,
    "page": "landing",
    "title": "1.2.4  Photos · desktop"
+  },
+  "p-e-mail-12-add-photos.dc.html": {
+   "x": 7480,
+   "y": 41272,
+   "w": 600,
+   "h": 772,
+   "page": "landing",
+   "title": "5.2.12  Add photos (bundle, skipped) · email"
+  },
+  "p-e-mail-13-group-deadline.dc.html": {
+   "x": 8160,
+   "y": 41272,
+   "w": 600,
+   "h": 772,
+   "page": "landing",
+   "title": "5.2.13  Group: collecting ended · email"
   }
  },
  "createdOnFiles": {
@@ -1570,6 +1586,8 @@
   "p-e-mail-09-video-expiring.dc.html",
   "p-e-mail-10-new-part.dc.html",
   "p-e-mail-11-scheduled.dc.html",
+  "p-e-mail-12-add-photos.dc.html",
+  "p-e-mail-13-group-deadline.dc.html",
   "p-d-15-post-reaction.dc.html",
   "p-d-15-post-reaction-d.dc.html",
   "p-d-16-story-song.dc.html",
