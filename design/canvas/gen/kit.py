@@ -8,7 +8,7 @@ HELMET = """<helmet>
 <style>
 body{margin:0}
 strong{font-weight:500}
-a{color:#111}a:hover{color:#FF7A00}
+a{color:#111}a:hover{color:#111;text-decoration-thickness:2px}
 .cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
 .cp *{box-sizing:border-box}
 .un{font-family:Unbounded,Inter,sans-serif}
@@ -54,7 +54,7 @@ IMG = {
  'cal':'2a17c1433c28b630a8a2c681eb0bba92','sofa':'5c825ead91ccef82ac575d6be71a2319','office':'ca7740159a99c62c8060e76efe18a779',
  'mum':'b84a9519552c7276a7f67d913a01ed45','dad':'f2f411ec00795b0ea6ea67c498d9ebd2','wed':'622571a5efec9dcfab9862a7f3332a70',
  'r06':'e0bf68270375990a6c155c753ae64c80','head':'8dc0a0f37bdd55b766f2a195b5837c3e',
- 'n1':'14e5fc82d8e091b7c2c5e95a5d6fb907','n2':'1b8a12e55b48d782ad0aed8eb47242db','n3':'3015cceae11db6c90f56093d73001aff','n4':'f5a721339c23682eaaeb28b20b3d3277',
+ 'n1':'095fdda333a43596fda361560982a7ab','n2':'1b8a12e55b48d782ad0aed8eb47242db','n3':'43c09850bc5e335549c9bbf9e9cee424','n4':'f5a721339c23682eaaeb28b20b3d3277',
  'p1':'a3f42c6f3111ab5d35fc884beb5eaeac','p2':'8818f91654a75b17e7baedc093c10a73','p3':'581229994cf2e1b007e71612e725066d','ls1':'4aad2618b0b1d9095a2137c66e18fd1e',
 }
 
