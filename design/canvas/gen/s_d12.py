@@ -8,17 +8,19 @@ NOTES = [('Kate', 'your daughter', 'Sixty and still beating us all at cards. I h
          ('Ivy', 'your niece', 'You taught me to drive and never once shouted. I still check my mirrors because of you'),
          ('Max', 'the lodger', 'Happy 60th from the lodger who never left. Thank you for making it home')]
 ROT = (-1.2, 0.8, -0.6, 1.1, -0.9, 0.6, -0.4)
+PHOTO = {'Kate': ('r06', 'Kate’s photo: Mum with her lemon birthday cake'), 'Tom': ('family', 'Tom’s photo: the family around the table'), 'Sam': ('mum', 'Sam’s photo: pancakes on a Sunday'), 'Dad': ('candles', 'Dad’s photo: candles on the cake')}
 
 def letter(i, who, rel, txt, big=False, d=False):
     tape = '<span aria-hidden="true" style="position:absolute;top:-10px;left:50%%;transform:translateX(-50%%) rotate(%.1fdeg);width:72px;height:20px;background:#FFD84D;opacity:.9;border-radius:2px"></span>' % (-ROT[i] * 2)
     av = '<span aria-hidden="true" class="un" style="width:36px;height:36px;border-radius:50%%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;flex-shrink:0">%s</span>' % who[0]
     sig = '<div style="display:flex;align-items:center;gap:10px">%s<div style="display:flex;flex-direction:column"><strong style="font-size:15px">%s</strong><span class="mut" style="font-size:13px">%s</span></div></div>' % (av, who, rel)
+    ph = ('<div class="ph" style="height:%dpx;border-radius:4px"><img src="/_blob/%s" alt="%s"></div>' % (220 if d else 180, IMG[PHOTO[who][0]], PHOTO[who][1])) if who in PHOTO else ''
     q = '<p style="margin:0;font-size:%dpx;line-height:1.45">%s</p>' % ((26 if big else 21) if d else (20 if big else 17), txt)
     return ('<article style="position:relative;background:#fff;border:1px solid #DADADA;border-radius:6px;box-shadow:0 6px 16px rgba(17,17,17,.08);padding:28px 22px 20px;'
-            'display:flex;flex-direction:column;gap:16px;transform:rotate(%.1fdeg)">%s%s%s</article>') % (ROT[i], tape, q, sig)
+            'display:flex;flex-direction:column;gap:16px;transform:rotate(%.1fdeg)">%s%s%s%s</article>') % (ROT[i], tape, ph, q, sig)
 
 intro = lambda sz: col(small('For your 60th, from the family', extra='font-size:14px'), un('Notes from all 7 of us', sz, tag='h1'),
-                       t('Everyone wrote one before the song was made. Some of their words are in it', 15 if sz < 40 else 17, True), gap=8)
+                       t('Everyone wrote one before the song was made. Some of their words are in it, and their photos played with it', 15 if sz < 40 else 17, True), gap=8)
 paper = 'background:#F2F2F2;'
 m = col(img('family', 'The family gathered around a phone at the table', 200, '50% 40%'), intro(30),
         col(*[letter(i, *n, big=(i == 0)) for i, n in enumerate(NOTES)], gap=28, extra='padding:32px 16px 24px;margin:0 -20px;background:#F2F2F2'),

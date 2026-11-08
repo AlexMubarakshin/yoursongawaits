@@ -214,7 +214,7 @@
    "x": 10640,
    "y": 17972,
    "w": 1440,
-   "h": 760,
+   "h": 976,
    "page": "landing",
    "title": "1.3.8  Song or bundle · desktop"
   },
@@ -222,7 +222,7 @@
    "x": 10640,
    "y": 16664,
    "w": 390,
-   "h": 912,
+   "h": 1088,
    "page": "landing",
    "title": "1.3.8  Song or bundle · mobile"
   },
@@ -294,7 +294,7 @@
    "x": 9120,
    "y": 17972,
    "w": 1440,
-   "h": 728,
+   "h": 880,
    "page": "landing",
    "title": "1.3.7  Free tries used · desktop"
   },
@@ -310,7 +310,7 @@
    "x": 12160,
    "y": 17972,
    "w": 1440,
-   "h": 720,
+   "h": 744,
    "page": "landing",
    "title": "1.3.9  Subscriber with credit · desktop"
   },
@@ -422,7 +422,7 @@
    "x": 12160,
    "y": 26756,
    "w": 1440,
-   "h": 900,
+   "h": 800,
    "page": "landing",
    "title": "3.1.9  Song playing · desktop"
   },
@@ -430,13 +430,13 @@
    "x": 12160,
    "y": 25712,
    "w": 390,
-   "h": 844,
+   "h": 900,
    "page": "landing",
    "title": "3.1.9  Song playing with lyrics · mobile"
   },
   "p-d-05-review-reaction-d.dc.html": {
    "x": 0,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
    "h": 900,
    "page": "landing",
@@ -452,19 +452,19 @@
   },
   "p-d-06-song-ended-d.dc.html": {
    "x": 4560,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
-   "h": 1180,
+   "h": 1500,
    "page": "landing",
-   "title": "3.2.4  Song ended · desktop"
+   "title": "3.2.4  Song ended, the gift page from now on · desktop"
   },
   "p-d-06-song-ended.dc.html": {
    "x": 4560,
    "y": 28256,
    "w": 390,
-   "h": 984,
+   "h": 1424,
    "page": "landing",
-   "title": "3.2.4  Song ended · mobile"
+   "title": "3.2.4  Song ended, the gift page from now on · mobile"
   },
   "p-d-07-link-preview.dc.html": {
    "x": 0,
@@ -508,7 +508,7 @@
   },
   "p-d-10-share-consent-d.dc.html": {
    "x": 1520,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
    "h": 900,
    "page": "landing",
@@ -540,9 +540,9 @@
   },
   "p-d-12-group-notes-d.dc.html": {
    "x": 6080,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
-   "h": 1304,
+   "h": 1568,
    "page": "landing",
    "title": "3.2.5  Notes from everyone · desktop"
   },
@@ -550,13 +550,13 @@
    "x": 6080,
    "y": 28256,
    "w": 390,
-   "h": 2104,
+   "h": 2912,
    "page": "landing",
    "title": "3.2.5  Notes from everyone · mobile"
   },
   "p-d-13-my-video-d.dc.html": {
    "x": 7600,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
    "h": 900,
    "page": "landing",
@@ -588,7 +588,7 @@
   },
   "p-d-15-post-reaction-d.dc.html": {
    "x": 3040,
-   "y": 30456,
+   "y": 31264,
    "w": 1440,
    "h": 1000,
    "page": "landing",
@@ -620,7 +620,7 @@
   },
   "p-e-00-group-setup-d.dc.html": {
    "x": 0,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 1100,
    "page": "landing",
@@ -628,7 +628,7 @@
   },
   "p-e-00-group-setup.dc.html": {
    "x": 0,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 1036,
    "page": "landing",
@@ -636,7 +636,7 @@
   },
   "p-e-01-organizer-d.dc.html": {
    "x": 1520,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 960,
    "page": "landing",
@@ -644,7 +644,7 @@
   },
   "p-e-01-organizer.dc.html": {
    "x": 1520,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 944,
    "page": "landing",
@@ -652,7 +652,7 @@
   },
   "p-e-02-invite-d.dc.html": {
    "x": 3040,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 840,
    "page": "landing",
@@ -660,7 +660,7 @@
   },
   "p-e-02-invite.dc.html": {
    "x": 3040,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 844,
    "page": "landing",
@@ -668,7 +668,7 @@
   },
   "p-e-03-contribute-d.dc.html": {
    "x": 4560,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 904,
    "page": "landing",
@@ -676,7 +676,7 @@
   },
   "p-e-03-contribute.dc.html": {
    "x": 4560,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 904,
    "page": "landing",
@@ -684,7 +684,7 @@
   },
   "p-e-04-done-d.dc.html": {
    "x": 6080,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 720,
    "page": "landing",
@@ -692,7 +692,7 @@
   },
   "p-e-04-done.dc.html": {
    "x": 6080,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 844,
    "page": "landing",
@@ -700,7 +700,7 @@
   },
   "p-e-05-account-orders-d.dc.html": {
    "x": 0,
-   "y": 39856,
+   "y": 40664,
    "w": 1440,
    "h": 760,
    "page": "landing",
@@ -708,7 +708,7 @@
   },
   "p-e-05-account-orders.dc.html": {
    "x": 0,
-   "y": 38156,
+   "y": 38964,
    "w": 390,
    "h": 844,
    "page": "landing",
@@ -716,7 +716,7 @@
   },
   "p-e-06-reaction-d.dc.html": {
    "x": 1520,
-   "y": 39856,
+   "y": 40664,
    "w": 1440,
    "h": 1352,
    "page": "landing",
@@ -724,7 +724,7 @@
   },
   "p-e-06-reaction.dc.html": {
    "x": 1520,
-   "y": 38156,
+   "y": 38964,
    "w": 390,
    "h": 1604,
    "page": "landing",
@@ -732,7 +732,7 @@
   },
   "p-e-07-calendar-d.dc.html": {
    "x": 3040,
-   "y": 39856,
+   "y": 40664,
    "w": 1440,
    "h": 1152,
    "page": "landing",
@@ -740,7 +740,7 @@
   },
   "p-e-07-calendar.dc.html": {
    "x": 3040,
-   "y": 38156,
+   "y": 38964,
    "w": 390,
    "h": 1452,
    "page": "landing",
@@ -748,7 +748,7 @@
   },
   "p-e-08-remake-refund-d.dc.html": {
    "x": 4560,
-   "y": 39856,
+   "y": 40664,
    "w": 1440,
    "h": 720,
    "page": "landing",
@@ -756,7 +756,7 @@
   },
   "p-e-08-remake-refund.dc.html": {
    "x": 4560,
-   "y": 38156,
+   "y": 38964,
    "w": 390,
    "h": 844,
    "page": "landing",
@@ -764,7 +764,7 @@
   },
   "p-e-09-participant-later-d.dc.html": {
    "x": 7600,
-   "y": 34932,
+   "y": 35740,
    "w": 1440,
    "h": 1060,
    "page": "landing",
@@ -772,7 +772,7 @@
   },
   "p-e-09-participant-later.dc.html": {
    "x": 7600,
-   "y": 33696,
+   "y": 34504,
    "w": 390,
    "h": 1140,
    "page": "landing",
@@ -780,7 +780,7 @@
   },
   "p-e-10-settings-d.dc.html": {
    "x": 6080,
-   "y": 39856,
+   "y": 40664,
    "w": 1440,
    "h": 720,
    "page": "landing",
@@ -788,7 +788,7 @@
   },
   "p-e-10-settings.dc.html": {
    "x": 6080,
-   "y": 38156,
+   "y": 38964,
    "w": 390,
    "h": 844,
    "page": "landing",
@@ -796,7 +796,7 @@
   },
   "p-e-mail-01-opened.dc.html": {
    "x": 2720,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 900,
    "page": "landing",
@@ -804,7 +804,7 @@
   },
   "p-e-mail-02-reaction.dc.html": {
    "x": 3400,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 960,
    "page": "landing",
@@ -812,7 +812,7 @@
   },
   "p-e-mail-03-preview-ready.dc.html": {
    "x": 0,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 760,
    "page": "landing",
@@ -820,7 +820,7 @@
   },
   "p-e-mail-04-paid.dc.html": {
    "x": 680,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 600,
    "page": "landing",
@@ -828,7 +828,7 @@
   },
   "p-e-mail-05-gift-for-you.dc.html": {
    "x": 1360,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 728,
    "page": "landing",
@@ -836,7 +836,7 @@
   },
   "p-e-mail-06-time-to-send.dc.html": {
    "x": 2040,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 792,
    "page": "landing",
@@ -844,7 +844,7 @@
   },
   "p-e-mail-07-calendar.dc.html": {
    "x": 4080,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 716,
    "page": "landing",
@@ -852,7 +852,7 @@
   },
   "p-e-mail-08-login.dc.html": {
    "x": 4760,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 440,
    "page": "landing",
@@ -860,7 +860,7 @@
   },
   "p-e-mail-09-video-expiring.dc.html": {
    "x": 5440,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 748,
    "page": "landing",
@@ -868,7 +868,7 @@
   },
   "p-e-mail-10-new-part.dc.html": {
    "x": 6120,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 560,
    "page": "landing",
@@ -876,7 +876,7 @@
   },
   "p-e-mail-11-scheduled.dc.html": {
    "x": 6800,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 716,
    "page": "landing",
@@ -956,7 +956,7 @@
   },
   "p-h-01-ideas-hub-d.dc.html": {
    "x": 0,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 1744,
    "page": "landing",
@@ -964,7 +964,7 @@
   },
   "p-h-01-ideas-hub.dc.html": {
    "x": 0,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 2120,
    "page": "landing",
@@ -972,7 +972,7 @@
   },
   "p-h-02-vs-songfinch-d.dc.html": {
    "x": 1520,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 2560,
    "page": "landing",
@@ -980,7 +980,7 @@
   },
   "p-h-02-vs-songfinch.dc.html": {
    "x": 1520,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 2916,
    "page": "landing",
@@ -988,7 +988,7 @@
   },
   "p-h-03-guide-cost-d.dc.html": {
    "x": 3040,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 1952,
    "page": "landing",
@@ -996,7 +996,7 @@
   },
   "p-h-03-guide-cost.dc.html": {
    "x": 3040,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 2284,
    "page": "landing",
@@ -1004,7 +1004,7 @@
   },
   "p-h-04-songs-for-sister-d.dc.html": {
    "x": 4560,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 1592,
    "page": "landing",
@@ -1012,7 +1012,7 @@
   },
   "p-h-04-songs-for-sister.dc.html": {
    "x": 4560,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 1296,
    "page": "landing",
@@ -1020,7 +1020,7 @@
   },
   "p-h-05-birthday-song-name-d.dc.html": {
    "x": 6080,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 1712,
    "page": "landing",
@@ -1028,7 +1028,7 @@
   },
   "p-h-05-birthday-song-name.dc.html": {
    "x": 6080,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 1536,
    "page": "landing",
@@ -1036,7 +1036,7 @@
   },
   "p-h-06-love-song-tool-d.dc.html": {
    "x": 7600,
-   "y": 48212,
+   "y": 49020,
    "w": 1440,
    "h": 1624,
    "page": "landing",
@@ -1044,7 +1044,7 @@
   },
   "p-h-06-love-song-tool.dc.html": {
    "x": 7600,
-   "y": 45096,
+   "y": 45904,
    "w": 390,
    "h": 1716,
    "page": "landing",
@@ -1108,7 +1108,7 @@
   },
   "p-e-mail-12-add-photos.dc.html": {
    "x": 7480,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 772,
    "page": "landing",
@@ -1116,7 +1116,7 @@
   },
   "p-e-mail-13-group-deadline.dc.html": {
    "x": 8160,
-   "y": 41536,
+   "y": 42344,
    "w": 600,
    "h": 772,
    "page": "landing",
@@ -1137,6 +1137,22 @@
    "h": 800,
    "page": "landing",
    "title": "1.3.6  What Anna gets · desktop"
+  },
+  "p-d-04b-note-moment.dc.html": {
+   "x": 13680,
+   "y": 25712,
+   "w": 390,
+   "h": 900,
+   "page": "landing",
+   "title": "3.1.10  Note during the song · mobile"
+  },
+  "p-d-04b-note-moment-d.dc.html": {
+   "x": 13680,
+   "y": 26756,
+   "w": 1440,
+   "h": 800,
+   "page": "landing",
+   "title": "3.1.10  Note during the song · desktop"
   }
  },
  "createdOnFiles": {
@@ -1191,7 +1207,8 @@
   "v62hol",
   "v63open",
   "v64photos",
-  "v66peek"
+  "v66peek",
+  "v67play"
  ],
  "notes": {
   "s03": {
@@ -1324,7 +1341,7 @@
   },
   "t_p4_0": {
    "x": 0,
-   "y": 33396,
+   "y": 34204,
    "text": "Organizer and participants",
    "kind": "title1",
    "maxW": 9040,
@@ -1332,7 +1349,7 @@
   },
   "t_p5_0": {
    "x": 0,
-   "y": 37856,
+   "y": 38664,
    "text": "Account",
    "kind": "title1",
    "maxW": 7520,
@@ -1340,7 +1357,7 @@
   },
   "t_p6_0": {
    "x": 0,
-   "y": 44796,
+   "y": 45604,
    "text": "Ideas hub, comparisons, guides, free tools",
    "kind": "title1",
    "maxW": 9040,
@@ -1348,7 +1365,7 @@
   },
   "t_p5_mail": {
    "x": 0,
-   "y": 41236,
+   "y": 42044,
    "text": "Emails",
    "kind": "title1",
    "maxW": 7400,
@@ -1356,7 +1373,7 @@
   },
   "t_p6_seo": {
    "x": 0,
-   "y": 44396,
+   "y": 45204,
    "text": "SEO notes for these templates live on the overview page, next to the UI kit",
    "w": 900,
    "size": "m",
@@ -1401,7 +1418,7 @@
   },
   "sec_p4": {
    "x": -40,
-   "y": 32696,
+   "y": 33504,
    "text": "4 · Group gift",
    "kind": "title1",
    "maxW": 6000,
@@ -1410,7 +1427,7 @@
   },
   "sec_p5": {
    "x": -40,
-   "y": 37156,
+   "y": 37964,
    "text": "5 · Account and emails",
    "kind": "title1",
    "maxW": 6000,
@@ -1419,7 +1436,7 @@
   },
   "sec_p6": {
    "x": -40,
-   "y": 43696,
+   "y": 44504,
    "text": "6 · Content and SEO",
    "kind": "title1",
    "maxW": 6000,
@@ -1459,7 +1476,7 @@
    "text": "Holidays depend on country. Shown here for the US. We pick the list from the account country and let people change it. Mother’s Day differs: US and Canada in May, UK in March",
    "w": 320,
    "x": 3470,
-   "y": 38156,
+   "y": 38964,
    "size": 20
   },
   "v63open": {
@@ -1488,6 +1505,15 @@
    "x": 7600,
    "y": 16344,
    "text": "Hook before payment. The giver sees the gift as Anna will: their own photo as the cover, her name in the song, their note. A smaller version shows while the music records (1.3.1), so the wait builds anticipation instead of doubt"
+  },
+  "v67play": {
+   "fill": "yellow",
+   "page": "landing",
+   "size": 20,
+   "w": 380,
+   "x": 12160,
+   "y": 25372,
+   "text": "How Anna experiences it. During the song: the giver’s photos change with the music above the lyrics (bundle; with the song only, the cover photo stays). In instrumental breaks and the outro, notes appear one at a time, each next to the photo its author added. After the song, the same link becomes the gift page: play again, photos and slideshow, lyrics, notes, download and share. Anna can come back any time"
   }
  },
  "order": [
@@ -1519,6 +1545,7 @@
   "p-d-02-gift-first-screen.dc.html",
   "p-d-03-reaction-consent.dc.html",
   "p-d-04-song-playing.dc.html",
+  "p-d-04b-note-moment.dc.html",
   "p-d-05-review-reaction.dc.html",
   "p-d-06-song-ended.dc.html",
   "p-e-01-organizer.dc.html",
@@ -1583,6 +1610,7 @@
   "p-d-08-reveal.dc.html",
   "p-d-08-reveal-d.dc.html",
   "p-d-04-song-playing-d.dc.html",
+  "p-d-04b-note-moment-d.dc.html",
   "p-d-05-review-reaction-d.dc.html",
   "p-d-10-share-consent.dc.html",
   "p-d-10-share-consent-d.dc.html",
