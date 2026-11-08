@@ -83,84 +83,84 @@
    "title": "1.2.2  Who is it for · mobile"
   },
   "p-b-03-their-story-d.dc.html": {
-   "x": 4560,
+   "x": 6080,
    "y": 15064,
    "w": 1440,
    "h": 880,
    "page": "landing",
-   "title": "1.2.4  Their story · desktop"
+   "title": "1.2.5  Their story · desktop"
   },
   "p-b-03-their-story.dc.html": {
-   "x": 4560,
+   "x": 6080,
    "y": 13824,
    "w": 390,
    "h": 844,
    "page": "landing",
-   "title": "1.2.4  Their story · mobile"
+   "title": "1.2.5  Their story · mobile"
   },
   "p-b-04-genre-and-voice-d.dc.html": {
-   "x": 7600,
+   "x": 9120,
    "y": 15064,
    "w": 1440,
    "h": 896,
    "page": "landing",
-   "title": "1.2.6  Sound · desktop"
+   "title": "1.2.7  Sound · desktop"
   },
   "p-b-04-genre-and-voice.dc.html": {
-   "x": 7600,
+   "x": 9120,
    "y": 13824,
    "w": 390,
    "h": 852,
    "page": "landing",
-   "title": "1.2.6  Genre and voice · mobile"
+   "title": "1.2.7  Genre and voice · mobile"
   },
   "p-b-05-lyrics-ready-d.dc.html": {
-   "x": 9120,
+   "x": 10640,
    "y": 15064,
    "w": 1440,
    "h": 1000,
    "page": "landing",
-   "title": "1.2.7  Lyrics · desktop"
+   "title": "1.2.8  Lyrics · desktop"
   },
   "p-b-05-lyrics-ready.dc.html": {
-   "x": 9120,
+   "x": 10640,
    "y": 13824,
    "w": 390,
    "h": 1040,
    "page": "landing",
-   "title": "1.2.7  Lyrics ready · mobile"
+   "title": "1.2.8  Lyrics ready · mobile"
   },
   "p-b-06-email-d.dc.html": {
-   "x": 10640,
+   "x": 12160,
    "y": 15064,
    "w": 1440,
    "h": 896,
    "page": "landing",
-   "title": "1.2.8  Email · desktop"
+   "title": "1.2.9  Email · desktop"
   },
   "p-b-06-email.dc.html": {
-   "x": 10640,
+   "x": 12160,
    "y": 13824,
    "w": 390,
    "h": 844,
    "page": "landing",
-   "title": "1.2.8  Email before generation · mobile"
+   "title": "1.2.9  Email before generation · mobile"
   },
   "p-b-07-moderation-d.dc.html": {
-   "x": 6080,
+   "x": 7600,
    "y": 15064,
    "w": 1440,
    "h": 872,
    "page": "landing",
-   "title": "1.2.5  Story needs a change · desktop"
+   "title": "1.2.6  Story needs a change · desktop"
   },
   "p-b-07-moderation.dc.html": {
-   "x": 6080,
+   "x": 7600,
    "y": 13824,
    "w": 390,
    "h": 844,
    "page": "landing",
-   "title": "1.2.5  Story needs a change · mobile"
+   "title": "1.2.6  Story needs a change · mobile"
   },
   "p-c-01-generating-d.dc.html": {
    "x": 0,
@@ -1089,6 +1089,22 @@
    "h": 792,
    "page": "landing",
    "title": "1.3.4  Fix the name · desktop"
+  },
+  "p-b-02c-photos.dc.html": {
+   "x": 4560,
+   "y": 13824,
+   "w": 390,
+   "h": 844,
+   "page": "landing",
+   "title": "1.2.4  Photos · mobile"
+  },
+  "p-b-02c-photos-d.dc.html": {
+   "x": 4560,
+   "y": 15064,
+   "w": 1440,
+   "h": 880,
+   "page": "landing",
+   "title": "1.2.4  Photos · desktop"
   }
  },
  "createdOnFiles": {
@@ -1141,7 +1157,8 @@
   "v62proof",
   "v62rev",
   "v62hol",
-  "v63open"
+  "v63open",
+  "v64photos"
  ],
  "notes": {
   "s03": {
@@ -1420,6 +1437,15 @@
    "x": 1520,
    "y": 20404,
    "text": "Who counts as opening. The giver is signed in (or has the order cookie) and opens the link in preview mode, which never counts. “Opened” is the first open by someone else: a new device with no order session, after the delivery time. If the giver opens it logged out on a new device, it would count, so the refund rule also checks that the song was actually played past 30 s"
+  },
+  "v64photos": {
+   "fill": "yellow",
+   "page": "landing",
+   "size": 20,
+   "w": 360,
+   "x": 4560,
+   "y": 13504,
+   "text": "Flow change. Photos and the giver’s name now come before the email and generation, while the person is still invested. The more of their own they put in, the less likely they leave before paying. Skip is allowed: the slideshow screen after payment (2.1.4) stays as the path for people who skipped"
   }
  },
  "order": [
@@ -1433,6 +1459,7 @@
   "p-b-01-solo-or-together.dc.html",
   "p-b-02-who-is-it-for.dc.html",
   "p-b-02b-occasion.dc.html",
+  "p-b-02c-photos.dc.html",
   "p-b-03-their-story.dc.html",
   "p-b-04-genre-and-voice.dc.html",
   "p-b-05-lyrics-ready.dc.html",
@@ -1472,6 +1499,7 @@
   "p-b-01-solo-or-together-d.dc.html",
   "p-b-02-who-is-it-for-d.dc.html",
   "p-b-02b-occasion-d.dc.html",
+  "p-b-02c-photos-d.dc.html",
   "p-b-03-their-story-d.dc.html",
   "p-b-07-moderation.dc.html",
   "p-b-07-moderation-d.dc.html",
