@@ -2,13 +2,13 @@
 B = {'e1':'f2f411ec00795b0ea6ea67c498d9ebd2','e2':'622571a5efec9dcfab9862a7f3332a70','e3':'b84a9519552c7276a7f67d913a01ed45','e4':'ca7740159a99c62c8060e76efe18a779',
      'r01':'2744d11a0bc2b86bbfb658477ac52617','bed':'e354aac9a424c73c0156013efdeaf1bd','mum':'b84a9519552c7276a7f67d913a01ed45','f1':'753681caffaf93a756329748141b4104',
      'r06':'e0bf68270375990a6c155c753ae64c80','o1':'84d89a78197fb53d36fc38f060588b8c','box':'2892b385f1c5f1e8dedf7df3815e506f',
-     'n1':'7a485437d12948b1e1dcded99bcf7fd6','n2':'93d463c9b9e10e234fbc07698d1cc88b','n3':'df1c70701221d9bf344803a51c266b72','n4':'87250b5abbb4fdf76bc75f5925cb6e56','p1':'a3f42c6f3111ab5d35fc884beb5eaeac','p2':'8818f91654a75b17e7baedc093c10a73','p3':'581229994cf2e1b007e71612e725066d'}
+     'n1':'14e5fc82d8e091b7c2c5e95a5d6fb907','n2':'1b8a12e55b48d782ad0aed8eb47242db','n3':'3015cceae11db6c90f56093d73001aff','n4':'f5a721339c23682eaaeb28b20b3d3277','p1':'a3f42c6f3111ab5d35fc884beb5eaeac','p2':'8818f91654a75b17e7baedc093c10a73','p3':'581229994cf2e1b007e71612e725066d'}
 PLAY = '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24"><path d="M7 4.5l10 7.5-10 7.5z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg>'
 CHECK = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>'
-SONGS = [('n1', 'A man in his sixties listening to a song on his phone at the kitchen table', 'Sixty miles of Walt', 'For Dad, 60th · country', 'Walt', ', sixty miles and still the open road', '0:42'),
-         ('n2', 'A woman on a sofa listening to her song, hand on her chest', 'Sunday pancakes for Rosa', 'For Mum, Mother’s Day · acoustic', 'Rosa', ', pancakes on a Sunday, flipped too high', '0:38'),
-         ('n3', 'A couple in a parked car sharing one phone', 'Sam and Jo, row 42', 'For the newlyweds · indie pop', 'Sam and Jo', ', row forty-two', '0:40'),
-         ('n4', 'A woman at her office desk listening, colleagues around her with a card', 'Twenty years, Bev', 'For a colleague, retirement · swing', 'Bev', ', twenty years and the kettle’s still on', '0:44')]
+SONGS = [('n1', 'A man in his sixties laughing at his song on his birthday, cake and family around him', 'Sixty miles of Walt', 'For Dad, 60th · country', 'Walt', ', sixty miles and still the open road', '0:42'),
+         ('n2', 'A woman with flowers smiling at the song on her phone on Mother’s Day', 'Sunday pancakes for Rosa', 'For Mum, Mother’s Day · acoustic', 'Rosa', ', pancakes on a Sunday, flipped too high', '0:38'),
+         ('n3', 'Newlyweds laughing on the steps, sharing one phone', 'Sam and Jo, row 42', 'For the newlyweds · indie pop', 'Sam and Jo', ', row forty-two', '0:40'),
+         ('n4', 'A woman laughing at her retirement song, colleagues with balloons and a cake around her', 'Twenty years, Bev', 'For a colleague, retirement · swing', 'Bev', ', twenty years and the kettle’s still on', '0:44')]
 
 def song_card(k, alt, title, sub, name, line, dur, w=None, ph=240):
     ws = 'width:%dpx;flex-shrink:0;' % w if w else ''

@@ -54,7 +54,7 @@ IMG = {
  'cal':'2a17c1433c28b630a8a2c681eb0bba92','sofa':'5c825ead91ccef82ac575d6be71a2319','office':'ca7740159a99c62c8060e76efe18a779',
  'mum':'b84a9519552c7276a7f67d913a01ed45','dad':'f2f411ec00795b0ea6ea67c498d9ebd2','wed':'622571a5efec9dcfab9862a7f3332a70',
  'r06':'e0bf68270375990a6c155c753ae64c80','head':'8dc0a0f37bdd55b766f2a195b5837c3e',
- 'n1':'7a485437d12948b1e1dcded99bcf7fd6','n2':'93d463c9b9e10e234fbc07698d1cc88b','n3':'df1c70701221d9bf344803a51c266b72','n4':'87250b5abbb4fdf76bc75f5925cb6e56',
+ 'n1':'14e5fc82d8e091b7c2c5e95a5d6fb907','n2':'1b8a12e55b48d782ad0aed8eb47242db','n3':'3015cceae11db6c90f56093d73001aff','n4':'f5a721339c23682eaaeb28b20b3d3277',
  'p1':'a3f42c6f3111ab5d35fc884beb5eaeac','p2':'8818f91654a75b17e7baedc093c10a73','p3':'581229994cf2e1b007e71612e725066d','ls1':'4aad2618b0b1d9095a2137c66e18fd1e',
 }
 
@@ -380,3 +380,27 @@ def action_card(obj, title, sub, label, icon=None):
     # equal cards side by side: object + text on top, button pinned to the bottom
     top = '<div style="display:flex;gap:16px;align-items:flex-start">%s<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px;line-height:1.3">%s</strong><span class="mut" style="font-size:14px;line-height:1.4">%s</span></div></div>' % (obj, title, sub)
     return '<div class="frame" style="padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;height:100%%">%s%s</div>' % (top, btn(label, 'bo', sm=True, icon=icon, extra='align-self:flex-start'))
+
+# ---------- gift peek: what the recipient gets, shown to the giver before paying ----------
+def gift_peek(mobile=True, music_ready=True):
+    H = 300 if mobile else 380
+    W = 'width:248px;flex-shrink:0;' if mobile else ''
+    def frame_(body):
+        return '<div style="%sheight:%dpx;border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff;display:flex;flex-direction:column">%s</div>' % (W, H, body)
+    def step(n, title, body):
+        return '<div style="%sdisplay:flex;flex-direction:column;gap:12px"><div style="display:flex;gap:10px;align-items:center"><span class="un" style="width:28px;height:28px;border-radius:50%%;background:#FFD84D;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;flex-shrink:0">%d</span><strong style="font-size:15px">%s</strong></div>%s</div>' % (W, n, title, frame_(body))
+    s1 = ('<div style="flex:1;min-height:0;overflow:hidden"><img src="/_blob/%s" alt="Your photo as the cover" style="width:100%%;height:100%%;object-fit:cover;object-position:50%% 45%%;display:block"></div>'
+          '<div style="padding:16px;display:flex;flex-direction:column;gap:10px"><span class="un" style="font-size:20px;font-weight:800;line-height:1.1">Max made you something</span>'
+          '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span class="mut" style="font-size:12px">For <span class="nm" style="color:#111">Anna</span></span><span style="height:36px;padding:0 18px;border-radius:10px;background:#FFD84D;border:2px solid #111;display:flex;align-items:center;font-size:14px;font-weight:500">Open</span></div></div>') % IMG['sofa']
+    bar = ('<div style="display:flex;align-items:center;gap:10px"><span style="width:36px;height:36px;border-radius:50%%;background:#111;display:flex;align-items:center;justify-content:center;flex-shrink:0">%s</span><div style="flex:1;height:4px;border-radius:2px;background:#DADADA"><div style="width:35%%;height:100%%;border-radius:2px;background:#111"></div></div></div>' % ico('play', '#fff', 14)) if music_ready else \
+          '<div style="display:flex;align-items:center;gap:10px"><span style="width:36px;height:36px;border-radius:50%;border:2px dashed #111;flex-shrink:0"></span><span class="mut" style="font-size:13px">The music is being recorded</span></div>'
+    lines = ''.join('<p style="margin:0;font-size:15px;line-height:1.5%s">%s</p>' % (';font-weight:500' if i == 1 else ';color:#4A4A4A', l) for i, l in enumerate(['Morning comes and the kettle sings', '<span class="nm">Anna</span>, you still ride that yellow bike', 'Down the hill with the whole flat behind', 'Thirty looks good on you tonight']))
+    s2 = '<div style="flex:1;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;background:#FFD84D"><span class="un" style="font-size:16px;font-weight:500">Anna, happy 30th</span><div style="display:flex;flex-direction:column;gap:6px;background:#fff;border-radius:16px;padding:14px">%s</div>%s</div>' % (lines, bar)
+    pics = ''.join('<span class="ph" style="flex:1;height:100%;border-radius:10px;display:block"><img src="/_blob/%s" alt=""></span>' % IMG[k] for k in ('family', 'candles', 'r09'))
+    s3 = ('<div style="flex:1;padding:16px;display:flex;flex-direction:column;gap:16px"><div style="display:flex;gap:6px;flex:1;min-height:0">%s</div>'
+          '<div style="background:#fff;border:1px solid #DADADA;border-radius:6px;box-shadow:0 4px 10px rgba(17,17,17,.08);padding:16px 14px;transform:rotate(-1deg);position:relative"><span aria-hidden="true" style="position:absolute;top:-8px;left:50%%;transform:translateX(-50%%);width:56px;height:16px;background:#FFD84D;border-radius:2px"></span>'
+          '<p style="margin:0;font-size:14px;line-height:1.45">“Thirty and still the first one dancing. Love you, the whole flat”</p><span class="mut" style="font-size:12px;display:block;margin-top:8px">Max</span></div></div>') % pics
+    steps = [step(1, 'Anna opens it', s1), step(2, 'Hears the name in the song', s2), step(3, 'Your photos and note', s3)]
+    if mobile:
+        return '<div style="display:flex;gap:16px;overflow-x:auto;margin:0 -20px;padding:0 20px 4px;scrollbar-width:none">%s</div>' % ''.join(steps)
+    return '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">%s</div>' % ''.join(steps)
