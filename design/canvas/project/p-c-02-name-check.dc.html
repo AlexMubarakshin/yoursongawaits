@@ -46,7 +46,7 @@ button.bo{border:2px solid #111}
 .ck{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.4}
 </style>
 </helmet>
-<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden">
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
 <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><button aria-label="Back" style="width:44px;height:44px;border:none;background:none;display:flex;align-items:center;justify-content:flex-start;cursor:pointer;padding:0;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><a href="#" style="font-family:Unbounded,Inter,sans-serif;font-weight:500;font-size:18px;color:#111;display:flex;align-items:center;min-height:44px;text-decoration:none">openyoursong</a><span style="width:44px"></span></header>
 <section style="padding:16px 20px 0;display:flex;flex-direction:column;gap:24px">
   <div style="display:flex;flex-direction:column;gap:12px">
@@ -56,16 +56,8 @@ button.bo{border:2px solid #111}
     <button class="play" aria-label="Play the name"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg></button>
     <div style="display:flex;flex-direction:column;gap:4px;flex:1"><strong style="font-size:16px">“Happy birthday, Anna”</strong><span class="mut" style="font-size:14px">Female voice, pop</span></div><span class="mut tn" style="font-size:14px">0:10</span>
   </div>
-  <div style="display:flex;flex-direction:column;gap:12px"><button class="btn bk" style="width:100%">Sounds right</button><button class="btn bo" style="width:100%">Fix it</button></div>
-  <div style="border-top:2px solid #111;padding-top:20px;display:flex;flex-direction:column;gap:12px">
-    <label for="phon" class="lbl" style="margin:0">Spell it the way it sounds</label>
-    <input id="phon" class="inp" type="text" value="AH-nah">
-    <p class="mut" style="margin:0;font-size:14px;line-height:1.5">Split into syllables, stress in capitals. Siobhan → shi-VAWN, Joaquín → wah-KEEN</p>
-    <p style="margin:0;font-size:14px;line-height:1.5">Written as <strong>Anna</strong> on the gift page and in emails. Sung as <strong>AH-nah</strong></p>
-    <button class="btn bo" style="width:100%">Sing it again</button>
-    <span class="mut" style="font-size:14px">A name fix gives you one extra attempt</span>
-  </div>
-</section>
+  </section>
+<div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;align-items:center;gap:12px"><button class="btn bk" style="width:100%">Sounds right</button><a href="#" style="font-size:15px">Not quite right? Fix the name</a></div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>

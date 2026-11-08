@@ -54,6 +54,8 @@ IMG = {
  'cal':'2a17c1433c28b630a8a2c681eb0bba92','sofa':'5c825ead91ccef82ac575d6be71a2319','office':'ca7740159a99c62c8060e76efe18a779',
  'mum':'b84a9519552c7276a7f67d913a01ed45','dad':'f2f411ec00795b0ea6ea67c498d9ebd2','wed':'622571a5efec9dcfab9862a7f3332a70',
  'r06':'e0bf68270375990a6c155c753ae64c80','head':'8dc0a0f37bdd55b766f2a195b5837c3e',
+ 'n1':'7a485437d12948b1e1dcded99bcf7fd6','n2':'93d463c9b9e10e234fbc07698d1cc88b','n3':'df1c70701221d9bf344803a51c266b72','n4':'87250b5abbb4fdf76bc75f5925cb6e56',
+ 'p1':'a3f42c6f3111ab5d35fc884beb5eaeac','p2':'8818f91654a75b17e7baedc093c10a73','p3':'581229994cf2e1b007e71612e725066d','ls1':'4aad2618b0b1d9095a2137c66e18fd1e',
 }
 
 def ico(name, color='#111', size=18):
@@ -338,10 +340,10 @@ def status_bar(steps=('Paid', 'Song ready', 'Delivery scheduled', 'Sent', 'Opene
 def datetile(mon='MAR', day='14', w=64):
     return '<div aria-hidden="true" style="width:%dpx;flex-shrink:0;background:#fff;border:2px solid #111;border-radius:12px;overflow:hidden;text-align:center"><div style="background:#111;color:#fff;font-size:11px;font-weight:500;letter-spacing:.04em;padding:3px 0">%s</div><div class="un tn" style="font-size:%dpx;font-weight:800;line-height:1;padding:8px 0 10px">%s</div></div>' % (w, mon.capitalize(), int(w * .44), day)
 
-def calendar_card(title='Never miss her birthday again', sub='Add 14 March to your calendar. The event links back here, so next year’s song takes two minutes', mon='MAR', day='14', mobile=True, link='Or email me 14 days before', action='Add to calendar', icon='cal', quiet=False):
+def calendar_card(title='Never miss Anna’s birthday again', sub='Add 14 March to your calendar. The event links back here, so next year’s song takes two minutes', mon='MAR', day='14', mobile=True, link='Or email me 14 days before', action='Add to calendar', icon='cal', quiet=False):
     # butter surface, so the action is ink (kit rule)
     head = '<div style="display:flex;gap:16px;align-items:flex-start">%s%s</div>' % (datetile(mon, day, 56 if mobile else 64), col(strong(title, 17), '<span style="font-size:14px;line-height:1.45">%s</span>' % sub, gap=4))
-    acts = '<div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">%s<a href="#" style="font-size:14px">%s</a></div>' % (btn(action, 'bo' if quiet else 'bi', sm=True, icon=icon, tag='a', extra='width:100%' if mobile else ''), link)
+    acts = ('<div style="display:flex;flex-direction:column;align-items:center;gap:12px">%s<a href="#" style="font-size:14px">%s</a></div>' if mobile else '<div style="display:flex;align-items:center;gap:16px">%s<a href="#" style="font-size:14px">%s</a></div>') % (btn(action, 'bo' if quiet else 'bi', sm=True, icon=icon, tag='a', extra='width:100%' if mobile else ''), link)
     return card(head + acts, bg='#F2F2F2' if quiet else '#FFD84D', pad=20, gap=16)
 
 HOLIDAYS_US = (('May', '10', 'Mother’s Day', 'Sun 10 May'), ('Jun', '21', 'Father’s Day', 'Sun 21 Jun'), ('Sep', '13', 'Grandparents Day', 'Sun 13 Sep'))
@@ -368,3 +370,13 @@ def social_d(cap=None, rest=('X', 'Facebook', 'Copy link')):
     row = '<div style="display:flex;align-items:center;gap:8px">%s%s</div>' % (leadb, ''.join(iconbtn(r) for r in rest))
     qr = '<div style="display:flex;gap:12px;align-items:center">%s<span class="mut" style="font-size:14px;line-height:1.4">Stories and TikTok post from your phone. Scan to open this page there</span></div>' % ('<div style="width:56px;height:56px;flex-shrink:0;border:1px solid #DADADA;border-radius:12px;display:flex;align-items:center;justify-content:center">%s</div>' % soc('QR code', 36))
     return col(tag_card(cap), row, qr, gap=14)
+
+def pagethumb(w=48):
+    # the gift page as a small object, same footprint as pdfthumb
+    h = int(w * 1.32)
+    return '<div aria-hidden="true" style="width:%dpx;height:%dpx;flex-shrink:0;border:1px solid #DADADA;border-radius:6px;box-shadow:0 2px 6px rgba(17,17,17,.08);overflow:hidden;background:#fff;display:flex;flex-direction:column"><img src="/_blob/%s" alt="" style="width:100%%;height:62%%;object-fit:cover;display:block"><div style="flex:1;display:flex;align-items:center;justify-content:center"><span class="un" style="background:#FFD84D;border-radius:2px;padding:1px 3px;font-size:%dpx;font-weight:800">Anna</span></div></div>' % (w, h, IMG['box'], max(7, w // 7))
+
+def action_card(obj, title, sub, label, icon=None):
+    # equal cards side by side: object + text on top, button pinned to the bottom
+    top = '<div style="display:flex;gap:16px;align-items:flex-start">%s<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px;line-height:1.3">%s</strong><span class="mut" style="font-size:14px;line-height:1.4">%s</span></div></div>' % (obj, title, sub)
+    return '<div class="frame" style="padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;height:100%%">%s%s</div>' % (top, btn(label, 'bo', sm=True, icon=icon, extra='align-self:flex-start'))

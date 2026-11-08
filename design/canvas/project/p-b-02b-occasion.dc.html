@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Who is it for</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#FF7A00}
+.cp{font-family:Inter,system-ui,sans-serif;color:#111;background:#fff}
+.cp *{box-sizing:border-box}
+.un{font-family:Unbounded,Inter,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none}
+.bk{background:#FFD84D;color:#111;border:2px solid #111}
+.bk:hover{background:#FFE27A;color:#111}
+.bi{background:#111;color:#fff;border:2px solid #111}
+.bi:hover{background:#333;color:#fff}
+.bo{background:#fff;color:#111;border:2px solid #111}
+.tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
+.ph{overflow:hidden;border-radius:24px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:44px;height:44px;border-radius:50%;background:#111;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.mut{color:#4A4A4A}
+.h1{margin:0;font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.lab{font-size:14px;font-weight:500;display:block;margin-bottom:8px}
+.inp{width:100%;height:52px;border:2px solid #111;border-radius:12px;padding:0 16px;font:500 17px Inter,system-ui,sans-serif;color:#111;background:#fff}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;border:1px solid #DADADA;background:#fff;font:500 15px Inter,system-ui,sans-serif;color:#111;cursor:pointer;gap:8px}
+.chip.on{background:#111;color:#fff;border-color:#111}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
+</style>
+</helmet>
+<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" aria-label="Back" style="width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;display:flex;align-items:center;justify-content:center;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="width:44px;text-align:right;font-size:14px;font-variant-numeric:tabular-nums">1/4</span></header>
+  <div role="progressbar" aria-label="Step 1 of 4" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="display:flex;gap:4px;padding:0 20px 24px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span></div>
+  <main style="padding:0 20px;display:flex;flex-direction:column;gap:16px">
+    <h1 class="un h1">What’s the occasion</h1>
+    
+    
+    <div><span class="lab">What is the occasion</span><div class="chips"><button class="chip on" aria-pressed="true">Birthday</button><button class="chip" aria-pressed="false">Anniversary</button><button class="chip" aria-pressed="false">Valentine's</button><button class="chip" aria-pressed="false">Mother's Day</button><button class="chip" aria-pressed="false">Father's Day</button><button class="chip" aria-pressed="false">Wedding</button><button class="chip" aria-pressed="false">Graduation</button><button class="chip">More</button></div></div>
+    <div><label class="lab" for="gn">Sign it from</label><input class="inp" id="gn" type="text" value="Max and the whole flat" aria-describedby="gnh"><span id="gnh" class="mut" style="display:block;margin-top:6px;font-size:13px">Shown on the gift page</span></div>
+  </main>
+  <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn bk" style="width:100%">Continue</button></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals(){ return {}; } }
+</script>
+</body>
+</html>
