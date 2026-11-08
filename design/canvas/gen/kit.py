@@ -14,8 +14,10 @@ a{color:#111}a:hover{color:#FF7A00}
 .un{font-family:Unbounded,Inter,sans-serif}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer;border:none;white-space:nowrap}
 .btn.sm{height:44px;padding:0 20px;font-size:15px}
-.bk{background:#111;color:#fff}
-.bk:hover{background:#333;color:#fff}
+.bk{background:#FFD84D;color:#111;border:2px solid #111}
+.bk:hover{background:#FFE27A;color:#111}
+.bi{background:#111;color:#fff;border:2px solid #111}
+.bi:hover{background:#333;color:#fff}
 .bo{background:#fff;color:#111;border:2px solid #111}
 .by{background:#FFD84D;color:#111}
 .bw{background:#fff;color:#111}
@@ -88,7 +90,7 @@ def play(label='Play', size=44, icon='play'):
 def btn(label, kind='bk', full=False, sm=False, icon=None, tag='a', extra=''):
     st = 'width:100%;' if full else ''
     cls = 'btn %s%s' % (kind, ' sm' if sm else '')
-    ic = ico(icon, '#fff' if kind == 'bk' else '#111', 18) if icon else ''
+    ic = ico(icon, '#fff' if kind == 'bi' else '#111', 18) if icon else ''
     if tag == 'button':
         return '<button class="%s" style="%s%s">%s%s</button>' % (cls, st, extra, ic, label)
     return '<a class="%s" href="#" style="%s%s">%s%s</a>' % (cls, st, extra, ic, label)
@@ -179,13 +181,14 @@ def notice(text, kind='info'):
     ic = {'info': 'alert', 'warn': 'alert', 'ok': 'check'}[kind]
     return '<div style="display:flex;gap:12px;align-items:flex-start;background:%s;border-radius:16px;padding:16px;font-size:14px;line-height:1.45">%s<span>%s</span></div>' % (bg, ico(ic, '#111', 18), text)
 
-def sendrow(items=('WhatsApp', 'Messages', 'Telegram', 'More', 'QR code')):
-    m = {'SMS': 'Messages', 'Share': 'More', 'QR': 'QR code', 'Copy': 'Copy link'}
-    items = [m.get(i, i) for i in items]
-    return sharegrid(items, cols=min(len(items), 5), h=72)
+SEND = ('Messages', 'WhatsApp', 'Messenger', 'Email', 'Copy link', 'More')
+
+def sendrow(items=None):
+    # EN markets (US, GB, CA, AU): iMessage/SMS, WhatsApp and Messenger cover most private sharing; More opens the phone's share sheet
+    return sharegrid(SEND, cols=3, h=72)
 
 def linkbox(url='openyoursong.com/anna-7kq2'):
-    return '<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:6px 6px 6px 16px"><span class="tn" style="flex:1;font-size:16px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">%s</span>%s</div>' % (url, btn('Copy', 'bk', sm=True, icon='copy', tag='button'))
+    return '<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:6px 6px 6px 16px"><span class="tn" style="flex:1;font-size:16px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">%s</span>%s</div>' % (url, btn('Copy', 'bi', sm=True, icon='copy', tag='button'))
 
 def lyric(size=24, pad=8):
     return '<p class="un" style="margin:0;font-size:%dpx;font-weight:500;line-height:1.25;letter-spacing:-.01em"><span style="background:#FFD84D;padding:0 %dpx;border-radius:4px">Anna</span>, you still ride that yellow bike</p>' % (size, pad)
@@ -246,7 +249,7 @@ def d_head(kind='wizard', step=None, right=None):
         return '<header style="height:72px;display:flex;align-items:center;justify-content:center">%s</header>' % (WM % 18)
     if kind == 'account':
         tabs = ''.join('<a href="#" class="fl" style="height:80px;font-size:15px;font-weight:500;%s">%s</a>' % ('box-shadow:inset 0 -2px 0 #111;' if right == x else 'color:#4A4A4A;', x) for x in ('Orders', 'Calendar', 'Plan', 'Settings'))
-        return '<header style="height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #DADADA"><div style="display:flex;align-items:center;gap:48px">%s<nav style="display:flex;gap:32px">%s</nav></div><div style="display:flex;align-items:center;gap:16px"><span class="mut" style="font-size:14px">max.r@mail.com</span>%s</div></header>' % (WM % 20, tabs, btn('New song', sm=True, icon='plus'))
+        return '<header style="height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #DADADA"><div style="display:flex;align-items:center;gap:48px">%s<nav style="display:flex;gap:32px">%s</nav></div><div style="display:flex;align-items:center;gap:16px"><span class="mut" style="font-size:14px">max.r@mail.com</span>%s</div></header>' % (WM % 20, tabs, btn('New song', 'bo', sm=True, icon='plus'))
     if kind == 'order':
         return '<header style="height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #DADADA">%s<div style="display:flex;align-items:center;gap:24px"><a href="#" class="mut" style="font-size:15px;text-decoration:none">Help</a><a href="#" style="font-size:15px;text-decoration:none;font-weight:500">Account</a></div></header>' % (WM % 20)
     return ''
@@ -272,6 +275,7 @@ SOC = {
  'Telegram': '<path d="M3.5 11.5l16-6.5-2.8 14-5-4-2.4 2.6.3-4.2 7-6.4-8.8 5.2z" fill="none" stroke="#111" stroke-width="1.7" stroke-linejoin="round"></path>',
  'Messages': '<path d="M4 6h16v10H10l-4 3.5V16H4z" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"></path>',
  'Facebook': '<path d="M14.5 20v-7h2.6l.4-3h-3V8.2c0-.9.3-1.5 1.6-1.5h1.5V4.1A20 20 0 0015.4 4C13.2 4 11.6 5.3 11.6 7.8V10H9v3h2.6v7" fill="none" stroke="#111" stroke-width="1.7" stroke-linejoin="round"></path>',
+ 'Messenger': '<path d="M12 3.5c-4.8 0-8.5 3.5-8.5 8 0 2.4 1 4.5 2.8 6v3l2.8-1.5c.9.3 1.9.4 2.9.4 4.8 0 8.5-3.5 8.5-8s-3.7-7.9-8.5-7.9z" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"></path><path d="M7.5 13.5l3-3.2 2.2 2 3.8-3.6-3 3.4-2.2-2z" fill="none" stroke="#111" stroke-width="1.6" stroke-linejoin="round"></path>',
  'Save video': '<path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>',
  'Copy link': '<path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1" fill="none" stroke="#111" stroke-width="1.8" stroke-linecap="round"></path>',
  'More': '<circle cx="6" cy="12" r="1.6" fill="#111"></circle><circle cx="12" cy="12" r="1.6" fill="#111"></circle><circle cx="18" cy="12" r="1.6" fill="#111"></circle>',
@@ -303,12 +307,64 @@ def iconbtn(name):
     return '<button aria-label="%s" style="width:48px;height:48px;border-radius:12px;border:1px solid #DADADA;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer">%s</button>' % (name, soc(name, 20))
 
 def share_m(rest=('TikTok', 'X', 'Save video'), cap=None, lead='Share to Stories'):
-    leadb = '<button class="btn bk" style="width:100%%;gap:10px">%s%s</button>' % (soc('Stories', 20).replace('#111', '#fff'), lead)
+    leadb = '<button class="btn bk" style="width:100%%;gap:10px">%s%s</button>' % (soc('Stories', 20), lead)
     more = '<div style="display:flex;align-items:center;gap:8px"><span class="mut" style="font-size:14px;flex:1">Or</span>%s</div>' % ''.join(iconbtn(r) for r in rest)
     return col(leadb, more, caption(cap) if cap else '', tagline(), gap=10)
 
 def share_d(cap=None, rest=('X', 'Facebook', 'Copy link')):
-    leadb = '<button class="btn bk" style="gap:10px">%s%s</button>' % (soc('Save video', 20).replace('#111', '#fff'), 'Save the video')
+    leadb = '<button class="btn bk" style="gap:10px">%s%s</button>' % (soc('Save video', 20), 'Save the video')
     row = '<div style="display:flex;align-items:center;gap:8px">%s%s</div>' % (leadb, ''.join(iconbtn(r) for r in rest))
     qr = '<div style="display:flex;gap:12px;align-items:center">%s<span class="mut" style="font-size:14px;line-height:1.4">Stories and TikTok post from your phone. Scan to open this page there</span></div>' % ('<div style="width:56px;height:56px;flex-shrink:0;border:1px solid #DADADA;border-radius:12px;display:flex;align-items:center;justify-content:center">%s</div>' % soc('QR code', 36))
     return col(row, caption(cap) if cap else '', qr, tagline(), gap=12)
+
+# ---------- content previews (real objects, not grey icons) ----------
+def pdfthumb(w=64):
+    h = int(w * 1.32)
+    qr = '<svg aria-hidden="true" width="%d" height="%d" viewBox="0 0 10 10" style="display:block"><path d="M0 0h3v3H0zM7 0h3v3H7zM0 7h3v3H0zM4 1h1v2H4zM5 4h2v1H5zM8 5h1v2H8zM4 6h1v1H4zM6 7h1v3H6zM8 8h2v1H8zM1 4h2v1H1z" fill="#111"/></svg>' % (w // 4, w // 4)
+    return ('<div aria-hidden="true" style="width:%dpx;height:%dpx;flex-shrink:0;background:#fff;border:1px solid #DADADA;border-radius:6px;box-shadow:0 2px 6px rgba(17,17,17,.08);padding:%dpx;display:flex;flex-direction:column;justify-content:space-between">'
+            '<div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:%dpx;color:#4A4A4A;line-height:1">For</span><span class="un" style="align-self:flex-start;background:#FFD84D;border-radius:2px;padding:1px 3px;font-size:%dpx;font-weight:800;line-height:1.1">Anna</span><span style="font-size:%dpx;color:#4A4A4A;line-height:1">from Max</span></div>%s</div>') % (w, h, max(5, w // 10), max(6, w // 10), max(8, w // 6), max(6, w // 10), qr)
+
+def slideshow_card(mobile=True):
+    pics = ''.join('<div class="ph" style="flex:1;height:%dpx;border-radius:12px"><img src="/_blob/%s" alt="" style="object-position:%s"></div>' % (96 if mobile else 120, IMG[k], p) for k, p in (('r01', '50% 25%'), ('family', '50% 40%'), ('sofa', '50% 50%')))
+    strip = '<div style="display:flex;gap:6px;position:relative">%s<span style="position:absolute;left:50%%;top:50%%;transform:translate(-50%%,-50%%)">%s</span></div>' % (pics, play('Watch a slideshow example', 44))
+    txt = col(strong('Turn it into a video with your photos', 17), t('Add 5–20 photos of you two. We set them to the song in about 10 minutes, and Anna gets the video with her gift', 14, True), gap=6)
+    return card(strip + txt + btn('Add photos', icon='plus' if False else None, full=mobile, tag='a', extra='' if mobile else 'align-self:flex-start'), bg='#F2F2F2', pad=20, gap=16)
+
+def status_bar(steps=('Paid', 'Song ready', 'Delivery scheduled', 'Sent', 'Opened'), cur=2):
+    # compact mobile status: one segmented bar and the current step named
+    seg = ''.join('<span style="flex:1;height:6px;border-radius:3px;background:%s"></span>' % ('#111' if i < cur else '#FFD84D' if i == cur else '#DADADA') for i in range(len(steps)))
+    return '<div aria-label="Order status" style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:4px">%s</div><div style="display:flex;justify-content:space-between;font-size:14px"><strong style="font-size:14px">%s</strong><span class="mut tn">Step %d of %d · next: %s</span></div></div>' % (seg, steps[cur], cur + 1, len(steps), steps[cur + 1] if cur + 1 < len(steps) else 'done')
+
+def datetile(mon='MAR', day='14', w=64):
+    return '<div aria-hidden="true" style="width:%dpx;flex-shrink:0;background:#fff;border:2px solid #111;border-radius:12px;overflow:hidden;text-align:center"><div style="background:#111;color:#fff;font-size:11px;font-weight:500;letter-spacing:.04em;padding:3px 0">%s</div><div class="un tn" style="font-size:%dpx;font-weight:800;line-height:1;padding:8px 0 10px">%s</div></div>' % (w, mon.capitalize(), int(w * .44), day)
+
+def calendar_card(title='Never miss her birthday again', sub='Add 14 March to your calendar. The event links back here, so next year’s song takes two minutes', mon='MAR', day='14', mobile=True, link='Or email me 14 days before', action='Add to calendar', icon='cal', quiet=False):
+    # butter surface, so the action is ink (kit rule)
+    head = '<div style="display:flex;gap:16px;align-items:flex-start">%s%s</div>' % (datetile(mon, day, 56 if mobile else 64), col(strong(title, 17), '<span style="font-size:14px;line-height:1.45">%s</span>' % sub, gap=4))
+    acts = '<div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">%s<a href="#" style="font-size:14px">%s</a></div>' % (btn(action, 'bo' if quiet else 'bi', sm=True, icon=icon, tag='a', extra='width:100%' if mobile else ''), link)
+    return card(head + acts, bg='#F2F2F2' if quiet else '#FFD84D', pad=20, gap=16)
+
+HOLIDAYS_US = (('May', '10', 'Mother’s Day', 'Sun 10 May'), ('Jun', '21', 'Father’s Day', 'Sun 21 Jun'), ('Sep', '13', 'Grandparents Day', 'Sun 13 Sep'))
+
+def holidays(mobile=True, country='US'):
+    rows = ''.join('<div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid #DADADA">%s<div style="flex:1;display:flex;flex-direction:column;gap:2px"><strong style="font-size:16px">%s</strong><span class="mut tn" style="font-size:14px">%s</span></div>%s</div>' % (datetile(m, d, 44), n, w, btn('Add', 'bo', sm=True, tag='button', extra='height:36px;padding:0 14px')) for m, d, n, w in HOLIDAYS_US)
+    head = '<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px"><strong style="font-size:17px">Holidays coming up</strong><a href="#" class="mut" style="font-size:14px">%s · change</a></div>' % country
+    return col(head, small('Easy to forget, nice to get a song on. Add one and we remind you like your own dates', extra='font-size:14px'), '<div>%s</div>' % rows, '<a href="#" style="font-size:15px;font-weight:500">Add all to my calendar</a>', gap=8)
+
+# ---------- social: tag us (one shared block for recipient, giver and group) ----------
+def tag_card(cap=None):
+    w = lambda n: soc(n, 22).replace('#111', '#fff')
+    top = '<div style="display:flex;align-items:center;gap:10px">%s%s<span class="un" style="margin-left:4px;background:#FFD84D;color:#111;border-radius:6px;padding:4px 10px;font-size:16px;font-weight:500">@openyoursong</span></div>' % (w('Instagram'), w('TikTok'))
+    txt = '<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px;line-height:1.3;color:#fff">Tag us when you post</strong><span style="font-size:14px;line-height:1.45;color:#DADADA">We repost our favourites, with your OK. Your caption is ready, tag included</span></div>'
+    return card(top + txt + (caption(cap) if cap else ''), bg='#111', pad=20, gap=14)
+
+def social_m(cap=None, rest=('TikTok', 'X', 'More'), lead='Share to Stories'):
+    leadb = '<button class="btn bk" style="width:100%%;gap:10px">%s%s</button>' % (soc('Instagram', 20), lead)
+    more = '<div style="display:flex;align-items:center;gap:8px"><span class="mut" style="font-size:14px;flex:1">Or post to</span>%s</div>' % ''.join(iconbtn(r) for r in rest)
+    return col(tag_card(cap), leadb, more, gap=12)
+
+def social_d(cap=None, rest=('X', 'Facebook', 'Copy link')):
+    leadb = '<button class="btn bk" style="gap:10px">%s%s</button>' % (soc('Save video', 20), 'Save the video')
+    row = '<div style="display:flex;align-items:center;gap:8px">%s%s</div>' % (leadb, ''.join(iconbtn(r) for r in rest))
+    qr = '<div style="display:flex;gap:12px;align-items:center">%s<span class="mut" style="font-size:14px;line-height:1.4">Stories and TikTok post from your phone. Scan to open this page there</span></div>' % ('<div style="width:56px;height:56px;flex-shrink:0;border:1px solid #DADADA;border-radius:12px;display:flex;align-items:center;justify-content:center">%s</div>' % soc('QR code', 36))
+    return col(tag_card(cap), row, qr, gap=14)

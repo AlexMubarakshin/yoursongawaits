@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Balloon, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#1238B4}a:hover{color:#0B2575}
+.bl{font-family:'Baloo 2',system-ui,sans-serif;color:#0B2575;background:#D6ECFF}
+.bl *{box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:60px;padding:0 32px;border-radius:20px;font-weight:500;font-size:19px;text-decoration:none}
+.bc{background:#1238B4;color:#fff}
+.by{background:#FFCF30;color:#0B2575}
+.bw{background:#fff;color:#0B2575}
+.card{background:#fff;border-radius:36px;padding:32px}
+.pill{display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 24px;border-radius:20px;background:#fff;font-size:18px;font-weight:600}
+.frame{background:#fff;border-radius:28px;overflow:hidden;border:1px solid #B9D7F5}
+.opt{height:48px;padding:0 20px;border-radius:16px;border:1px solid #B9D7F5;background:#fff;color:#0B2575;font:inherit;font-size:17px;font-weight:500}
+.opt.on{background:#FFCF30;border-color:#0B2575}
+.inp{height:56px;border:1px solid #B9D7F5;border-radius:16px;padding:0 16px;font:inherit;font-size:19px;color:#0B2575;background:#fff}
+</style>
+</helmet>
+<div class="bl" style="width:1440px;height:2400px;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 80px">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#0B2575;font-weight:500;font-size:26px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1238B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>OpenYourSong</a>
+    <nav style="display:flex;gap:12px"><a href="#" class="pill" style="height:48px;font-size:16px;text-decoration:none;color:#0B2575">How it works</a><a href="#" class="pill" style="height:48px;font-size:16px;text-decoration:none;color:#0B2575">Listen</a><a href="#" class="pill" style="height:48px;font-size:16px;text-decoration:none;color:#0B2575">Family gift</a><a href="#" class="pill" style="height:48px;font-size:16px;text-decoration:none;color:#0B2575">Prices</a></nav>
+    <a class="btn bc" href="#" style="height:48px;font-size:16px">Make a song</a>
+  </header>
+
+  <section style="height:880px;display:grid;grid-template-columns:1fr 600px;gap:64px;align-items:center;padding:0 80px 40px">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span style="font-size:20px;font-weight:500;color:#1238B4">For grandparents, little ones and big birthdays</span>
+      <h1 style="margin:0;font-size:84px;line-height:1;font-weight:800;letter-spacing:-.01em">A song that's all about them</h1>
+      <p style="margin:0;font-size:22px;line-height:1.45;max-width:560px">Tell us a little about someone you love. We make a song with their name in it, ready in minutes. Listen free before you pay.</p>
+      <div style="display:flex;gap:16px"><a class="btn bc" href="#">Start a song</a><a class="btn bw" href="#">Hear an example</a></div>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+      <div style="height:600px;border-radius:40px;overflow:hidden"><img src="/_blob/dd03ace139d67b7c31ae17bfb60bf331" alt="A grandmother waltzing with her granddaughter among sunflowers" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <figcaption style="display:flex;align-items:center;gap:16px">
+        <button aria-label="Play Grandma Rose's song" style="width:56px;height:56px;flex:none;border-radius:50%;background:#1238B4;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M7 4l13 8-13 8z"></path></svg></button>
+        <span style="display:flex;flex-direction:column"><span style="font-size:20px;font-weight:500">Lily's song for Grandma Rose</span><span style="font-size:16px">Listen to the 0:40 preview</span></span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+    <div class="card" style="display:flex;flex-direction:column;gap:12px"><span style="width:64px;height:64px;border-radius:50%;background:#D6ECFF;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:500">1</span><strong style="font-size:28px">Tell us about them</strong><span style="font-size:18px;line-height:1.5">A few simple questions, easy to answer on any phone</span></div>
+    <div class="card" style="display:flex;flex-direction:column;gap:12px"><span style="width:64px;height:64px;border-radius:50%;background:#D6ECFF;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:500">2</span><strong style="font-size:28px">Listen for free</strong><span style="font-size:18px;line-height:1.5">Hear their name sung. Not quite right? Fix it in one tap.</span></div>
+    <div class="card" style="display:flex;flex-direction:column;gap:12px"><span style="width:64px;height:64px;border-radius:50%;background:#D6ECFF;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:500">3</span><strong style="font-size:28px">Send it with love</strong><span style="font-size:18px;line-height:1.5">By message or email on the day. See their smile on video.</span></div>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px">
+    <div class="card" style="background:#1238B4;color:#fff;display:flex;flex-direction:column;gap:16px">
+      <span style="font-weight:500;color:#FFCF30;font-size:18px">The whole family, one song</span>
+      <strong style="font-size:42px;line-height:1.05">Send a link to the family chat. Everyone adds a memory.</strong>
+      <div style="display:flex">
+        <span style="width:52px;height:52px;border-radius:50%;background:#FFCF30;border:3px solid #1238B4;display:flex;align-items:center;justify-content:center;color:#0B2575;font-weight:500">L</span>
+        <span style="width:52px;height:52px;border-radius:50%;background:#2EAF6E;border:3px solid #1238B4;display:flex;align-items:center;justify-content:center;font-weight:500;margin-left:-12px">M</span>
+        <span style="width:52px;height:52px;border-radius:50%;background:#fff;border:3px solid #1238B4;display:flex;align-items:center;justify-content:center;color:#0B2575;font-weight:500;margin-left:-12px">D</span>
+        <span style="width:52px;height:52px;border-radius:50%;background:#D6ECFF;border:3px solid #1238B4;display:flex;align-items:center;justify-content:center;color:#0B2575;font-weight:500;margin-left:-12px">+4</span>
+      </div>
+      <a class="btn by" href="#" style="align-self:flex-start;height:52px">Start a family song</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center"><div><div style="font-weight:500;font-size:18px">A song</div><div style="font-size:64px;font-weight:500;line-height:1">$29</div></div><span style="font-size:17px;line-height:1.5;max-width:260px">Full song and MP3, gift page, delivery on the day, their smile on video</span></div>
+      <div class="card" style="background:#FFCF30;display:flex;justify-content:space-between;align-items:center"><div><div style="font-weight:500;font-size:18px">Gift set</div><div style="font-size:64px;font-weight:500;line-height:1">$55</div></div><span style="font-size:17px;line-height:1.5;max-width:260px">Plus a second version, a photo slideshow and printable lyrics</span></div>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="frame" style="height:560px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;justify-content:space-between;font-size:16px"><span style="font-weight:500">Step 1 of 4</span><span>Saved as you go</span></div>
+        <h3 style="margin:0;font-size:36px;font-weight:500;line-height:1.1">Who is the song for?</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><button type="button" class="opt on">Grandma</button><button type="button" class="opt">Mum</button><button type="button" class="opt">Dad</button><button type="button" class="opt">My child</button><button type="button" class="opt">Partner</button><button type="button" class="opt">Friend</button><button type="button" class="opt">Someone else</button></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><label for="dn" style="font-size:17px;font-weight:500">Their name, the way the family says it</label><input id="dn" type="text" value="Grandma Rose" class="inp"></div>
+        <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px">No sign-up needed</span><button type="button" class="btn bc" style="border:none;height:56px">Next</button></div>
+      </div>
+      <figcaption style="font-size:19px;font-weight:500">1. Tell us who it's for</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="frame" style="height:560px;display:grid;grid-template-columns:1fr 1fr">
+        <div style="overflow:hidden"><img src="/_blob/2892b385f1c5f1e8dedf7df3815e506f" alt="A tangerine gift box tied with blue ribbon" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:40px 32px;display:flex;flex-direction:column;gap:16px;justify-content:center">
+          <span style="font-size:18px;font-weight:500;color:#1238B4">Lily made a song for you</span>
+          <h3 style="margin:0;font-size:48px;font-weight:500;line-height:1">Grandma Rose</h3>
+          <button type="button" class="btn bc" style="border:none;height:72px;font-size:22px;margin-top:8px">Play my song</button>
+          <span style="font-size:16px">Make sure the sound is on</span>
+        </div>
+      </div>
+      <figcaption style="font-size:19px;font-weight:500">2. Grandma opens it on her tablet</figcaption>
+    </figure>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

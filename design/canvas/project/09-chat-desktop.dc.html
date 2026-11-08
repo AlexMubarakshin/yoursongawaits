@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chat, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#00704E}a:hover{color:#101413}
+.ch{font-family:Manrope,system-ui,sans-serif;color:#101413;background:#F3F5F4}
+.ch *{box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:16px;font-weight:500;font-size:17px;text-decoration:none}
+.bm{background:#00B37E;color:#101413}
+.bk{background:#101413;color:#fff}
+.bw{background:#fff;color:#101413}
+.us{align-self:flex-end;background:#00B37E;color:#101413;border-radius:20px 20px 6px 20px;padding:12px 16px;max-width:78%;font-size:16px;line-height:1.45;font-weight:500}
+.them{align-self:flex-start;background:#fff;border-radius:20px 20px 20px 6px;padding:12px 16px;max-width:78%;font-size:16px;line-height:1.45}
+.qr{display:inline-flex;align-items:center;height:40px;padding:0 16px;border-radius:12px;border:1.5px solid #101413;font-size:14px;font-weight:600;background:#fff}
+.scr{position:relative;border-radius:24px;overflow:hidden;background:#fff;border:1px solid #CDD3D0;display:flex;flex-direction:column}
+.cap{font-size:15px;color:#4A524F;line-height:1.4}
+.qb{height:40px;padding:0 16px;border-radius:12px;border:1px solid #B9C2BE;font:inherit;font-size:14px;font-weight:500;background:#fff;color:#101413}
+.qb.on{border-color:#00B37E;background:#E3F5EE}
+.thr .them{background:#F3F5F4}
+.mh{height:64px;display:flex;align-items:center;gap:12px;padding:0 20px;border-bottom:1px solid #E1E5E3}
+.av{width:40px;height:40px;border-radius:50%;background:#00B37E;display:flex;align-items:center;justify-content:center;font-weight:500;flex:none}
+.comp{display:flex;gap:8px;align-items:center;padding:12px 16px;border-top:1px solid #E1E5E3}
+.comp input{flex:1;height:44px;border:1px solid #CDD3D0;border-radius:12px;padding:0 16px;font:inherit;font-size:15px;color:#101413;background:#fff}
+.ib{width:44px;height:44px;border-radius:12px;border:none;background:#00B37E;display:flex;align-items:center;justify-content:center;flex:none}
+.stk{background:#FFE066;border-radius:14px;padding:8px 12px;font-weight:500;font-size:14px;display:inline-block}
+</style>
+</helmet>
+<div class="ch" style="width:1440px;height:2380px;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 80px">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#101413;font-weight:500;font-size:22px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34"><path d="M4 8a6 6 0 0 1 6-6h14a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H13l-7 6v-6.5A6 6 0 0 1 4 18z" fill="#00B37E"></path><path d="M14 18a2 2 0 1 1-1.4-1.9V9l7-1.4v8.5a2 2 0 1 1-1.4-1.9V9.6L14 10.5z" fill="#101413"></path></svg>OpenYourSong</a>
+    <nav style="display:flex;gap:32px;font-weight:500;font-size:15px"><a href="#" style="color:#101413;text-decoration:none">How it works</a><a href="#" style="color:#101413;text-decoration:none">Examples</a><a href="#" style="color:#101413;text-decoration:none">Group gift</a><a href="#" style="color:#101413;text-decoration:none">Pricing</a></nav>
+    <a class="btn bk" href="#" style="height:44px;font-size:15px">Start chatting</a>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 560px;gap:72px;padding:60px 80px 80px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span class="stk" style="align-self:flex-start">It starts with a chat</span>
+      <h1 style="margin:0;font-size:80px;line-height:1;font-weight:800;letter-spacing:-.03em">Tell us about them like you'd tell a friend. We'll turn it into a song.</h1>
+      <p style="margin:0;font-size:20px;line-height:1.5;max-width:560px">Answer a few questions in a chat, hear a free preview with their name, then send it at the right moment. Works in your browser and in Telegram.</p>
+      <div style="display:flex;gap:12px"><a class="btn bm" href="#">Start the chat, preview is free</a><a class="btn bw" href="#">Play an example</a></div>
+      <span style="font-size:15px;font-weight:500">$29 after the preview · written and sung with AI</span>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div style="height:520px;border-radius:28px;overflow:hidden"><img src="/_blob/d013d6e315836c683e8ad903fab40d3f" alt="Max smiling as he types the story about Anna into the chat in a café" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <figcaption style="display:flex;align-items:center;gap:12px"><button aria-label="Play Anna's song preview" style="width:44px;height:44px;border-radius:50%;background:#101413;border:none;display:flex;align-items:center;justify-content:center;flex:none"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Anna's song, from Max's chat</strong><span style="font-size:14px;color:#4A524F">Preview · 0:40 · four messages about tea at 6am and a yellow bike</span></span></figcaption>
+    </figure>
+  </section>
+
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
+    <div style="background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="stk" style="align-self:flex-start;background:#E6EAE8">3 min</span><strong style="font-size:24px">Chat about them</strong><span style="font-size:16px;line-height:1.55">We ask, you answer. Tap a suggestion or type freely.</span></div>
+    <div style="background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="stk" style="align-self:flex-start;background:#E6EAE8">free</span><strong style="font-size:24px">Hear it in the chat</strong><span style="font-size:16px;line-height:1.55">The preview arrives like a voice message. Check how their name sounds.</span></div>
+    <div style="background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="stk" style="align-self:flex-start;background:#E6EAE8">on the day</span><strong style="font-size:24px">Send it as a message</strong><span style="font-size:16px;line-height:1.55">WhatsApp, iMessage, Telegram or email. Their reaction comes back here.</span></div>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:20px">
+    <div style="background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:8px"><span style="font-weight:500">Song</span><span style="font-size:60px;font-weight:500">$29</span><span style="font-size:15px;line-height:1.6">Full song + MP3, gift page, delivery, reaction video</span></div>
+    <div style="background:#00B37E;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:8px"><span style="font-weight:500">Bundle</span><span style="font-size:60px;font-weight:500">$55</span><span style="font-size:15px;line-height:1.6">+ second version, photo slideshow, printable lyrics</span></div>
+    <div style="background:#101413;color:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#00B37E">Group chat → group song</span><strong style="font-size:26px;line-height:1.2">Drop our link in the family chat. Everyone adds a line, one person pays.</strong><a class="btn bm" href="#" style="height:48px;align-self:flex-start;font-size:15px">Start a group song</a></div>
+  </section>
+
+  <section style="padding:0 80px 80px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font-size:40px;font-weight:700;letter-spacing:-.02em">How it looks in use</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="scr thr" style="height:640px">
+        <div class="mh"><span class="av">O</span><div style="flex:1"><div style="font-weight:500">OpenYourSong</div><div style="font-size:13px;color:#4A524F">Song for Anna · preview ready</div></div><button aria-label="More" style="width:40px;height:40px;border:none;background:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path d="M5 12h.01M12 12h.01M19 12h.01" stroke="#101413" stroke-width="3" stroke-linecap="round" fill="none"></path></svg></button></div>
+        <div style="flex:1;padding:20px;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+          <span style="align-self:center;font-size:12px;color:#6B7370">Today 14:32</span>
+          <div class="us">She makes tea for everyone at 6am and still rides her yellow bike from uni</div>
+          <div class="them">Quick check before the full song. Is this how you say her name?</div>
+          <div class="them" style="display:flex;align-items:center;gap:12px"><button aria-label="Play name" style="width:36px;height:36px;border-radius:50%;background:#00B37E;border:none;display:flex;align-items:center;justify-content:center;flex:none"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#101413"></path></svg></button><span>Anna</span><span style="font-size:13px;color:#4A524F">0:08</span></div>
+          <div class="us">Yes, perfect</div>
+          <div class="them" style="display:flex;flex-direction:column;gap:8px;width:72%"><span>Here's the start of her song</span><div style="display:flex;align-items:center;gap:12px"><button aria-label="Play preview" style="width:36px;height:36px;border-radius:50%;background:#00B37E;border:none;display:flex;align-items:center;justify-content:center;flex:none"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#101413"></path></svg></button><div style="flex:1;height:4px;border-radius:2px;background:#DDE2DF;position:relative"><span style="position:absolute;left:0;top:0;width:30%;height:4px;border-radius:2px;background:#00B37E"></span></div><span style="font-size:13px;color:#4A524F">0:40</span></div></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto"><button class="qb on">Song · $29</button><button class="qb">Bundle · $55</button><button class="qb">Try another version</button></div>
+        </div>
+        <div class="comp"><label for="cm" style="position:absolute;left:-10000px">Message</label><input id="cm" placeholder="Write a message"><button class="ib" aria-label="Send"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="#101413" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      </div>
+      <span class="cap">1. Create: the questionnaire is the chat, with name check and checkout inside it</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="scr" style="height:640px;background:#F3F5F4">
+          <div class="mh" style="background:#fff"><span class="av" style="background:#FFE066">M</span><div><div style="font-weight:500">Max</div><div style="font-size:13px;color:#4A524F">online</div></div></div>
+          <div style="flex:1;padding:16px;display:flex;flex-direction:column;gap:8px">
+            <span style="align-self:center;font-size:12px;color:#6B7370">Sat 14 March, 09:00</span>
+            <div class="them" style="max-width:90%">Happy birthday love. I made you something, sound on</div>
+            <a href="#" style="align-self:flex-start;width:90%;background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:#101413;display:flex;flex-direction:column"><img src="/_blob/e354aac9a424c73c0156013efdeaf1bd" alt="A wrapped gift on a sunny bedside table" style="width:100%;height:132px;object-fit:cover;display:block"><span style="padding:12px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:14px">A song for Anna</strong><span style="font-size:12px;color:#4A524F">openyoursong.com</span></span></a>
+          </div>
+          <div class="comp" style="background:#fff"><label for="wm" style="position:absolute;left:-10000px">Reply</label><input id="wm" placeholder="Message"></div>
+        </div>
+        <span class="cap">2. Anna gets Max's message with a link that doesn't spoil the song</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="scr" style="height:640px">
+          <div style="padding:24px 20px 0;display:flex;flex-direction:column;gap:12px">
+            <span style="font-size:13px;color:#4A524F">From Max</span>
+            <strong style="font-size:24px;line-height:1.15">Anna, this song is yours</strong>
+            <div style="display:flex;align-items:center;gap:12px"><button aria-label="Pause" style="width:44px;height:44px;border-radius:50%;background:#101413;border:none;display:flex;align-items:center;justify-content:center;flex:none"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><rect x="5" y="4" width="3.5" height="12" fill="#fff"></rect><rect x="11.5" y="4" width="3.5" height="12" fill="#fff"></rect></svg></button><div style="flex:1;height:4px;border-radius:2px;background:#E6EAE8;position:relative"><span style="position:absolute;left:0;top:0;width:40%;height:4px;border-radius:2px;background:#00B37E"></span></div><span style="font-size:12px;color:#4A524F">0:51</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.45;margin-top:4px"><span style="color:#6B7370">Six a.m., the kettle sings</span><span style="color:#6B7370">a cup for every sleepy head</span><strong>Anna, you still ride that yellow bike</strong><span>like nothing's changed a thing</span></div>
+          </div>
+          <div style="margin:auto 16px 16px;display:flex;flex-direction:column;gap:12px">
+            <div style="height:168px;border-radius:16px;overflow:hidden"><img src="/_blob/7f51b06f9dac967318218abfed7fecc2" alt="Front camera preview of Anna laughing" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div>
+            <strong style="font-size:15px">Send Max a video reply?</strong>
+            <span style="font-size:13px;color:#4A524F;line-height:1.4">Only Max sees it</span>
+            <a class="btn bm" href="#" style="height:44px;font-size:15px">Record reaction</a>
+          </div>
+        </div>
+        <span class="cap">3. The gift page plays the song and offers a video reply</span>
+      </div>
+    </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2380}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var hs = [8,14,22,18,26,12,20,28,16,10,24,30,18,12,22,26,14,20,28,22,12,16,24,18,10,20,26,14,8,16,22,12,8,6];
+    return { wave: hs.map(function(v,i){ return { v: v, c: i < 10 ? '#00B37E' : '#B9C2BE' }; }) };
+  }
+}
+</script>
+</body>
+</html>

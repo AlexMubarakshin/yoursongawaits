@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Seven-Inch, mobile flows</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Archivo+Black&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#0B5D46}a:hover{color:#111}
+.si{font-family:Archivo,system-ui,sans-serif;color:#111;background:#E8E5DE}
+.si *{box-sizing:border-box}
+.blk{font-family:Archivo,sans-serif;font-weight:600}
+.disp{font-family:'Archivo Black',Archivo,sans-serif;font-weight:400}
+.col{display:flex;flex-direction:column;gap:12px}
+.lbl{font-size:16px;font-weight:500;height:28px}
+.ph{width:360px;height:780px;border-radius:44px;border:1px solid #111;background:#FAF8F4;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.btn{display:flex;align-items:center;justify-content:center;height:56px;border-radius:6px;font-weight:500;font-size:17px;text-decoration:none}
+.bpk{background:#FFB3C7;color:#111}
+.bdk{background:#111;color:#fff}
+.bol{border:1.5px solid currentColor;color:inherit}
+.chip{display:inline-flex;align-items:center;height:40px;padding:0 16px;border-radius:6px;border:1.5px solid #111;font:inherit;font-size:14px;font-weight:500;background:#fff;color:#111}
+</style>
+</helmet>
+<div class="si" style="width:2040px;height:900px;box-sizing:border-box;padding:40px;display:flex;gap:40px">
+
+  <div class="col"><span class="lbl">1 · Landing</span>
+    <div class="ph" style="background:#0B5D46;color:#FAF8F4">
+      <div style="height:64px;margin-top:16px;display:flex;align-items:center;justify-content:space-between;padding:0 20px"><span class="blk" style="font-size:17px">OpenYourSong</span><button aria-label="Menu" style="width:44px;height:44px;background:none;border:none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M3 7h16M3 15h16" stroke="#FAF8F4" stroke-width="2"></path></svg></button></div>
+      <div style="padding:8px 20px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-size:12px;font-weight:500">Limited edition of one</span>
+        <h1 class="disp" style="margin:0;font-size:46px;line-height:.92">A single, pressed for one person</h1>
+      </div>
+      <div style="position:relative;height:260px;margin:16px 20px 0;border-radius:8px;overflow:hidden"><img src="/_blob/1ecb7fcf2d9c4048c7cf5809c3ae3ddd" alt="A seven-inch record sliding out of a green sleeve" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="margin:16px 20px 0;display:flex;align-items:center;gap:12px"><button aria-label="Play Anna's single" style="width:44px;height:44px;border-radius:50%;background:#FFB3C7;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#111"></path></svg></button><div style="display:flex;flex-direction:column;gap:2px"><span class="blk" style="font-size:16px">Anna, "The Kettle's On at Six"</span><span style="font-size:12px">0:42 preview</span></div></div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px"><a class="btn bpk" href="#">Start their single, hear it free</a><span style="font-size:13px;text-align:center">$29 once you love it</span></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">2 · Create: choose the sound</span>
+    <div class="ph">
+      <div style="margin-top:20px;padding:12px 20px;display:flex;justify-content:space-between;font-size:14px;font-weight:500"><span>Side A · 3 of 4</span><span>Save &amp; exit</span></div>
+      <div style="padding:8px 20px;display:flex;flex-direction:column;gap:16px">
+        <h2 class="blk" style="margin:0;font-size:30px;line-height:1">What does Anna's song sound like?</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="background:#0B5D46;color:#FAF8F4;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>Acoustic</strong><span style="font-size:12px">Play 10s sample</span></div>
+          <div style="border:1.5px solid #111;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>Pop</strong><span style="font-size:12px">Play 10s sample</span></div>
+          <div style="border:1.5px solid #111;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>Ballad</strong><span style="font-size:12px">Play 10s sample</span></div>
+          <div style="border:1.5px solid #111;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>Country</strong><span style="font-size:12px">Play 10s sample</span></div>
+          <div style="border:1.5px solid #111;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>R&amp;B</strong><span style="font-size:12px">Play 10s sample</span></div>
+          <div style="border:1.5px solid #111;border-radius:6px;padding:16px;height:96px;display:flex;flex-direction:column;justify-content:space-between"><strong>More…</strong><span style="font-size:12px">rock, jazz, kids</span></div>
+        </div>
+        <span style="font-size:14px;font-weight:500">Voice</span>
+        <div style="display:flex;gap:8px"><button type="button" class="chip" style="background:#111;color:#fff">Female</button><button type="button" class="chip">Male</button></div>
+        <span style="font-size:14px;font-weight:500">Mood</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="chip">Tender</button><button type="button" class="chip" style="background:#FFB3C7">Warm &amp; funny</button><button type="button" class="chip">Upbeat</button></div>
+      </div>
+      <div style="margin-top:auto;padding:20px"><a class="btn bdk" href="#">Write the lyrics</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">3 · Preview + name check</span>
+    <div class="ph">
+      <div style="margin-top:20px;padding:12px 20px;font-size:14px;font-weight:500;color:#0B5D46">Test pressing · free</div>
+      <div style="height:200px;margin:8px 20px 0;border-radius:8px;overflow:hidden"><img src="/_blob/1ecb7fcf2d9c4048c7cf5809c3ae3ddd" alt="Anna's test pressing on the turntable" style="width:100%;height:100%;object-fit:cover;display:block;object-position:62% 50%"></div>
+      <div style="padding:16px 20px;display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;justify-content:space-between;font-size:13px"><span>0:12</span><span>0:40 preview</span></div>
+        <div style="height:8px;background:#E6E2DA;border-radius:3px;position:relative"><span style="position:absolute;left:0;top:0;width:30%;height:8px;background:#0B5D46;border-radius:3px"></span></div>
+        <div style="display:flex;gap:8px"><button type="button" class="chip" style="background:#111;color:#fff">Take 1</button><button type="button" class="chip">Take 2</button></div>
+        <div style="background:#fff;border:1.5px solid #111;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:12px">
+          <strong>Is "Anna" sung right?</strong>
+          <div style="display:flex;gap:8px"><a class="btn bdk" href="#" style="flex:1;height:44px;font-size:14px">Yes</a><a class="btn bol" href="#" style="flex:1;height:44px;font-size:14px">Spell it by sound</a></div>
+        </div>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:8px"><a class="btn bdk" href="#">Press the full single, $29</a><a class="btn bol" href="#">Deluxe with B-side, $55</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">4 · Gift: sealed sleeve</span>
+    <div class="ph" style="background:#0B5D46;color:#FAF8F4">
+      <div style="padding:72px 24px 0;text-align:center;display:flex;flex-direction:column;gap:8px"><span style="font-size:12px;font-weight:500">A gift from Max</span><h2 class="blk" style="margin:0;font-size:32px;line-height:1">You've got a record</h2></div>
+      <div style="margin:32px 24px 0;height:300px;border-radius:8px;overflow:hidden"><img src="/_blob/1ecb7fcf2d9c4048c7cf5809c3ae3ddd" alt="Anna's record sliding out of its green sleeve" style="width:100%;height:100%;object-fit:cover;display:block;object-position:60% 50%"></div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px"><span style="text-align:center;font-size:14px">Swipe the record out · sound on</span><a class="btn bpk" href="#">Play my single</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">5 · Gift: playing + reaction</span>
+    <div class="ph">
+      <div style="padding:56px 20px 0;display:flex;gap:16px;align-items:center">
+        <div style="width:88px;height:88px;flex-shrink:0;border-radius:6px;overflow:hidden"><img src="/_blob/1ecb7fcf2d9c4048c7cf5809c3ae3ddd" alt="Anna's record" style="width:100%;height:100%;object-fit:cover;display:block;object-position:62% 50%"></div>
+        <div style="display:flex;flex-direction:column;gap:2px"><span class="blk" style="font-size:22px">The Kettle's On at Six</span><span style="font-size:13px">for Anna · from Max</span></div>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:center"><button aria-label="Pause" style="width:44px;height:44px;border-radius:50%;border:none;background:#111;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><rect x="5" y="4" width="3.5" height="12" fill="#fff"></rect><rect x="11.5" y="4" width="3.5" height="12" fill="#fff"></rect></svg></button><div style="flex:1;height:8px;background:#E6E2DA;border-radius:3px;position:relative"><span style="position:absolute;left:0;top:0;width:40%;height:8px;background:#0B5D46;border-radius:3px"></span></div><span style="font-size:13px">0:51</span></div>
+      <div style="padding:8px 20px;display:flex;flex-direction:column;gap:8px;font-size:19px;line-height:1.35">
+        <span style="color:#7C7A74">The window's full of spring,</span>
+        <span class="blk" style="color:#0B5D46">Anna, you still ride that yellow bike</span>
+        <span>like nothing's changed a thing</span>
+      </div>
+      <div style="margin:auto 16px 16px;background:#FFB3C7;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:120px;border-radius:6px;overflow:hidden"><img src="/_blob/bc1ad65e9ec697448aae2891dbe7fa2c" alt="Camera preview of Anna listening" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div>
+        <strong>Send Max your reaction?</strong>
+        <span style="font-size:13px;line-height:1.45">Record a short video. Only Max sees it, and you can delete it.</span>
+        <div style="display:flex;gap:8px"><a class="btn bdk" href="#" style="flex:1;height:44px;font-size:15px">Record</a><a class="btn bol" href="#" style="flex:1;height:44px;font-size:15px">Skip</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2040,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

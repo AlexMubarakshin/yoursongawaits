@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Balloon, mobile flows</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#1238B4}a:hover{color:#0B2575}
+.bl{font-family:'Baloo 2',system-ui,sans-serif;color:#0B2575;background:#BFDDF7}
+.bl *{box-sizing:border-box}
+.col{display:flex;flex-direction:column;gap:12px}
+.lbl{font-size:16px;font-weight:500;height:28px}
+.ph{width:360px;height:780px;border-radius:44px;border:1px solid #0B2575;background:#D6ECFF;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.btn{display:flex;align-items:center;justify-content:center;height:60px;border-radius:20px;font-weight:500;font-size:19px;text-decoration:none}
+.bc{background:#1238B4;color:#fff}
+.by{background:#FFCF30;color:#0B2575}
+.bw{background:#fff;color:#0B2575}
+.card{background:#fff;border-radius:28px;padding:20px}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 20px;border-radius:20px;background:#fff;border:none;color:#0B2575;font:inherit;font-size:16px;font-weight:500}
+</style>
+</helmet>
+<div class="bl" style="width:2040px;height:900px;box-sizing:border-box;padding:40px;display:flex;gap:40px">
+
+  <div class="col"><span class="lbl">1 · Landing</span>
+    <div class="ph">
+      <div style="position:relative;height:60px;margin-top:16px;display:flex;align-items:center;justify-content:space-between;padding:0 20px"><span style="font-weight:500;font-size:20px">OpenYourSong</span><button aria-label="Menu" style="width:44px;height:44px;border-radius:50%;background:#fff;border:none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22"><path d="M3 7h16M3 15h16" stroke="#0B2575" stroke-width="2.5"></path></svg></button></div>
+      <div style="padding:24px 20px 0;display:flex;flex-direction:column;gap:12px">
+        <h1 style="margin:0;font-size:40px;line-height:1;font-weight:800">A song that's all about them</h1>
+        <p style="margin:0;font-size:18px;line-height:1.4">With their name in it. Listen free before you pay.</p>
+      </div>
+      <div style="margin:24px 20px 0;display:flex;flex-direction:column;gap:12px">
+        <div style="height:240px;border-radius:28px;overflow:hidden"><img src="/_blob/dd03ace139d67b7c31ae17bfb60bf331" alt="A grandmother dancing with her granddaughter in a sunflower garden" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="display:flex;align-items:center;gap:12px"><button aria-label="Play example" style="width:48px;height:48px;flex:none;border-radius:50%;background:#1238B4;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M7 4l13 8-13 8z"></path></svg></button><span style="display:flex;flex-direction:column;line-height:1.3"><span style="font-size:16px;font-weight:500">Lily's song for Grandma Rose</span><span style="font-size:14px">0:40 preview</span></span></div>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:8px"><a class="btn bc" href="#">Start a song</a><span style="text-align:center;font-size:15px">$29 only if you love it</span></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">2 · Create: tell us about her</span>
+    <div class="ph">
+      <div style="margin-top:32px;padding:12px 20px;display:flex;gap:8px"><span style="flex:1;height:12px;border-radius:5px;background:#1238B4"></span><span style="flex:1;height:12px;border-radius:5px;background:#1238B4"></span><span style="flex:1;height:12px;border-radius:5px;background:#fff"></span><span style="flex:1;height:12px;border-radius:5px;background:#fff"></span></div>
+      <div style="padding:12px 20px;display:flex;flex-direction:column;gap:16px">
+        <h2 style="margin:0;font-size:32px;font-weight:500;line-height:1.05">What does Grandma Rose love?</h2>
+        <span style="font-size:16px">Tap what fits, or write your own</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><button type="button" class="chip" style="background:#FFCF30">Her garden</button><button type="button" class="chip">Baking</button><button type="button" class="chip" style="background:#FFCF30">Dancing</button><button type="button" class="chip">Crosswords</button><button type="button" class="chip">Her cat</button><button type="button" class="chip">Old films</button></div>
+        <label for="rs" style="font-weight:500;font-size:17px">Anything else?</label>
+        <textarea id="rs" style="height:132px;border:none;border-radius:24px;padding:16px;font:inherit;font-size:17px;line-height:1.4;resize:none;background:#fff;color:#0B2575">She waltzes with me in the garden and calls me "my little sunflower"</textarea>
+      </div>
+      <div style="margin-top:auto;padding:20px"><a class="btn bc" href="#">Next</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">3 · Preview + name check</span>
+    <div class="ph">
+      <div style="margin-top:24px;padding:12px 20px"><h2 style="margin:0;font-size:30px;font-weight:500">Have a listen</h2></div>
+      <div style="padding:0 20px;display:flex;flex-direction:column;gap:16px">
+        <div class="card" style="display:flex;flex-direction:column;align-items:center;gap:12px">
+          <div style="width:100%;height:120px;border-radius:16px;overflow:hidden"><img src="/_blob/dd03ace139d67b7c31ae17bfb60bf331" alt="Grandma Rose and Lily dancing" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+          <button aria-label="Play preview" style="width:72px;height:72px;border-radius:50%;background:#1238B4;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button>
+          <div style="width:100%;height:12px;border-radius:5px;background:#D6ECFF;position:relative"><span style="position:absolute;left:0;top:0;width:30%;height:12px;border-radius:5px;background:#2EAF6E"></span></div>
+          <span style="font-size:15px">0:12 of the 40-second preview</span>
+        </div>
+        <div class="card" style="background:#FFCF30;display:flex;flex-direction:column;gap:12px">
+          <strong style="font-size:19px">Did we sing "Grandma Rose" right?</strong>
+          <div style="display:flex;gap:8px"><a class="btn bc" href="#" style="flex:1;height:48px;font-size:16px">Yes</a><a class="btn bw" href="#" style="flex:1;height:48px;font-size:16px">Fix it</a></div>
+        </div>
+        <a href="#" style="font-weight:500;text-align:center">Hear another version</a>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:8px"><a class="btn bc" href="#">Get the song, $29</a><a class="btn bw" href="#">Gift set, $55</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">4 · Gift: one big button</span>
+    <div class="ph" style="background:#FFCF30">
+      <div style="height:380px;overflow:hidden"><img src="/_blob/2892b385f1c5f1e8dedf7df3815e506f" alt="A tangerine gift box tied with blue ribbon" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="margin-top:32px;padding:0 20px;text-align:center;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:19px;font-weight:500">Lily made a song for you</span>
+        <h2 style="margin:0;font-size:50px;font-weight:500;line-height:1">Grandma Rose</h2>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px"><a class="btn bc" href="#" style="height:76px;font-size:24px">Play my song</a><span style="text-align:center;font-size:16px">Sound on</span></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">5 · Gift: playing + smile video</span>
+    <div class="ph">
+      <div style="padding:32px 20px 0;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+        <span style="font-weight:500">Lily's song for Grandma Rose</span>
+        <div style="width:100%;height:180px;border-radius:24px;overflow:hidden"><img src="/_blob/dd03ace139d67b7c31ae17bfb60bf331" alt="Grandma Rose and Lily dancing in the garden" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <button aria-label="Pause" style="width:64px;height:64px;border-radius:50%;background:#1238B4;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M9 5v14M15 5v14"></path></svg></button>
+        <span style="font-size:19px;font-weight:500;line-height:1.3">"Waltz me round the garden, Grandma Rose, my sunflower…"</span>
+        <div style="width:100%;height:12px;border-radius:5px;background:#fff;position:relative"><span style="position:absolute;left:0;top:0;width:40%;height:12px;border-radius:5px;background:#2EAF6E"></span></div>
+      </div>
+      <div class="card" style="margin:auto 16px 16px;display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:100px;border-radius:16px;overflow:hidden"><img src="/_blob/2133a4cd0e151fb436cadd8739f8b814" alt="Camera preview of Grandma Rose listening on her tablet" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div>
+        <strong style="font-size:18px">Show Lily your smile?</strong>
+        <span style="font-size:15px;line-height:1.4">We'll record a short video for Lily only. You can say no.</span>
+        <div style="display:flex;gap:8px"><a class="btn bc" href="#" style="flex:1;height:52px;font-size:17px">Yes, record</a><a class="btn" href="#" style="flex:1;height:52px;font-size:17px;background:#D6ECFF;color:#0B2575">No thanks</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2040,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

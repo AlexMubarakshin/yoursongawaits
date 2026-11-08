@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Karaoke, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#FFE14D}a:hover{color:#fff}
+.ko{font-family:'Inter Tight',system-ui,sans-serif;color:#E8DDF5;background:#2D1640}
+.ko *{box-sizing:border-box}
+.hl{background:#FFE14D;color:#2D1640;padding:0 16px;border-radius:10px}
+.dim{color:#B4A3CB}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:14px;font-weight:500;font-size:17px;text-decoration:none}
+.by{background:#FFE14D;color:#2D1640}
+.bo{border:1.5px solid #B4A3CB;color:#E8DDF5}
+.frame{border:1px solid #4B2E63;border-radius:24px;overflow:hidden;background:#24102F}
+.inp{width:100%;height:44px;border:1px solid #FFE14D;border-radius:8px;padding:0 8px;margin-left:-8px;font:inherit;color:#fff;background:#2D1640}
+.kchip{height:40px;padding:0 16px;border-radius:10px;border:none;background:#3B2152;color:#E8DDF5;font:inherit;font-size:14px}
+</style>
+</helmet>
+<div class="ko" style="width:1440px;height:2720px;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 80px">
+    <a href="#" style="font-weight:500;font-size:22px;color:#E8DDF5;text-decoration:none">open<span style="color:#FFE14D">your</span>song</a>
+    <nav style="display:flex;gap:36px;font-size:16px;font-weight:500"><a href="#" style="color:#E8DDF5;text-decoration:none">Listen</a><a href="#" style="color:#E8DDF5;text-decoration:none">How it works</a><a href="#" style="color:#E8DDF5;text-decoration:none">Together</a><a href="#" style="color:#E8DDF5;text-decoration:none">Pricing</a></nav>
+    <a class="btn by" href="#" style="height:44px;font-size:15px">Write their song</a>
+  </header>
+
+  <section style="padding:60px 80px 92px;display:grid;grid-template-columns:420px 1fr;gap:60px">
+    <div style="display:flex;flex-direction:column;gap:24px;padding-top:32px">
+      <span style="font-size:15px;font-weight:500;color:#FFE14D">Now playing · birthday · acoustic</span>
+      <p style="margin:0;font-size:22px;line-height:1.45">A song where every line is about them, and the chorus sings their name. We write it from your story, and it's ready in minutes.</p>
+      <a class="btn by" href="#">Write their song, hear it free</a>
+      <span style="font-size:15px" class="dim">$29 after the preview · made with AI, edited by you</span>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:12px">
+        <button aria-label="Pause example" style="width:52px;height:52px;border-radius:50%;background:#E8DDF5;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><rect x="5" y="4" width="3.5" height="12" fill="#2D1640"></rect><rect x="11.5" y="4" width="3.5" height="12" fill="#2D1640"></rect></svg></button>
+        <div style="flex:1;height:4px;background:#4B2E63;border-radius:2px;position:relative"><span style="position:absolute;left:0;top:0;width:42%;height:4px;background:#FFE14D;border-radius:2px"></span></div>
+        <span style="font-size:14px">0:51</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-weight:500;font-size:76px;line-height:1.08;letter-spacing:-.025em">
+      <span class="dim">The kettle's on at six,</span>
+      <span class="dim">the window's full of spring,</span>
+      <span><span class="hl">Anna,</span> you still ride</span>
+      <span>that yellow bike</span>
+      <span style="color:#9883B4">like nothing's changed a thing</span>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 80px;display:grid;grid-template-columns:2fr 1fr;gap:24px"><div style="position:relative;height:440px;border-radius:20px;overflow:hidden"><img src="/_blob/13df6040ed00b4887c32752b668980dd" alt="A woman singing into a microphone at a home party" style="width:100%;height:100%;object-fit:cover;display:block"></div><div style="position:relative;height:440px;border-radius:20px;overflow:hidden"><img src="/_blob/64ddd1497faca22c743cc98cd962c196" alt="Anna laughing with happy tears after hearing her song" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div></section>
+
+  <section style="padding:72px 80px;border-top:1.5px solid #4B2E63;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Verse 1</span><strong style="font-size:32px;line-height:1.1;color:#fff">You tell us about them</strong><span style="font-size:17px;line-height:1.5">The nickname, the yellow bike, the car karaoke. Three minutes on your phone.</span></div>
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Chorus</span><strong style="font-size:32px;line-height:1.1;color:#fff">You hear their name sung</strong><span style="font-size:17px;line-height:1.5">A free preview. Fix how the name sounds, edit any line, try another take.</span></div>
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Encore</span><strong style="font-size:32px;line-height:1.1;color:#fff">They sing along</strong><span style="font-size:17px;line-height:1.5">The lyrics light up as it plays. Their reaction video comes back to you.</span></div>
+  </section>
+
+  <section style="padding:60px 80px;background:#FFE14D;color:#2D1640;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:center">
+    <h2 style="margin:0;font-size:56px;font-weight:500;line-height:.98;letter-spacing:-.02em">Listen first, pay if it hits</h2>
+    <div style="display:flex;flex-direction:column;gap:8px"><span style="font-weight:500">The song</span><span style="font-size:64px;font-weight:500">$29</span><span style="font-size:16px;line-height:1.5">Full song, MP3, lyric page, delivery on the day, reaction video</span></div>
+    <div style="display:flex;flex-direction:column;gap:8px"><span style="font-weight:500">The bundle</span><span style="font-size:64px;font-weight:500">$55</span><span style="font-size:16px;line-height:1.5">+ second version, photo slideshow, printable lyrics</span></div>
+  </section>
+
+  <section style="padding:60px 80px 52px;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:30px;color:#fff">Duet with the family</strong><span style="font-size:17px">Everyone adds a line from the group chat. One person pays.</span></div>
+    <a class="btn bo" href="#">Start a group song</a>
+  </section>
+
+  <section style="padding:0 80px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="frame" style="height:560px;display:flex;flex-direction:column">
+        <div style="height:64px;border-bottom:1px solid #4B2E63;display:flex;align-items:center;justify-content:space-between;padding:0 28px"><span style="font-weight:500">open<span style="color:#FFE14D">your</span>song</span><span class="dim" style="font-size:14px">Step 3 of 4 · Lyrics</span></div>
+        <div style="padding:28px;display:flex;flex-direction:column;gap:16px;flex:1">
+          <span class="dim" style="font-size:14px">Verse 1 · click a line to edit</span>
+          <div style="font-size:22px;font-weight:500;line-height:1.4;display:flex;flex-direction:column;gap:4px;color:#fff">
+            <span>The kettle's on at six,</span>
+            <label for="kol" style="position:absolute;width:1px;height:1px;overflow:hidden">Edit line 2</label>
+            <input id="kol" class="inp" value="the window's full of spring,">
+            <span><span class="hl" style="padding:0 8px;border-radius:6px">Anna,</span> you still ride that yellow bike</span>
+          </div>
+          <div style="display:flex;gap:8px"><button class="kchip">Make it funnier</button><button class="kchip">Add the dog</button><button class="kchip">Rewrite line</button></div>
+          <div style="border:1px solid #4B2E63;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:12px">
+            <button aria-label="Play name clip" style="width:40px;height:40px;border-radius:50%;background:#FFE14D;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button>
+            <span style="flex:1;font-weight:500">Hear how we'll sing "Anna"</span>
+            <a href="#" style="font-weight:500;font-size:14px">Sounds wrong?</a>
+          </div>
+          <a class="btn by" href="#" style="margin-top:auto">Make the music, free preview</a>
+        </div>
+      </div>
+      <span class="dim" style="font-size:15px">1. Create: edit the lyrics and check the name</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="frame" style="height:560px;display:grid;grid-template-columns:1fr 1.3fr">
+        <div style="overflow:hidden"><img src="/_blob/d460a0186b29d520ca6822db1d986d01" alt="An empty club stage with a microphone under an amber spotlight" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:32px;display:flex;flex-direction:column;gap:8px;font-weight:500;font-size:28px;line-height:1.15">
+          <span style="font-size:14px;color:#FFE14D;margin-bottom:12px">From Max, for your birthday</span>
+          <span class="dim">the window's full of spring,</span>
+          <span style="color:#fff"><span class="hl" style="padding:0 8px;border-radius:8px">Anna,</span> you still ride</span>
+          <span style="color:#fff">that yellow bike</span>
+          <span style="color:#9883B4">like nothing's changed a thing</span>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:auto"><div style="flex:1;height:4px;background:#4B2E63;border-radius:2px;position:relative"><span style="position:absolute;left:0;top:0;width:40%;height:4px;background:#FFE14D"></span></div><span style="font-size:14px;font-weight:500">0:51 / 2:14</span></div>
+          <div style="display:flex;gap:12px;margin-top:16px"><a class="btn by" href="#" style="height:48px;font-size:15px;padding:0 20px;white-space:nowrap">Record a reaction</a><a class="btn bo" href="#" style="height:48px;font-size:15px;padding:0 20px">Download</a></div>
+        </div>
+      </div>
+      <span class="dim" style="font-size:15px">2. Gift: Anna sings along on the day</span>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2720}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

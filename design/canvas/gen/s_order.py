@@ -113,12 +113,12 @@ OUT.append(write('p-c-10-pay-with-credit-d.dc.html', desktop('Pay: subscriber wi
 mm = col(un('Send it when you’re ready', 30, tag='h1'), t('The link works now. We’ll remind you 10 minutes before 09:00 on 14 March', 16, True),
          card(linkbox() + sendrow(), bg='#FFD84D', pad=20, gap=12),
          ta('msg', 'Message, edit if you like', 'Something for your birthday. Turn the sound on', 72),
-         notice('Want it at midnight on the dot? Schedule it with Send Later in iMessage or Telegram'), gap=16)
+         notice('Want it at midnight on the dot? Schedule it with Send Later in iMessage'), gap=16)
 OUT.append(write('p-c-11-send-myself.dc.html', mobile('Order: I’ll send it myself', m_head('order'), mm, btn('I’ve sent it', 'bo', full=True, icon='check'))))
 main = col(un('Send it when you’re ready', 48, tag='h1'), t('The link works now. We’ll remind you 10 minutes before 09:00 on 14 March and again at 09:00', 18, True),
            card(strong('Gift link') + linkbox() + sendrow(('WhatsApp', 'SMS', 'Telegram', 'Share', 'QR', 'Email')), bg='#FFD84D', pad=28, gap=16),
            ta('msgd', 'Message, edit if you like', 'Something for your birthday. Turn the sound on', 72),
-           notice('Want it at midnight on the dot? Schedule it with Send Later in iMessage or Telegram'),
+           notice('Want it at midnight on the dot? Schedule it with Send Later in iMessage'),
            rowx(btn('I’ve sent it', 'bo', icon='check'), small('If you added her email and she hasn’t opened it 2 hours later, we email her too'), gap=20), gap=24)
 order_d('p-c-11-send-myself-d.dc.html', 'Order: I’ll send it myself, desktop', main, 2, h=980)
 

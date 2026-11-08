@@ -17,7 +17,10 @@ a{color:#111}a:hover{color:#FF7A00}
 .cp *{box-sizing:border-box}
 .un{font-family:Unbounded,Inter,sans-serif}
 .btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none}
-.bk{background:#111;color:#fff}
+.bk{background:#FFD84D;color:#111;border:2px solid #111}
+.bk:hover{background:#FFE27A;color:#111}
+.bi{background:#111;color:#fff;border:2px solid #111}
+.bi:hover{background:#333;color:#fff}
 .bw{background:#fff;color:#111}
 .tile{border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
 .frame{border:1px solid #DADADA;border-radius:24px;overflow:hidden;background:#fff}
@@ -52,7 +55,7 @@ button.bo{border:2px solid #111}
     <label style="border-radius:24px;background:#FFD84D;border:2px solid #111;padding:16px 20px;display:flex;gap:12px;align-items:flex-start;cursor:pointer"><input type="radio" name="how" checked style="width:22px;height:22px;accent-color:#111;margin:2px 0 0"><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">We’ll send it</strong><span style="font-size:14px;line-height:1.4">An email from “Max via openyoursong” with an Open your gift button. No lyrics in it</span></span></label>
   </fieldset>
   <fieldset style="border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px"><legend class="lbl">When</legend>
-    <div style="display:flex;gap:8px"><button class="btn bo" style="flex:1;height:44px;font-size:15px;border-color:#DADADA;border-width:1px">Now</button><button class="btn bk" style="flex:1;height:44px;font-size:15px">Pick a date</button></div>
+    <div style="display:flex;gap:8px"><button class="btn bo" style="flex:1;height:44px;font-size:15px;border-color:#DADADA;border-width:1px">Now</button><button class="btn bo" style="flex:1;height:44px;font-size:15px">Pick a date</button></div>
     <div style="display:flex;gap:12px"><div style="flex:1.4"><label for="dd" class="lbl">Date</label><input id="dd" class="inp tn" type="text" value="14 March 2027"></div><div style="flex:1"><label for="tt" class="lbl">Time</label><input id="tt" class="inp tn" type="text" value="09:00"></div></div>
     <div><label for="tz" class="lbl">Anna’s time zone</label><div style="position:relative"><input id="tz" class="inp" type="text" value="London, UK (GMT)" style="padding-left:44px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="position:absolute;left:16px;top:16px"><circle cx="11" cy="11" r="6" fill="none" stroke="#111" stroke-width="2"></circle><path d="M16 16l4 4" stroke="#111" stroke-width="2" stroke-linecap="round"></path></svg></div><span class="mut" style="display:block;margin-top:8px;font-size:14px">Search by city. Up to 365 days ahead</span></div>
   </fieldset>

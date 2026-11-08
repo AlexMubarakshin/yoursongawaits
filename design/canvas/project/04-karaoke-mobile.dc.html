@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Karaoke, mobile flows</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#FFE14D}a:hover{color:#fff}
+.ko{font-family:'Inter Tight',system-ui,sans-serif;color:#E8DDF5;background:#1E0E2B}
+.ko *{box-sizing:border-box}
+.col{display:flex;flex-direction:column;gap:12px}
+.lbl{font-size:16px;font-weight:500;height:28px;color:#E8DDF5}
+.ph{width:360px;height:780px;border-radius:44px;border:1px solid #4B2E63;background:#2D1640;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.hl{background:#FFE14D;color:#2D1640;padding:0 8px;border-radius:8px}
+.dim{color:#B4A3CB}
+.btn{display:flex;align-items:center;justify-content:center;height:56px;border-radius:14px;font-weight:500;font-size:17px;text-decoration:none}
+.by{background:#FFE14D;color:#2D1640}
+.bo{border:1.5px solid #B4A3CB;color:#E8DDF5}
+.chip{display:inline-flex;align-items:center;height:40px;padding:0 16px;border-radius:10px;background:#3B2152;font-size:14px;font-weight:500;border:none;color:#E8DDF5;font-family:inherit}
+</style>
+</helmet>
+<div class="ko" style="width:2040px;height:900px;box-sizing:border-box;padding:40px;display:flex;gap:40px">
+
+  <div class="col"><span class="lbl">1 · Landing</span>
+    <div class="ph">
+      <div style="height:60px;margin-top:16px;display:flex;align-items:center;justify-content:space-between;padding:0 20px"><span style="font-weight:500;font-size:18px">open<span style="color:#FFE14D">your</span>song</span><button aria-label="Menu" style="width:44px;height:44px;background:none;border:none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M3 7h16M3 15h16" stroke="#E8DDF5" stroke-width="2"></path></svg></button></div>
+      <div style="margin:8px 20px 0;height:200px;border-radius:20px;overflow:hidden"><img src="/_blob/13df6040ed00b4887c32752b668980dd" alt="A woman singing into a microphone at a home party" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="padding:24px 20px 0;display:flex;flex-direction:column;gap:4px;font-weight:500;font-size:32px;line-height:1.1;letter-spacing:-.02em">
+        <span class="dim">The kettle's on at six,</span>
+        <span><span class="hl">Anna,</span> you still</span>
+        <span>ride that yellow bike</span>
+        <span style="color:#9883B4">like nothing's changed…</span>
+      </div>
+      <p style="margin:16px 20px 0;font-size:16px;line-height:1.45">A song about them, with their name in the chorus. Ready in minutes.</p>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px"><a class="btn by" href="#">Write their song, free preview</a><span style="text-align:center;font-size:13px" class="dim">$29 after you hear it</span></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">2 · Create: who &amp; why</span>
+    <div class="ph">
+      <div style="margin-top:24px;padding:12px 20px;font-size:14px;font-weight:500" class="dim">Intro · 1 of 4</div>
+      <div style="padding:8px 20px;display:flex;flex-direction:column;gap:20px">
+        <h2 style="margin:0;font-size:30px;font-weight:500;line-height:1.1;color:#fff">Who's the song for?</h2>
+        <div style="display:flex;flex-direction:column;gap:8px"><label for="nm" style="font-size:14px">Their name</label><input id="nm" value="Anna" style="height:56px;border-radius:12px;border:1.5px solid #FFE14D;background:#24102F;color:#fff;font:inherit;font-size:20px;font-weight:500;padding:0 16px"></div>
+        <span style="font-size:14px">They are my…</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><button class="chip" style="background:#FFE14D;color:#2D1640">Partner</button><button class="chip">Mum</button><button class="chip">Dad</button><button class="chip">Friend</button><button class="chip">Sister</button><button class="chip">Colleague</button><button class="chip">Other</button></div>
+        <span style="font-size:14px">The occasion</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><button class="chip" style="background:#FFE14D;color:#2D1640">Birthday</button><button class="chip">Anniversary</button><button class="chip">Wedding</button><button class="chip">Just because</button></div>
+      </div>
+      <div style="margin-top:auto;padding:20px"><a class="btn by" href="#">Next: the story</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">3 · Preview + name check</span>
+    <div class="ph">
+      <div style="margin-top:32px;padding:12px 20px;font-size:13px;font-weight:500;color:#FFE14D">Free preview · take 1 of 2</div>
+      <div style="padding:12px 20px;display:flex;flex-direction:column;gap:4px;font-weight:500;font-size:28px;line-height:1.15">
+        <span class="dim">The kettle's on at six,</span>
+        <span style="color:#fff"><span class="hl">Anna,</span> you still ride</span>
+        <span style="color:#fff">that yellow bike</span>
+      </div>
+      <div style="padding:16px 20px;display:flex;align-items:center;gap:12px"><button aria-label="Pause" style="width:48px;height:48px;border-radius:50%;background:#E8DDF5;border:none;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><rect x="5" y="4" width="3.5" height="12" fill="#2D1640"></rect><rect x="11.5" y="4" width="3.5" height="12" fill="#2D1640"></rect></svg></button><div style="flex:1;height:4px;background:#4B2E63;border-radius:2px;position:relative"><span style="position:absolute;left:0;top:0;width:30%;height:4px;background:#FFE14D"></span></div><span style="font-size:13px">0:12/0:40</span></div>
+      <div style="margin:0 20px;background:#3B2152;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px">
+        <label for="kon" style="color:#fff;font-weight:500">Is "Anna" sung right?</label>
+        <div style="display:flex;gap:8px"><input id="kon" value="Anna" style="flex:1;min-width:0;height:44px;border-radius:10px;border:1px solid #4B2E63;background:#24102F;color:#fff;font:inherit;font-size:16px;padding:0 12px"><a class="btn by" href="#" style="height:44px;font-size:15px;padding:0 20px">Yes</a></div>
+        <span class="dim" style="font-size:13px">Type it how it sounds, for example "AH-na"</span>
+      </div>
+      <button class="chip" style="margin:16px 20px 0;align-self:flex-start">Try take 2</button>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:8px"><a class="btn by" href="#">Get the full song, $29</a><a class="btn bo" href="#">Bundle, $55</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">4 · Gift: first screen</span>
+    <div class="ph">
+      <div style="height:340px;overflow:hidden"><img src="/_blob/d460a0186b29d520ca6822db1d986d01" alt="An empty stage with a microphone under an amber spotlight" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="margin:auto 0;padding:0 24px 24px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-size:14px;font-weight:500;color:#FFE14D">Max · 14 March</span>
+        <h2 style="margin:0;font-size:44px;font-weight:500;line-height:1;color:#fff;letter-spacing:-.02em">This song is about <span class="hl">you</span></h2>
+        <span style="font-size:16px;line-height:1.45">Turn the sound up. The words light up as it plays</span>
+        <a class="btn by" href="#" style="margin-top:12px">Play it</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">5 · Gift: sing-along + reaction</span>
+    <div class="ph">
+      <div style="padding:72px 24px 0;display:flex;flex-direction:column;gap:8px;font-weight:500;font-size:32px;line-height:1.15">
+        <span class="dim">the window's full of spring,</span>
+        <span style="color:#fff"><span class="hl">Anna,</span> you still ride</span>
+        <span style="color:#fff">that yellow bike</span>
+        <span style="color:#9883B4">like nothing's changed a thing</span>
+        <span style="color:#9883B4">And Pickle barks along…</span>
+      </div>
+      <div style="padding:20px 24px;display:flex;align-items:center;gap:12px"><div style="flex:1;height:4px;background:#4B2E63;border-radius:2px;position:relative"><span style="position:absolute;left:0;top:0;width:40%;height:4px;background:#FFE14D"></span></div><span style="font-size:13px">0:51</span></div>
+      <div style="margin:auto 16px 16px;background:#FFE14D;color:#2D1640;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:120px;border-radius:12px;overflow:hidden"><img src="/_blob/64ddd1497faca22c743cc98cd962c196" alt="Camera preview of Anna listening" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div>
+        <strong>Record your reaction for Max?</strong>
+        <span style="font-size:13px;line-height:1.45">Only Max sees it. You can delete it any time.</span>
+        <div style="display:flex;gap:8px"><a class="btn" href="#" style="flex:1;height:44px;font-size:15px;background:#2D1640;color:#FFE14D">Record</a><a class="btn" href="#" style="flex:1;height:44px;font-size:15px;border:1.5px solid #2D1640;color:#2D1640">Not now</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2040,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Airmail, mobile flows</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#2447D8}a:hover{color:#15171C}
+.am{font-family:'Bricolage Grotesque',system-ui,sans-serif;color:#15171C;background:#E9E8E2}
+.am *{box-sizing:border-box}
+.col{display:flex;flex-direction:column;gap:12px}
+.lbl{font-size:16px;font-weight:500;height:28px}
+.ph{width:360px;height:780px;border-radius:44px;border:1px solid #15171C;background:#F7F6F1;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.top{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;font-weight:500;font-size:16px;margin-top:20px}
+.btn{display:flex;align-items:center;justify-content:center;height:56px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;border:2px solid #15171C}
+.bp{background:#2447D8;color:#fff;border-color:#2447D8}
+.bg{background:#fff;color:#15171C}
+.chip{display:inline-flex;align-items:center;height:36px;padding:0 12px;border-radius:12px;border:1px solid #B9BBC2;font:inherit;font-size:14px;background:#fff;color:#15171C}
+.k{font-size:12px;font-weight:500;color:#2447D8}
+.play{width:52px;height:52px;border-radius:50%;background:#2447D8;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+</style>
+</helmet>
+<div class="am" style="width:2040px;height:900px;box-sizing:border-box;padding:40px;display:flex;gap:40px">
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs><pattern id="air2" width="40" height="10" patternUnits="userSpaceOnUse"><polygon points="0,0 10,0 0,10" fill="#2447D8"></polygon><polygon points="20,0 30,0 20,10 10,10" fill="#FFB400"></polygon><polygon points="40,0 40,10 30,10" fill="#2447D8"></polygon></pattern></defs></svg>
+
+  <div class="col"><span class="lbl">1 · Landing</span>
+    <div class="ph">
+      <svg aria-hidden="true" width="360" height="10" style="display:block"><rect width="360" height="10" fill="url(#air2)"></rect></svg>
+      <div class="top"><span>OpenYourSong</span><button aria-label="Menu" style="background:none;border:none;width:44px;height:44px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M3 7h16M3 15h16" stroke="#15171C" stroke-width="2"></path></svg></button></div>
+      <div style="padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+        <span class="k">Delivered on the day</span>
+        <h1 style="margin:0;font-size:42px;line-height:1;font-weight:800;letter-spacing:-.02em">A song with their name, right on time</h1>
+        <div style="position:relative;height:180px;border-radius:12px;overflow:hidden;border:2px solid #15171C;margin-top:8px"><img src="/_blob/3a168d01d99bc8131ed360bbd9415aa0" alt="Airmail envelope on a kitchen table" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 78%"></div>
+        <div style="display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:12px 12px;border:2px solid #15171C">
+          <button class="play" aria-label="Play example" style="width:40px;height:40px"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button>
+          <span style="font-size:14px;font-weight:500">Hear Anna's song · 0:42</span>
+        </div>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px">
+        <a class="btn bp" href="#">Start their song, free preview</a>
+        <span style="text-align:center;font-size:13px">$29 after you hear it · made with AI, edited by you</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">2 · Create: their story</span>
+    <div class="ph">
+      <div class="top"><button aria-label="Back" style="background:none;border:none;width:44px;height:44px;text-align:left;padding:0"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M14 4l-7 7 7 7" stroke="#15171C" stroke-width="2" fill="none"></path></svg></button><span style="font-size:14px;font-weight:500">Step 2 of 4</span><span style="width:44px"></span></div>
+      <div style="display:flex;gap:8px;padding:0 20px"><span style="flex:1;height:8px;border-radius:3px;background:#2447D8"></span><span style="flex:1;height:8px;border-radius:3px;background:#2447D8"></span><span style="flex:1;height:8px;border-radius:3px;background:#D5D8E2"></span><span style="flex:1;height:8px;border-radius:3px;background:#D5D8E2"></span></div>
+      <div style="padding:24px 20px;display:flex;flex-direction:column;gap:16px">
+        <h2 style="margin:0;font-size:30px;line-height:1.1;font-weight:500">What should the song remember about Anna?</h2>
+        <label for="story1" style="font-size:14px">A few sentences are enough. Details make it hers.</label>
+        <textarea id="story1" style="height:192px;border:1px solid #B9BBC2;border-radius:14px;padding:16px;font:inherit;font-size:16px;line-height:1.45;resize:none;background:#fff">We met at uni in 2009. She makes tea for everyone at 6am, sings badly in the car and still has the yellow bike</textarea>
+        <span style="font-size:13px;text-align:right">142 / 1500</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <button type="button" class="chip">How you met</button><button type="button" class="chip">Inside joke</button><button type="button" class="chip">Her favourite phrase</button><button type="button" class="chip">What you're proud of</button>
+        </div>
+      </div>
+      <div style="margin-top:auto;padding:20px"><a class="btn bp" href="#">Next: choose the sound</a></div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">3 · Preview + name check</span>
+    <div class="ph">
+      <div class="top"><span style="font-size:14px;font-weight:500">Step 4 of 4</span><span style="font-size:14px;font-weight:500">Free preview</span></div>
+      <div style="padding:12px 20px;display:flex;flex-direction:column;gap:16px">
+        <div style="background:#FFB400;border:2px solid #15171C;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px">
+          <strong style="font-size:19px">Does "Anna" sound right?</strong>
+          <div style="display:flex;gap:12px;align-items:center"><button class="play" aria-label="Play name clip" style="width:40px;height:40px;background:#15171C"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="font-size:14px">0:08 · sung in the voice you chose</span></div>
+          <div style="display:flex;gap:8px"><a class="btn" href="#" style="flex:1;height:44px;font-size:15px;background:#15171C;color:#fff">Sounds right</a><a class="btn bg" href="#" style="flex:1;height:44px;font-size:15px">Fix it</a></div>
+        </div>
+        <div style="background:#fff;border:2px solid #15171C;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;justify-content:space-between;font-size:14px"><strong>Version 1 of 2</strong><span>0:12 / 0:40</span></div>
+          <div style="display:flex;gap:3px;align-items:center;height:44px"><sc-for list="{{wave}}" as="h" hint-placeholder-count="40"><span style="width:4px;border-radius:2px;background:{{h.c}};height:{{h.v}}px"></span></sc-for></div>
+          <span style="font-size:15px;line-height:1.45">"Anna, the kettle's on at six, the window's full of spring"</span>
+          <a href="#" style="font-size:14px;font-weight:500">Hear the other version</a>
+        </div>
+      </div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px">
+        <a class="btn bp" href="#">Get the full song, $29</a>
+        <a class="btn bg" href="#">Gift bundle, $55</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">4 · Gift: Anna opens the link</span>
+    <div class="ph" style="background:#2447D8;color:#fff">
+      <div style="padding:72px 24px 0;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+        <span style="font-size:13px;font-weight:500;color:#FFB400">Delivered 14 March · 09:00</span>
+        <h2 style="margin:0;font-size:34px;line-height:1.05;font-weight:500">Max wrote you a song</h2>
+      </div>
+      <div style="margin:36px 24px 0;height:260px;border-radius:12px;overflow:hidden;border:2px solid #15171C"><img src="/_blob/3a168d01d99bc8131ed360bbd9415aa0" alt="An airmail envelope for Anna on the kitchen table" style="width:100%;height:100%;object-fit:cover;display:block;object-position:72% 70%"></div>
+      <div style="margin-top:auto;padding:20px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:14px;text-align:center">Turn the sound on</span>
+        <a class="btn" href="#" style="background:#FFB400;color:#15171C">Open your song</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col"><span class="lbl">5 · Gift: playing + reaction</span>
+    <div class="ph">
+      <div style="background:#2447D8;color:#fff;padding:52px 20px 24px;display:flex;flex-direction:column;gap:16px">
+        <span style="font-size:13px;font-weight:500;color:#FFB400">For Anna · from Max</span>
+        <div style="display:flex;gap:12px;align-items:center"><button class="play" aria-label="Pause" style="background:#FFB400"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20"><rect x="5" y="4" width="3.5" height="12" fill="#15171C"></rect><rect x="11.5" y="4" width="3.5" height="12" fill="#15171C"></rect></svg></button><div style="flex:1;height:8px;background:#5470E0;border-radius:3px;position:relative"><span style="position:absolute;left:0;top:0;height:8px;width:38%;background:#fff;border-radius:3px"></span></div><span style="font-size:13px">0:51</span></div>
+      </div>
+      <div style="padding:24px 20px;display:flex;flex-direction:column;gap:12px;font-size:20px;line-height:1.35">
+        <span style="color:#8A8D96">The window's full of spring,</span>
+        <span style="font-weight:500">Anna, you still ride that yellow bike</span>
+        <span>like nothing's changed a thing</span>
+        <span style="color:#8A8D96">And every six a.m. the kettle…</span>
+      </div>
+      <div style="margin:auto 16px 16px;background:#fff;border:2px solid #15171C;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:120px;border-radius:12px;overflow:hidden"><img src="/_blob/2744d11a0bc2b86bbfb658477ac52617" alt="Camera preview of Anna listening" style="width:100%;height:100%;object-fit:cover;display:block;object-position:50% 22%"></div>
+        <strong style="font-size:16px">Record your reaction for Max?</strong>
+        <span style="font-size:13px;line-height:1.45">Only Max sees it. You can watch it first and delete it.</span>
+        <div style="display:flex;gap:8px"><a class="btn bp" href="#" style="flex:1;height:44px;font-size:15px">Record</a><a class="btn bg" href="#" style="flex:1;height:44px;font-size:15px">Not now</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2040,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var hs = [10,18,26,34,22,40,30,16,24,38,42,28,20,34,40,26,14,22,36,40,30,18,26,34,42,32,20,12,24,38,30,22,16,28,40,34,20,26,18,10];
+    return { wave: hs.map(function(v,i){ return { v: v, c: i < 12 ? '#2447D8' : '#C9CEDD' }; }) };
+  }
+}
+</script>
+</body>
+</html>

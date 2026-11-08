@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Airmail, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#2447D8}a:hover{color:#15171C}
+.am{font-family:'Bricolage Grotesque',system-ui,sans-serif;color:#15171C;background:#F7F6F1}
+.am *{box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;gap:12px;height:52px;padding:0 24px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;border:2px solid #15171C}
+.btn-p{background:#2447D8;color:#fff;border-color:#2447D8}
+.btn-g{background:transparent;color:#15171C}
+.chip{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:12px;border:1.5px solid #15171C;font-size:14px;font-weight:500;background:#fff}
+.stamp{background:#fff;padding:24px;border:2px dashed #15171C;border-radius:6px;display:flex;flex-direction:column;gap:12px}
+.k{font-size:12px;font-weight:500;color:#2447D8}
+.card{background:#fff;border-radius:16px;border:2px solid #15171C}
+.scr{background:#fff;border:1px solid #CFCDC4;border-radius:16px;overflow:hidden;height:560px}
+.appbar{height:56px;border-bottom:1px solid #E4E2DA;display:flex;align-items:center;justify-content:space-between;padding:0 32px}
+.sbtn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 16px;border-radius:10px;border:1px solid #B9BBC2;background:#fff;font:inherit;font-size:15px;font-weight:500;color:#15171C}
+button.btn{cursor:pointer}
+.play{width:56px;height:56px;border-radius:50%;background:#2447D8;display:flex;align-items:center;justify-content:center;border:none;flex-shrink:0}
+</style>
+</helmet>
+<div class="am" style="width:1440px;height:2640px;position:relative;overflow:hidden">
+  <svg aria-hidden="true" width="1440" height="14" style="display:block"><defs><pattern id="air" width="56" height="14" patternUnits="userSpaceOnUse"><polygon points="0,0 14,0 0,14" fill="#2447D8"></polygon><polygon points="14,0 28,0 14,14 0,14" fill="#F7F6F1"></polygon><polygon points="28,0 42,0 28,14 14,14" fill="#FFB400"></polygon><polygon points="42,0 56,0 42,14 28,14" fill="#F7F6F1"></polygon><polygon points="56,0 56,14 42,14" fill="#2447D8"></polygon></pattern></defs><rect width="1440" height="14" fill="url(#air)"></rect></svg>
+
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 80px">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#15171C;font-weight:500;font-size:22px">
+      <svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="3" fill="#FFB400" stroke="#15171C" stroke-width="2" stroke-dasharray="3 2"></rect><path d="M14 22.5a3 3 0 1 1-2-2.8V10l10-2v11.5a3 3 0 1 1-2-2.8V11.2l-6 1.2z" fill="#15171C"></path></svg>
+      OpenYourSong
+    </a>
+    <nav style="display:flex;gap:36px;font-size:16px;font-weight:500">
+      <a href="#" style="color:#15171C;text-decoration:none">How it works</a>
+      <a href="#" style="color:#15171C;text-decoration:none">Examples</a>
+      <a href="#" style="color:#15171C;text-decoration:none">Group gift</a>
+      <a href="#" style="color:#15171C;text-decoration:none">Pricing</a>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a href="#" style="color:#15171C;font-weight:500;text-decoration:none;font-size:16px">Sign in</a>
+      <a class="btn btn-p" href="#" style="height:44px;font-size:15px">Start a song</a>
+    </div>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 620px;gap:64px;padding:48px 80px 72px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div class="k">Personal songs · delivered on the day</div>
+      <h1 style="margin:0;font-size:84px;line-height:.98;font-weight:800;letter-spacing:-.025em">A song with their name, delivered right on time</h1>
+      <p style="margin:0;font-size:21px;line-height:1.5;max-width:540px">Tell us about them. We write and sing a song with their name in it, and it arrives the minute you pick. You get their reaction back.</p>
+      <div style="display:flex;gap:16px;align-items:center">
+        <a class="btn btn-p" href="#">Start their song, free preview</a>
+        <a class="btn btn-g" href="#">Hear an example</a>
+      </div>
+      <div style="display:flex;gap:24px;font-size:15px;font-weight:500">
+        <span>$29 after you hear it</span><span>·</span><span>Ready in minutes</span><span>·</span><span>Made with AI, edited by you</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="height:464px;border-radius:16px;overflow:hidden;border:1px solid #15171C"><img src="/_blob/3a168d01d99bc8131ed360bbd9415aa0" alt="Airmail envelope on a kitchen table next to morning tea" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <button class="play" aria-label="Play example song for Anna" style="width:48px;height:48px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-weight:500;font-size:16px">Anna's song, "The kettle's on at six"</span>
+          <span style="font-size:14px;color:#4A4D55">Birthday · acoustic · 0:42 preview</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 80px">
+    <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:28px">
+      <h2 style="margin:0;font-size:44px;font-weight:500;letter-spacing:-.02em">How it gets there</h2>
+      <span style="font-size:16px">About 3 minutes of your time</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <div class="stamp"><span class="k">Step 1</span><strong style="font-size:24px">Tell their story</strong><span style="font-size:16px;line-height:1.5">Who they are to you, the inside joke, what they love. Write alone or invite the family.</span></div>
+      <div class="stamp"><span class="k">Step 2</span><strong style="font-size:24px">Hear it before you pay</strong><span style="font-size:16px;line-height:1.5">A free preview with their name. Check how the name sounds and fix the spelling if needed.</span></div>
+      <div class="stamp"><span class="k">Step 3</span><strong style="font-size:24px">Pick the moment</strong><span style="font-size:16px;line-height:1.5">Send the link yourself or let us deliver it at 9:00 on the day. Their reaction comes back to you.</span></div>
+    </div>
+  </section>
+
+  <section style="background:#2447D8;color:#fff;padding:72px 80px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:16px;padding-right:24px">
+      <h2 style="margin:0;font-size:44px;font-weight:500;letter-spacing:-.02em;line-height:1.05">One price, and you hear it first</h2>
+      <p style="margin:0;font-size:17px;line-height:1.5">Pay only after the preview. The gift page, the delivery and their reaction video are included.</p>
+    </div>
+    <div style="background:#fff;color:#15171C;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px">
+      <span class="k">The song</span><span style="font-size:56px;font-weight:500">$29</span>
+      <span style="font-size:16px;line-height:1.6">Full song and MP3<br>Gift page with reveal<br>Scheduled delivery<br>Reaction video back to you</span>
+    </div>
+    <div style="background:#FFB400;color:#15171C;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px;border:2px solid #15171C">
+      <span class="k" style="color:#15171C">Gift bundle</span><span style="font-size:56px;font-weight:500">$55</span>
+      <span style="font-size:16px;line-height:1.6">Everything in the song<br>A second version<br>Photo slideshow video<br>Printable lyrics card</span>
+    </div>
+  </section>
+
+  <section style="padding:64px 80px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div class="card" style="padding:32px;display:flex;gap:24px;align-items:center">
+      <div style="width:176px;height:132px;flex-shrink:0;border-radius:10px;overflow:hidden;border:2px solid #15171C"><img src="/_blob/753681caffaf93a756329748141b4104" alt="A family around a kitchen table laughing at one phone" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:24px">From the whole family</strong><span style="font-size:16px;line-height:1.5">Share a link in the group chat. Everyone adds a memory, one person pays.</span><a href="#" style="font-weight:500">Start a group gift</a></div>
+    </div>
+    <div class="card" style="padding:32px;display:flex;gap:24px;align-items:center">
+      <div style="width:176px;height:132px;flex-shrink:0;border-radius:10px;overflow:hidden;border:2px solid #15171C"><img src="/_blob/2a17c1433c28b630a8a2c681eb0bba92" alt="A hand circling a date on a wall calendar above a small gift" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:24px">Never miss a date</strong><span style="font-size:16px;line-height:1.5">Occasions Calendar reminds you a week ahead, and songs cost less</span><a href="#" style="font-weight:500">See the calendar plan</a></div>
+    </div>
+  </section>
+
+  <section style="padding:24px 80px 0">
+    <div style="font-size:15px;font-weight:500;color:#2447D8;margin-bottom:20px">Flows</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="scr">
+          <div class="appbar"><span style="font-weight:500">OpenYourSong</span><span style="font-size:14px;color:#4A4D55">Step 4 of 4 · Preview</span></div>
+          <div style="padding:24px 32px;display:flex;flex-direction:column;gap:20px">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label for="nm" style="font-size:14px;font-weight:500">Name as it should be sung</label>
+              <div style="display:flex;gap:12px">
+                <input id="nm" type="text" value="Anna" style="flex:1;height:48px;border:1px solid #B9BBC2;border-radius:10px;padding:0 16px;font:inherit;font-size:16px;background:#fff;color:#15171C">
+                <button class="sbtn" type="button"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#15171C" stroke-width="1.8"><path d="M6 4l10 6-10 6z"></path></svg>Hear it, 0:08</button>
+              </div>
+              <span style="font-size:13px;color:#4A4D55">Sounds off? Spell it the way it is said, like "Ah-na"</span>
+            </div>
+            <div style="border:1px solid #D6D4CC;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div style="display:flex;gap:12px;align-items:center"><button class="play" aria-label="Play preview" style="width:44px;height:44px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><strong style="font-size:17px">Version 1 of 2</strong></div>
+                <span style="font-size:14px;color:#4A4D55">0:12 / 0:40</span>
+              </div>
+              <div style="display:flex;gap:3px;align-items:center;height:48px">
+                <sc-for list="{{wave}}" as="h" hint-placeholder-count="60"><span style="width:4px;border-radius:3px;background:{{h.c}};height:{{h.v}}px"></span></sc-for>
+              </div>
+              <span style="font-size:15px;line-height:1.5">"Anna, the kettle's on at six, the window's full of spring"</span>
+              <a href="#" style="font-size:14px;font-weight:500">Hear version 2</a>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center">
+              <button class="btn btn-p" type="button" style="flex:1;justify-content:center;font:inherit;font-weight:500;font-size:17px">Get the full song, $29</button>
+              <button class="btn btn-g" type="button" style="font:inherit;font-weight:500;font-size:17px">Bundle, $55</button>
+            </div>
+          </div>
+        </div>
+        <span style="font-size:15px">1. Create: hear the preview and check the name before paying</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="scr" style="background:#2447D8;color:#fff">
+          <div style="height:300px;overflow:hidden"><img src="/_blob/3a168d01d99bc8131ed360bbd9415aa0" alt="The airmail envelope waiting on the kitchen table" style="width:100%;height:100%;object-fit:cover;display:block;object-position:60% 70%"></div>
+          <div style="padding:28px 32px;display:flex;flex-direction:column;gap:12px">
+            <span style="font-size:14px;font-weight:500;color:#FFB400">14 March · 09:00</span>
+            <strong style="font-size:34px;line-height:1.1">Max wrote you a song</strong>
+            <span style="font-size:16px;line-height:1.5">Turn the sound on. It's about 2 minutes long.</span>
+            <div style="display:flex;gap:16px;align-items:center;margin-top:8px">
+              <button class="btn" type="button" style="background:#FFB400;color:#15171C;border-color:#FFB400;font:inherit;font-weight:500;font-size:17px">Open your song</button>
+              <span style="font-size:13px;line-height:1.5;max-width:300px">Next we'll ask if you'd like to record your reaction for Max. Your choice.</span>
+            </div>
+          </div>
+        </div>
+        <span style="font-size:15px">2. Gift: what Anna sees on 14 March</span>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2640}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var hs = [10,18,26,34,22,40,30,16,24,38,44,28,20,34,42,26,14,22,36,40,30,18,26,34,46,32,20,12,24,38,30,22,16,28,40,34,20,26,38,30,18,24,34,28,20,14,22,30,36,26,18,24,16,12,20,28,22,14,10,8];
+    return { wave: hs.map(function(v,i){ return { v: v, c: i < 18 ? '#2447D8' : '#C9CEDD' }; }) };
+  }
+}
+</script>
+</body>
+</html>

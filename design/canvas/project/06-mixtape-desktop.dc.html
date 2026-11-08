@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mixtape, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Archivo+Narrow:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#0E6262}a:hover{color:#111}
+.mx{font-family:'Archivo Narrow',system-ui,sans-serif;color:#111;background:#E9E7E1}
+.mx *{box-sizing:border-box}
+.mono{font-family:'Space Mono',monospace}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 24px;border-radius:4px;font-family:'Space Mono',monospace;font-weight:500;font-size:15px;text-decoration:none}
+.bor{background:#F07C1B;color:#111;border:2px solid #111}
+.bk{background:#111;color:#E9E7E1;border:2px solid #111}
+.bo{border:2px solid #111;color:#111}
+.row{display:grid;grid-template-columns:70px 1fr 120px;padding:16px 0;border-bottom:1.5px dashed #111;font-size:20px;align-items:center}
+.scr{border:1.5px solid #111;border-radius:8px;overflow:hidden;background:#F5F4F0}
+.cap{font-size:17px;line-height:1.4}
+.f{display:flex;flex-direction:column;gap:8px}
+.f label{font-size:16px;font-weight:500}
+.f input{height:44px;border:1.5px solid #111;border-radius:4px;padding:0 12px;font-family:'Space Mono',monospace;font-size:13px;background:#fff;color:#111}
+</style>
+</helmet>
+<div class="mx" style="width:1440px;height:2304px;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 80px;border-bottom:2px solid #111">
+    <a href="#" class="mono" style="font-weight:500;font-size:18px;color:#111;text-decoration:none">OpenYourSong</a>
+    <nav class="mono" style="display:flex;gap:32px;font-size:14px"><a href="#" style="color:#111;text-decoration:none">How</a><a href="#" style="color:#111;text-decoration:none">Examples</a><a href="#" style="color:#111;text-decoration:none">Group tape</a><a href="#" style="color:#111;text-decoration:none">Pricing</a></nav>
+    <a class="btn bor" href="#" style="height:44px">Make a tape</a>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 640px;gap:56px;padding:72px 80px 80px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span class="mono" style="font-size:14px;font-weight:500;color:#0E6262">Side A · one track · one person</span>
+      <h1 style="margin:0;font-size:104px;line-height:.9;font-weight:700;letter-spacing:-.01em">Remember mixtapes? This one sings their name</h1>
+      <p style="margin:0;font-size:22px;line-height:1.4;max-width:560px">You write the liner notes. AI writes and sings the song, and you can edit any line. Then it plays for them at the moment you pick.</p>
+      <div style="display:flex;gap:12px"><a class="btn bor" href="#">Start a tape, hear it free</a><a class="btn bo" href="#">Press play</a></div>
+      <span class="mono" style="font-size:13px">$29 after the preview · ready in minutes</span>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div style="height:440px;border-radius:6px;overflow:hidden;border:2px solid #111"><img src="/_blob/d0335743d2545a63d028958fa28cc24c" alt="A cassette tape with a blank label on a desk next to an orange pen and handwritten notes" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <figcaption style="display:flex;align-items:center;gap:16px"><button type="button" aria-label="Play Anna's song" style="width:52px;height:52px;flex:none;border-radius:50%;background:#F07C1B;border:2px solid #111;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:22px">For Anna, love Max</strong><span class="mono" style="font-size:13px">Example song · 2:14</span></span></figcaption>
+    </figure>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:300px 1fr;gap:60px;border-top:2px solid #111;padding-top:60px">
+    <div style="display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-weight:500;color:#0E6262;font-size:14px">Tracklist</span><h2 style="margin:0;font-size:52px;line-height:.95">How a tape gets made</h2></div>
+    <div style="border-top:1.5px dashed #111">
+      <div class="row"><span class="mono">01</span><span><strong>Liner notes</strong>, tell us about them, alone or with the family</span><span class="mono" style="text-align:right">3:00</span></div>
+      <div class="row"><span class="mono">02</span><span><strong>Rough mix</strong>, free preview, check the name, swap takes</span><span class="mono" style="text-align:right">Free</span></div>
+      <div class="row"><span class="mono">03</span><span><strong>Final cut</strong>, edit any line, then unlock the full song</span><span class="mono" style="text-align:right">$29</span></div>
+      <div class="row"><span class="mono">04</span><span><strong>Hand it over</strong>, on the day, by link or our email; reaction comes back</span><span class="mono" style="text-align:right">On time</span></div>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:2px solid #111;margin:0 80px 72px;padding:0">
+    <div style="padding:32px;border-right:2px solid #111;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500">C-30 · single</span><span style="font-size:64px;font-weight:500">$29</span><span style="font-size:18px;line-height:1.5">Song + MP3, gift page, scheduled delivery, reaction video</span></div>
+    <div style="padding:32px;border-right:2px solid #111;background:#F07C1B;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500">C-60 · double</span><span style="font-size:64px;font-weight:500">$55</span><span style="font-size:18px;line-height:1.5">+ Side B version, photo slideshow, printable J-card with lyrics</span></div>
+    <div style="padding:32px;background:#127C7C;color:#fff;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500">Group tape</span><span style="font-size:30px;font-weight:500;line-height:1.1">Everyone adds a memory. One person pays.</span><a href="#" class="mono" style="color:#fff;font-weight:500">Start a group tape →</a></div>
+  </section>
+
+  <section style="padding:0 80px 80px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="scr" style="height:600px;padding:32px;display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-size:32px">Mum's 60th tape</h3><span class="mono" style="font-size:12px">Deadline Fri 18:00</span></div>
+        <div class="f"><label for="mx-inv">Invite link</label><div style="display:flex;gap:8px"><input id="mx-inv" value="openyoursong.com/j/mum60" readonly style="flex:1"><button type="button" class="btn bk" style="height:44px;font-size:13px;padding:0 16px">Copy</button></div></div>
+        <span class="mono" style="font-size:13px;font-weight:500">5 of 8 have added a memory</span>
+        <div style="display:flex;flex-direction:column;border-top:1.5px dashed #111"><div style="display:grid;grid-template-columns:80px 1fr;padding:12px 0;border-bottom:1.5px dashed #111;font-size:17px"><strong>Kate</strong><span>Her lemon cake that never rises</span></div><div style="display:grid;grid-template-columns:80px 1fr;padding:12px 0;border-bottom:1.5px dashed #111;font-size:17px"><strong>Dad</strong><span>Dancing in the kitchen to ABBA, 1987</span></div><div style="display:grid;grid-template-columns:80px 1fr;padding:12px 0;border-bottom:1.5px dashed #111;font-size:17px"><strong>Leo</strong><span>Drove me to every football match</span></div><div style="display:grid;grid-template-columns:80px 1fr;padding:12px 0;border-bottom:1.5px dashed #111;font-size:17px;color:#6A6862"><strong>Sam</strong><span>Invited, not yet</span></div></div>
+        <button type="button" class="btn bor" style="margin-top:auto">Write the song from 5 memories</button>
+      </div>
+      <figcaption class="cap">1. Max collects a memory from everyone in the family</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="scr" style="height:600px;background:#127C7C;color:#fff;display:flex;flex-direction:column">
+        <div style="height:260px"><img src="/_blob/e0bf68270375990a6c155c753ae64c80" alt="Mum at her 60th with the lemon cake, listening" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block"></div>
+        <div style="padding:28px 32px;display:flex;flex-direction:column;gap:16px;flex:1">
+          <div style="display:flex;align-items:center;gap:16px"><button type="button" aria-label="Pause" style="width:48px;height:48px;flex:none;border-radius:50%;background:#F07C1B;border:2px solid #111;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M7 4v12M13 4v12" stroke="#111" stroke-width="2.5" stroke-linecap="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px;flex:1"><strong style="font-size:26px">Happy 60th, Mum</strong><span class="mono" style="font-size:12px">00:51 / 02:14</span></span></div>
+          <span style="font-size:20px;line-height:1.35">"…and the lemon cake that never rises, still the best we've had…"</span>
+          <span class="mono" style="font-size:12px">From Kate, Dad, Leo, Max and Zoe</span>
+          <div style="display:flex;gap:12px;margin-top:auto"><button type="button" class="btn bor">Record a thank-you</button><button type="button" class="btn bo" style="border-color:#fff;color:#fff;background:none">Read the notes</button></div>
+        </div>
+      </div>
+      <figcaption class="cap">2. Mum plays it, then can thank everyone at once</figcaption>
+    </figure>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2304}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

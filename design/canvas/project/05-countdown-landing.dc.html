@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Countdown, landing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#0A7A42}
+.cd{font-family:'Space Grotesk',system-ui,sans-serif;color:#111;background:#fff}
+.cd *{box-sizing:border-box}
+.mono{font-family:'JetBrains Mono',monospace}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none;font-family:inherit;cursor:pointer}
+.bg{background:#12C26B;color:#111;border:none}
+.bk{background:#111;color:#fff;border:none}
+.bo{border:1.5px solid #111;color:#111;background:none}
+.cap{font-size:15px;line-height:1.5;color:#4A4D4D}
+.h2{margin:0;font-size:48px;line-height:1.04;font-weight:500;letter-spacing:-.02em}
+.ts{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500}
+.ph{border-radius:16px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;flex:none;border-radius:50%;background:#12C26B;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.occ{display:grid;grid-template-columns:220px 1fr 280px;align-items:baseline;padding:24px 0;border-bottom:1px solid #D5D7D7}
+.qa{display:flex;flex-direction:column;gap:12px;padding:28px 0;border-top:1.5px solid #111}
+.qa strong{font-size:22px;line-height:1.25}
+.qa span{font-size:17px;line-height:1.55;color:#2E3030}
+.li{display:flex;gap:12px;font-size:17px;line-height:1.4}
+.li svg{flex:none;margin-top:2px}
+.fl{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.fl a{text-decoration:none;color:#4A4D4D}
+</style>
+</helmet>
+<div class="cd" style="width:1440px;height:6780px;box-sizing:border-box;overflow:hidden">
+
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 80px;border-bottom:1.5px solid #111">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;font-size:20px"><span class="mono" style="background:#12C26B;padding:4px 8px;border-radius:6px;font-size:14px">09:00</span>OpenYourSong</a>
+    <nav style="display:flex;gap:32px;font-size:16px"><a href="#how" style="text-decoration:none">How it works</a><a href="#examples" style="text-decoration:none">Examples</a><a href="#group" style="text-decoration:none">Group gift</a><a href="#pricing" style="text-decoration:none">Pricing</a></nav>
+    <div style="display:flex;align-items:center;gap:24px"><a href="#" style="text-decoration:none;font-size:16px;color:#4A4D4D">Log in</a><a class="btn bk" href="#" style="height:44px;font-size:15px;padding:0 20px">Schedule a song</a></div>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 600px;gap:64px;padding:88px 80px 96px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span class="ts">Sat 14 Mar · 09:00 · Lisbon time</span>
+      <h1 style="margin:0;font-size:84px;line-height:.98;font-weight:700;letter-spacing:-.03em">Be there at 9:00 on her birthday, even from far away</h1>
+      <p style="margin:0;font-size:20px;line-height:1.5;max-width:580px">Tell us her story. We make a personal song with her name sung in it and deliver it at the minute you choose, in her time zone. Her reaction comes back to you.</p>
+      <div style="display:flex;gap:12px"><a class="btn bg" href="#">Start the song, free preview</a><a class="btn bo" href="#examples">Play an example</a></div>
+      <span style="font-size:15px;color:#4A4D4D">Hear a 30–45 s preview free · $29 if you love it · made with AI from your story</span>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="ph" style="height:480px"><img src="/_blob/e354aac9a424c73c0156013efdeaf1bd" alt="A birthday present by a bedside clock in a sunny Lisbon bedroom"></div>
+      <figcaption style="display:flex;justify-content:space-between;align-items:baseline;gap:16px"><span class="cap">Anna's song opens in</span><span class="mono" style="font-size:24px;font-weight:500">2 d 14 h 08 min</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="how" style="background:#EEEFEF;padding:88px 80px">
+    <div style="display:grid;grid-template-columns:1fr 520px;gap:64px;align-items:end;margin-bottom:56px">
+      <h2 class="h2">From story to her song in three timestamps</h2>
+      <p style="margin:0;font-size:18px;line-height:1.5;color:#2E3030">No sign-up before you pay. You hear the start of the real song, with her name, before spending anything.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:16px;border-top:3px solid #111;padding-top:24px">
+        <span class="ts">T – 3 min</span>
+        <strong style="font-size:28px">You tell the story</strong>
+        <span style="font-size:17px;line-height:1.5">Who she is, what she loves, the inside joke. A few minutes on your phone, and you can edit every line of the lyrics.</span>
+        <div class="ph" style="height:220px;margin-top:8px"><img src="/_blob/d013d6e315836c683e8ad903fab40d3f" alt="Max smiling as he types on his phone in a café"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;border-top:3px solid #111;padding-top:24px">
+        <span class="ts">T – 2 min</span>
+        <strong style="font-size:28px">You hear it free and check her name</strong>
+        <span style="font-size:17px;line-height:1.5">A 30–45 s preview with her name sung in it. If it sounds off, spell it the way it's said and we sing it again.</span>
+        <div class="ph" style="height:220px;margin-top:8px"><img src="/_blob/8dc0a0f37bdd55b766f2a195b5837c3e" alt="A woman in headphones laughing at her phone"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;border-top:3px solid #12C26B;padding-top:24px">
+        <span class="ts" style="background:#12C26B;align-self:flex-start;padding:2px 8px;border-radius:4px">T = 09:00</span>
+        <strong style="font-size:28px">It arrives on the day</strong>
+        <span style="font-size:17px;line-height:1.5">We email her at the time you set, or remind you to send the link yourself. The gift page stays locked until then.</span>
+        <div class="ph" style="height:220px;margin-top:8px"><img src="/_blob/2a17c1433c28b630a8a2c681eb0bba92" alt="A hand circling a date on a wall calendar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="examples" style="padding:96px 80px">
+    <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:48px">
+      <h2 class="h2">Listen to a few examples</h2>
+      <span class="cap">Example songs made from made-up stories</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:300px"><img src="/_blob/f2f411ec00795b0ea6ea67c498d9ebd2" alt="A man in his sixties with a guitar by an old truck"></div>
+        <figcaption style="display:flex;gap:16px;align-items:center"><button class="play" type="button" aria-label="Play Sixty and still tuning"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Sixty and still tuning</strong><span class="cap" style="font-size:14px">For Dad, 60th birthday · 2:12</span></span></figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:300px"><img src="/_blob/622571a5efec9dcfab9862a7f3332a70" alt="Newlyweds laughing on a city bus"></div>
+        <figcaption style="display:flex;gap:16px;align-items:center"><button class="play" type="button" aria-label="Play The number 12 bus"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">The number 12 bus</strong><span class="cap" style="font-size:14px">For Sam and Priya, wedding · 2:20</span></span></figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:300px"><img src="/_blob/b84a9519552c7276a7f67d913a01ed45" alt="A mum flipping pancakes in her kitchen"></div>
+        <figcaption style="display:flex;gap:16px;align-items:center"><button class="play" type="button" aria-label="Play Sunday pancakes"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Sunday pancakes</strong><span class="cap" style="font-size:14px">For Mum, Mother's Day · 2:05</span></span></figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:300px"><img src="/_blob/ca7740159a99c62c8060e76efe18a779" alt="An office team bringing a cake to a colleague"></div>
+        <figcaption style="display:flex;gap:16px;align-items:center"><button class="play" type="button" aria-label="Play Last day at desk four"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px">Last day at desk four</strong><span class="cap" style="font-size:14px">For Linda, retirement · 2:16</span></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 96px;display:grid;grid-template-columns:400px 1fr;gap:64px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2 class="h2">Every date worth a song</h2>
+      <p style="margin:0;font-size:18px;line-height:1.5;color:#2E3030">Pick the day and the minute. Schedule it up to a year ahead, or send it right now.</p>
+      <a class="btn bo" href="#" style="align-self:flex-start;margin-top:8px">Pick an occasion</a>
+    </div>
+    <div style="border-top:1.5px solid #111">
+      <div class="occ"><span class="ts">00:00</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Birthday</strong><span class="cap">The minute the day starts, or breakfast</span></div>
+      <div class="occ"><span class="ts">20:00</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Anniversary</strong><span class="cap">Right before dinner</span></div>
+      <div class="occ"><span class="ts">09:00</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Mother's Day, Father's Day</strong><span class="cap">With the first coffee</span></div>
+      <div class="occ"><span class="ts">16:30</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Wedding</strong><span class="cap">For the couple, or for the toast</span></div>
+      <div class="occ"><span class="ts">17:00</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Retirement</strong><span class="cap">As the last shift ends</span></div>
+      <div class="occ"><span class="ts">Any time</span><strong style="font-size:36px;font-weight:500;letter-spacing:-.02em">Just because</strong><span class="cap">No date needed</span></div>
+    </div>
+  </section>
+
+  <section style="background:#111;color:#fff;padding:96px 80px">
+    <div style="display:grid;grid-template-columns:1fr 520px;gap:64px;align-items:end;margin-bottom:56px">
+      <h2 class="h2">The minute it opens, and what comes back</h2>
+      <p style="margin:0;font-size:18px;line-height:1.5;color:#D5D7D7">If she opens the link early, she sees only a countdown. The song, lyrics and notes stay locked until your minute.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <div class="ph" style="height:520px"><img src="/_blob/569a369cbde8dfb0c60e52425af4b96c" alt="Anna by the window in headphones, listening"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:8px">
+          <span class="ts" style="color:#12C26B">09:00 · what Anna sees</span>
+          <strong style="font-size:28px">Max made you something</strong>
+          <span style="font-size:17px;line-height:1.5;color:#D5D7D7">She taps Open, and the song plays with the lyrics on screen. She can download the MP3 and keep it.</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <div class="ph" style="height:520px"><img src="/_blob/2744d11a0bc2b86bbfb658477ac52617" alt="Anna in her kitchen with happy tears" style="object-position:50% 22%"></div>
+        <figcaption style="display:flex;flex-direction:column;gap:8px">
+          <span class="ts" style="color:#12C26B">09:02 · what comes back to Max</span>
+          <strong style="font-size:28px">Her reaction, only for you</strong>
+          <span style="font-size:17px;line-height:1.5;color:#D5D7D7">She can record a short video as she listens. It's sent only if she says yes, and only Max sees it.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="group" style="padding:72px 80px;display:grid;grid-template-columns:480px 1fr auto;gap:56px;align-items:center;border-bottom:1.5px solid #111">
+    <div class="ph" style="height:280px"><img src="/_blob/753681caffaf93a756329748141b4104" alt="A family gathered around a phone at the table"></div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="ts">Group gift · up to 20 people</span>
+      <h2 class="h2" style="font-size:40px">One song from everyone</h2>
+      <p style="margin:0;font-size:18px;line-height:1.5;color:#2E3030;max-width:560px">Send the family an invite link. Everyone adds a memory and a note, the song is written from all of them, and one person pays the same price.</p>
+    </div>
+    <a class="btn bk" href="#">Start a group gift</a>
+  </section>
+
+  <section id="pricing" style="padding:96px 80px">
+    <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:48px">
+      <h2 class="h2">Hear it free first, then pick</h2>
+      <span class="cap">One payment, no subscription needed</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div style="border:1.5px solid #111;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><strong style="font-size:28px">Song</strong><span style="font-size:72px;font-weight:500;letter-spacing:-.03em">$29</span></div>
+        <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid #D5D7D7;padding-top:24px">
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>The full song with her name, plus the lyrics</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>MP3 download, 256 kbps</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Gift page delivered on your date and minute</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Her reaction video, if she records one</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Printable card with a QR code to the gift</span>
+        </div>
+        <a class="btn bo" href="#" style="margin-top:auto">Hear it free first</a>
+      </div>
+      <div style="background:#12C26B;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><strong style="font-size:28px">Bundle</strong><span style="font-size:72px;font-weight:500;letter-spacing:-.03em">$55</span></div>
+        <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid #111;padding-top:24px">
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Song</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>A second version of the song in full quality</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Photo slideshow video from 5–20 of your photos</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Lyrics poster to print, with her name and the date</span>
+        </div>
+        <a class="btn bk" href="#" style="margin-top:auto">Hear it free first</a>
+      </div>
+    </div>
+    <p class="cap" style="margin:24px 0 0">You pay after the preview. Upgrade from Song to Bundle later by paying the difference.</p>
+  </section>
+
+  <section style="padding:0 80px 96px;display:grid;grid-template-columns:400px 1fr;gap:64px">
+    <h2 class="h2">Questions, answered</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:48px">
+      <div class="qa"><strong>Is the song made with AI?</strong><span>Yes. AI writes the lyrics from your story and sings them. You can edit any section or ask for a rewrite before the music is made.</span></div>
+      <div class="qa"><strong>What if her name sounds wrong?</strong><span>You hear the name before you pay. Tap Fix it, write how it's pronounced, and we sing it again. It's still spelled correctly on her gift page.</span></div>
+      <div class="qa"><strong>What's in the free preview?</strong><span>The first 30–45 seconds of the same song you'd buy, with her name in it. The full song unlocks after payment.</span></div>
+      <div class="qa"><strong>How does it get to her on time?</strong><span>Pick a date and time in her time zone, up to a year ahead. We email her between 08:00 and 21:00 her time, or remind you to send the link yourself.</span></div>
+      <div class="qa"><strong>Who can see her reaction video?</strong><span>Only you. She agrees before the camera turns on and again before sending. Videos are kept for 12 months, and you can delete them any time.</span></div>
+      <div class="qa"><strong>What if I don't like the result?</strong><span>After paying you get 2 free regenerations. If it's still not right, you get a full refund within 14 days, as long as the gift hasn't been opened.</span></div>
+    </div>
+  </section>
+
+  <section style="margin:0 80px;border-radius:16px;background:#EEEFEF;display:grid;grid-template-columns:1fr 520px;overflow:hidden">
+    <div style="padding:64px;display:flex;flex-direction:column;gap:24px;justify-content:center">
+      <span class="ts">Her next big minute is coming</span>
+      <h2 class="h2" style="font-size:56px">Start the song now, hear it before you pay</h2>
+      <div style="display:flex;gap:12px"><a class="btn bg" href="#">Start the song, free preview</a><a class="btn bo" href="#group">Group gift</a></div>
+    </div>
+    <div style="height:440px"><img src="/_blob/2e424d0b737f69811f2caaeee23c5d93" alt="Anna on her bed, moved by the song" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block"></div>
+  </section>
+
+  <footer style="padding:72px 80px 64px;display:grid;grid-template-columns:1fr repeat(3,200px);gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;font-size:20px"><span class="mono" style="background:#12C26B;padding:4px 8px;border-radius:6px;font-size:14px">09:00</span>OpenYourSong</a>
+      <span class="cap" style="max-width:360px">Personal songs, made with AI from your story, delivered on the minute</span>
+    </div>
+    <div class="fl"><strong>Product</strong><a href="#how">How it works</a><a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#group">Group gift</a></div>
+    <div class="fl"><strong>Help</strong><a href="#">FAQ</a><a href="#">Refunds</a><a href="#">Contact</a></div>
+    <div class="fl"><strong>Legal</strong><a href="#">Terms</a><a href="#">Privacy</a><a href="#">How it's made</a></div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6780}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

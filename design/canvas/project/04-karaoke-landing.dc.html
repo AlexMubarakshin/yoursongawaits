@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Karaoke, landing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#FFE14D}a:hover{color:#fff}
+.ko{font-family:'Inter Tight',system-ui,sans-serif;color:#E8DDF5;background:#2D1640}
+.ko *{box-sizing:border-box}
+.hl{background:#FFE14D;color:#2D1640;padding:0 16px;border-radius:10px}
+.dim{color:#B4A3CB}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:14px;font-weight:500;font-size:17px;text-decoration:none}
+.by{background:#FFE14D;color:#2D1640}
+.bo{border:1.5px solid #B4A3CB;color:#E8DDF5}
+.frame{border:1px solid #4B2E63;border-radius:24px;overflow:hidden;background:#24102F}
+.ph{overflow:hidden;border-radius:20px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.play{width:48px;height:48px;border-radius:50%;background:#FFE14D;border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+.h2{margin:0;font-size:56px;font-weight:500;line-height:1;letter-spacing:-.025em;color:#fff}
+.nl{color:#E8DDF5;text-decoration:none}
+details{border-top:1.5px solid #4B2E63;padding:24px 0}
+summary{cursor:pointer;font-size:22px;font-weight:500;color:#fff;list-style:none}
+summary::-webkit-details-marker{display:none}
+details p{margin:12px 0 0;font-size:17px;line-height:1.55;color:#B4A3CB;max-width:640px}
+</style>
+</helmet>
+<div class="ko" style="width:1440px;height:5608px;box-sizing:border-box;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 80px">
+    <a href="#" style="font-weight:500;font-size:22px;color:#E8DDF5;text-decoration:none">open<span style="color:#FFE14D">your</span>song</a>
+    <nav style="display:flex;gap:36px;font-size:16px;font-weight:500"><a href="#listen" class="nl">Listen</a><a href="#how" class="nl">How it works</a><a href="#together" class="nl">Together</a><a href="#pricing" class="nl">Pricing</a></nav>
+    <div style="display:flex;gap:24px;align-items:center"><a href="#" class="dim" style="font-size:15px;text-decoration:none">Log in</a><a class="btn by" href="#" style="height:44px;font-size:15px">Write their song</a></div>
+  </header>
+
+  <section style="padding:56px 80px 72px;display:grid;grid-template-columns:1fr 520px;gap:64px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <span style="font-size:15px;font-weight:500;color:#FFE14D">Now playing · birthday · acoustic</span>
+      <h1 style="margin:0;display:flex;flex-direction:column;gap:4px;font-weight:800;font-size:76px;line-height:1.08;letter-spacing:-.03em;color:#fff">
+        <span class="dim" style="font-weight:500">The kettle's on at six,</span>
+        <span><span class="hl">Anna,</span> you still ride</span>
+        <span>that yellow bike</span>
+      </h1>
+      <p style="margin:0;font-size:21px;line-height:1.45;max-width:600px">A song where every line is about them, and the chorus sings their name. We write it from your story.</p>
+      <div style="display:flex;gap:16px"><a class="btn by" href="#">Write their song, hear it free</a><a class="btn bo" href="#listen">Listen to examples</a></div>
+      <span class="dim" style="font-size:15px">Free 30–45 s preview with their name · $29 after the preview · made with AI, edited by you</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="ph" style="height:600px"><img src="/_blob/13df6040ed00b4887c32752b668980dd" alt="A woman singing into a microphone at a home party"></div>
+      <div style="display:flex;align-items:center;gap:16px">
+        <button class="play" aria-label="Play Anna's song"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button>
+        <div style="display:flex;flex-direction:column;gap:4px"><strong style="color:#fff">Anna, happy 30th</strong><span class="dim" style="font-size:14px">From Max · 0:42 preview</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding:72px 80px;border-top:1.5px solid #4B2E63;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Verse 1</span><strong style="font-size:32px;line-height:1.1;color:#fff">You tell us about them</strong><span style="font-size:17px;line-height:1.5">The nickname, the yellow bike, the car karaoke. About three minutes on your phone</span></div>
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Chorus</span><strong style="font-size:32px;line-height:1.1;color:#fff">You hear their name sung</strong><span style="font-size:17px;line-height:1.5">A free 30–45 s preview. Check how the name sounds, edit any line, try another version</span></div>
+    <div style="display:flex;flex-direction:column;gap:12px"><span style="font-weight:500;color:#FFE14D">Encore</span><strong style="font-size:32px;line-height:1.1;color:#fff">It arrives on the day</strong><span style="font-size:17px;line-height:1.5">You pick the date and time. They open a page with the song and the lyrics</span></div>
+  </section>
+
+  <section id="listen" style="padding:96px 80px;background:#24102F">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px"><h2 class="h2">Tonight's setlist</h2><span class="dim" style="font-size:16px">Example songs, made for this page</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 48px">
+      <div style="display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center;border-bottom:1.5px solid #4B2E63;padding-bottom:24px"><div class="ph" style="height:240px;border-radius:16px"><img src="/_blob/84d89a78197fb53d36fc38f060588b8c" alt="Friends cheering as a woman blows out birthday candles"></div><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:14px;color:#FFE14D">01 · birthday · pop</span><strong style="font-size:28px;line-height:1.1;color:#fff">Thirty looks good on you, Sam</strong><span class="dim" style="font-size:15px">For Sam, from the five of us</span><button class="play" aria-label="Play Thirty looks good on you, Sam"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button></div></div>
+      <div style="display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center;border-bottom:1.5px solid #4B2E63;padding-bottom:24px"><div class="ph" style="height:240px;border-radius:16px"><img src="/_blob/622571a5efec9dcfab9862a7f3332a70" alt="Newlyweds laughing on a bus"></div><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:14px;color:#FFE14D">02 · wedding · indie pop</span><strong style="font-size:28px;line-height:1.1;color:#fff">Leo and Mia, row 42</strong><span class="dim" style="font-size:15px">For the newlyweds, from the best man</span><button class="play" aria-label="Play Leo and Mia, row 42"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button></div></div>
+      <div style="display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center"><div class="ph" style="height:240px;border-radius:16px"><img src="/_blob/f2f411ec00795b0ea6ea67c498d9ebd2" alt="A man of sixty with a guitar by an old truck"></div><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:14px;color:#FFE14D">03 · Father's Day · country</span><strong style="font-size:28px;line-height:1.1;color:#fff">Dad and the old blue truck</strong><span class="dim" style="font-size:15px">For Dad, from Leo and Zoe</span><button class="play" aria-label="Play Dad and the old blue truck"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button></div></div>
+      <div style="display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center"><div class="ph" style="height:240px;border-radius:16px"><img src="/_blob/b84a9519552c7276a7f67d913a01ed45" alt="A mother laughing while making pancakes"></div><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:14px;color:#FFE14D">04 · Mother's Day · acoustic</span><strong style="font-size:28px;line-height:1.1;color:#fff">Mum's Sunday pancakes</strong><span class="dim" style="font-size:15px">For Mum, from Kate</span><button class="play" aria-label="Play Mum's Sunday pancakes"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6z" fill="none" stroke="#2D1640" stroke-width="2" stroke-linejoin="round"></path></svg></button></div></div>
+    </div>
+  </section>
+
+  <section style="padding:112px 80px">
+    <h2 class="h2" style="margin-bottom:40px">Pick the song for the night</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;font-size:44px;font-weight:500;letter-spacing:-.02em;line-height:1">
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Birthday</a>
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Anniversary</a>
+      <a href="#" style="background:#FFE14D;color:#2D1640;text-decoration:none;border-radius:20px;padding:20px 32px">Mother's Day</a>
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Father's Day</a>
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Wedding</a>
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Retirement</a>
+      <a href="#" class="nl" style="border:1.5px solid #4B2E63;border-radius:20px;padding:20px 32px">Just because</a>
+    </div>
+  </section>
+
+  <section style="padding:112px 80px;border-top:1.5px solid #4B2E63;display:grid;grid-template-columns:1fr 1fr;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <h2 class="h2">The lights go down, the lyrics light up</h2>
+      <p style="margin:0;font-size:19px;line-height:1.5;max-width:520px">On the day, Anna opens her page and sees "Max made you something". One tap and the song plays with the words on screen, then Max's note</p>
+      <div class="ph" style="height:400px"><img src="/_blob/d460a0186b29d520ca6822db1d986d01" alt="An empty club stage with a microphone under an amber spotlight"></div>
+      <span class="dim" style="font-size:15px">Her gift page: the song, the lyrics, a note from you, MP3 to keep</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;padding-top:64px">
+      <div class="ph" style="height:640px"><img src="/_blob/64ddd1497faca22c743cc98cd962c196" alt="Anna laughing with happy tears after hearing her song" style="object-position:50% 22%"></div>
+      <strong style="font-size:22px;color:#fff">Her reaction comes back to you</strong>
+      <span class="dim" style="font-size:16px;line-height:1.5">She's asked first and can just open the gift. If she records and sends it, only you see it</span>
+    </div>
+  </section>
+
+  <section id="together" style="padding:56px 80px;background:#3B2152;display:flex;justify-content:space-between;align-items:center;gap:48px">
+    <div style="display:flex;align-items:center;gap:32px"><div class="ph" style="width:200px;height:136px;border-radius:16px;flex-shrink:0"><img src="/_blob/753681caffaf93a756329748141b4104" alt="A family gathered around a phone at the table"></div><div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:34px;color:#fff">Duet with the family</strong><span style="font-size:17px;max-width:640px;line-height:1.5">Share one link. Up to 20 people add a memory and a note, no sign-up. One person pays, same price as a solo song</span></div></div>
+    <a class="btn by" href="#">Start a group song</a>
+  </section>
+
+  <section id="pricing" style="padding:80px;background:#FFE14D;color:#2D1640;display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:24px"><h2 style="margin:0;font-size:56px;font-weight:500;line-height:1;letter-spacing:-.025em">Hear it free first</h2><p style="margin:0;font-size:18px;line-height:1.5">Listen to the preview with their name. Pay only if it hits</p><a class="btn" href="#" style="background:#2D1640;color:#FFE14D;align-self:flex-start">Write their song</a></div>
+    <div style="display:flex;flex-direction:column;gap:16px;border-left:1.5px solid #2D1640;padding-left:48px"><span style="font-weight:500;font-size:18px">The song</span><span style="font-size:80px;font-weight:500;line-height:1">$29</span><ul style="margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;font-size:16px"><li>Full song with their name, MP3</li><li>Lyrics and their own gift page</li><li>Delivery on the day you pick</li><li>Printable PDF card with a QR code</li><li>Their reaction video, if they send one</li></ul></div>
+    <div style="display:flex;flex-direction:column;gap:16px;border-left:1.5px solid #2D1640;padding-left:48px"><span style="font-weight:500;font-size:18px">The bundle</span><span style="font-size:80px;font-weight:500;line-height:1">$55</span><ul style="margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;font-size:16px"><li>Everything in the song</li><li>A second version</li><li>Photo slideshow</li><li>Printable lyrics</li></ul></div>
+  </section>
+
+  <section style="padding:112px 80px;display:grid;grid-template-columns:420px 1fr;gap:64px">
+    <h2 class="h2">Before you take the mic</h2>
+    <div style="border-bottom:1.5px solid #4B2E63">
+      <details open="open"><summary>What's in the free preview</summary><p>The first 30–45 seconds of the same song you'll get, with their name sung. You can hear a second version before you pay.</p></details>
+      <details><summary>What if the name sounds wrong</summary><p>Type it the way it sounds, for example "AH-na", and we sing it again. The name fix doesn't count against your tries.</p></details>
+      <details><summary>Is it made with AI</summary><p>Yes, the words and music are made with AI from your story, and you can edit every line. We say so on the gift page too.</p></details>
+      <details><summary>Can they hear it before the day</summary><p>No. Until the date and time you set, the link shows a waiting screen with who it's from and when it opens.</p></details>
+      <details><summary>Who sees the reaction video</summary><p>Only you, or the people in a group gift. They agree before the camera starts and again before sending. Nothing leaves their phone until then.</p></details>
+      <details><summary>What if I don't like it</summary><p>You get two free re-makes. After that, a full refund within 14 days, as long as the gift hasn't been opened.</p></details>
+    </div>
+  </section>
+
+  <section style="padding:112px 80px;border-top:1.5px solid #4B2E63;display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center">
+    <h2 style="margin:0;font-size:80px;font-weight:500;line-height:1.05;letter-spacing:-.03em;color:#fff">Their name in the <span class="hl">chorus</span></h2>
+    <a class="btn by" href="#">Write their song, hear it free</a>
+    <span class="dim" style="font-size:15px">$29 after the preview</span>
+  </section>
+
+  <footer style="padding:64px 80px;border-top:1.5px solid #4B2E63;display:flex;justify-content:space-between;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:12px"><a href="#" style="font-weight:500;font-size:20px;color:#E8DDF5;text-decoration:none">open<span style="color:#FFE14D">your</span>song</a><span class="dim" style="font-size:14px">Personal songs, made with AI from your story</span></div>
+    <nav style="display:flex;gap:64px;font-size:15px">
+      <div style="display:flex;flex-direction:column;gap:12px"><a href="#" class="nl">How it works</a><a href="#" class="nl">Pricing</a><a href="#" class="nl">Group gift</a></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><a href="#" class="nl">FAQ</a><a href="#" class="nl">Contact</a><a href="#" class="nl">Log in</a></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><a href="#" class="nl">Privacy</a><a href="#" class="nl">Terms</a><a href="#" class="nl">Refunds</a></div>
+    </nav>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5608}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

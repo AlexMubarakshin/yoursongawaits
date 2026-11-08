@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Countdown, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#111}a:hover{color:#0A7A42}
+.cd{font-family:'Space Grotesk',system-ui,sans-serif;color:#111;background:#fff}
+.cd *{box-sizing:border-box}
+.mono{font-family:'JetBrains Mono',monospace}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:12px;font-weight:500;font-size:17px;text-decoration:none}
+.bg{background:#12C26B;color:#111}
+.bk{background:#111;color:#fff}
+.bo{border:1.5px solid #111;color:#111}
+.scr{border:1px solid #D5D7D7;border-radius:16px;overflow:hidden;background:#fff}
+.f{display:flex;flex-direction:column;gap:8px}
+.f label{font-size:16px;font-weight:500}
+.f input,.f select{height:48px;border:1px solid #B5B8B8;border-radius:10px;padding:0 16px;font:inherit;font-size:16px;color:#111;background:#fff}
+.opt{border:1px solid #B5B8B8;border-radius:12px;padding:16px;display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.4}
+.opt input{margin:2px 0 0;accent-color:#111}
+.cap{font-size:15px;line-height:1.5;color:#4A4D4D}
+</style>
+</helmet>
+<div class="cd" style="width:1440px;height:2456px;overflow:hidden">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:28px 80px;border-bottom:1.5px solid #111">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;font-size:20px"><span class="mono" style="background:#12C26B;padding:4px 8px;border-radius:6px;font-size:14px">09:00</span>OpenYourSong</a>
+    <nav style="display:flex;gap:32px;font-size:16px"><a href="#" style="text-decoration:none">How it works</a><a href="#" style="text-decoration:none">Examples</a><a href="#" style="text-decoration:none">Occasions Calendar</a><a href="#" style="text-decoration:none">Pricing</a></nav>
+    <a class="btn bk" href="#" style="height:44px;font-size:15px">Schedule a song</a>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 560px;gap:60px;padding:80px 80px 92px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span class="mono" style="font-size:14px;font-weight:500">Sat 14 Mar · 09:00 · Lisbon time</span>
+      <h1 style="margin:0;font-size:82px;line-height:.98;font-weight:700;letter-spacing:-.03em">Be there at 9:00 on her birthday, even from far away</h1>
+      <p style="margin:0;font-size:20px;line-height:1.5;max-width:560px">A personal song with her name in it, delivered at the exact minute you choose, in her time zone. You'll get her reaction back.</p>
+      <div style="display:flex;gap:12px"><a class="btn bg" href="#">Start the song, free preview</a><a class="btn bo" href="#">Play an example</a></div>
+      <span style="font-size:15px">$29 after the preview · made with AI from your story</span>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div style="height:440px;border-radius:16px;overflow:hidden"><img src="/_blob/e354aac9a424c73c0156013efdeaf1bd" alt="A birthday present by a bedside clock in a sunny Lisbon bedroom" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <figcaption style="display:flex;justify-content:space-between;align-items:baseline;gap:16px"><span class="cap">Anna's song opens in</span><span class="mono" style="font-size:24px;font-weight:500">2 d 14 h 08 min</span></figcaption>
+    </figure>
+  </section>
+
+  <section style="background:#EEEFEF;padding:72px 80px">
+    <h2 style="margin:0 0 40px;font-size:44px;font-weight:500;letter-spacing:-.02em">From story to "she's crying" in three timestamps</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:3px solid #111">
+      <div style="padding:24px 32px 0 0;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-weight:500;font-size:15px">T – 3 min</span><strong style="font-size:26px">You tell the story</strong><span style="font-size:17px;line-height:1.5">Who she is, what she loves, the joke. From your phone.</span></div>
+      <div style="padding:24px 32px 0 0;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-weight:500;font-size:15px">T – 2 min</span><strong style="font-size:26px">You hear it free</strong><span style="font-size:17px;line-height:1.5">Check her name, swap the version, edit lines. Pay only if you love it.</span></div>
+      <div style="padding:24px 32px 0 0;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-weight:500;font-size:15px;background:#12C26B;align-self:flex-start;padding:2px 8px;border-radius:4px">T = 09:00</span><strong style="font-size:26px">It opens on time</strong><span style="font-size:17px;line-height:1.5">We email her, or remind you to send. Her reaction comes back.</span></div>
+    </div>
+  </section>
+
+  <section style="padding:72px 80px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px">
+    <div style="border:1.5px solid #111;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500">One song</span><span style="font-size:60px;font-weight:500">$29</span><span style="font-size:16px;line-height:1.6">Song + MP3, gift page, scheduled delivery, reaction video</span></div>
+    <div style="border:1.5px solid #111;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500">Bundle</span><span style="font-size:60px;font-weight:500">$55</span><span style="font-size:16px;line-height:1.6">+ second version, photo slideshow, printable lyrics</span></div>
+    <div style="background:#111;color:#fff;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;font-weight:500;color:#12C26B">Occasions calendar</span><span style="font-size:30px;font-weight:500;line-height:1.15">Add everyone's dates once. We'll remind you a week before.</span><span style="font-size:15px;line-height:1.5">Songs are included with the yearly plan</span><a class="btn bg" href="#" style="height:48px;align-self:flex-start;font-size:15px">See the plan</a></div>
+  </section>
+
+  <section style="padding:0 80px 80px;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="scr" style="padding:32px;display:flex;flex-direction:column;gap:20px;height:620px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0;font-size:26px;font-weight:500">When should Anna get it?</h3><span class="cap" style="font-size:14px">Step 2 of 2</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <label class="opt" style="border-color:#111"><input type="radio" name="who" checked><span><strong style="display:block;font-size:16px">We'll send it</strong>Email to Anna at the set time</span></label>
+          <label class="opt"><input type="radio" name="who"><span><strong style="display:block;font-size:16px">I'll send it</strong>We remind you, you share the link</span></label>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="f"><label for="cd-d">Date</label><input id="cd-d" value="Sat, 14 March"></div><div class="f"><label for="cd-t">Time</label><input id="cd-t" value="09:00"></div></div>
+        <div class="f"><label for="cd-z">Her time zone</label><select id="cd-z"><option>Lisbon (GMT+0)</option></select></div>
+        <div class="f"><label for="cd-e">Her email</label><input id="cd-e" type="email" value="anna@example.com"></div>
+        <span class="cap" style="font-size:14px">The email won't reveal the song. It arrives between 08:00 and 21:00 her time.</span>
+        <button class="btn bk" type="button" style="border:none;margin-top:auto;font-family:inherit">Schedule for 09:00</button>
+      </div>
+      <figcaption class="cap">1. After payment, Max picks the minute and her time zone</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="scr" style="height:620px;display:flex;flex-direction:column">
+        <div style="height:300px"><img src="/_blob/e354aac9a424c73c0156013efdeaf1bd" alt="The wrapped gift beside the bedside clock" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="padding:32px;display:flex;flex-direction:column;gap:12px;flex:1">
+          <span class="cap" style="font-size:14px">A gift from Max</span>
+          <strong style="font-size:30px;line-height:1.15">Something is waiting for you, Anna</strong>
+          <span class="mono" style="font-size:48px;font-weight:500;letter-spacing:-.02em">00:00:12</span>
+          <span class="cap" style="font-size:15px">Opens at 09:00. Keep this page open, sound on.</span>
+        </div>
+      </div>
+      <figcaption class="cap">2. Anna opens the link early and sees only the countdown</figcaption>
+    </figure>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2456}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var days = [];
+    for (var i = 1; i <= 21; i++) {
+      var on = i === 14;
+      days.push({ n: i + 1 > 0 ? String(i + 7) : '', bg: on ? '#12C26B' : '#EEEFEF', fg: '#111' });
+    }
+    days = days.map(function(d, i){ var n = i + 8; return { n: String(n), bg: n === 14 ? '#12C26B' : '#EEEFEF', fg: '#111' }; });
+    return { days: days };
+  }
+}
+</script>
+</body>
+</html>

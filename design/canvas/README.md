@@ -16,7 +16,7 @@ Snapshot of the design canvas: https://claude.ai/artifact/PJsrpVDQ8xjsg7SSAkhj1a
 
 ## Page "Actual flows", top to bottom
 
-0. Overview: landing (desktop 1440 and mobile 390), brand language, UI kit, growth loop and SEO notes.
+0. Overview: landing (desktop 1440, mobile 390 split into two boards because of the 8000 px canvas limit), brand language, UI kit, growth loop and SEO notes.
 1. Create and pay: entry pages, questionnaire, generation, preview and payment.
 2. Order and delivery.
 3. Recipient and sharing: opening the gift, the reaction video and posting it.
@@ -42,3 +42,7 @@ The "[RESEARCH] Flows" page holds the original Cut Paper exploration.
 | `p-h` | Content |
 
 A `-d` suffix marks the desktop version.
+
+## Button rule
+
+One primary per screen: butter with a 2 px ink edge (`.bk`). On a butter surface the primary is ink (`.bi`). Secondary is white with an ink edge (`.bo`).

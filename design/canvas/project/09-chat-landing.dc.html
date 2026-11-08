@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chat, landing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+strong{font-weight:500}
+a{color:#00704E}a:hover{color:#101413}
+.ch{font-family:Manrope,system-ui,sans-serif;color:#101413;background:#F3F5F4}
+.ch *{box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:16px;font-weight:500;font-size:17px;text-decoration:none;border:none;font-family:inherit}
+.bm{background:#00B37E;color:#101413}
+.bk{background:#101413;color:#fff}
+.bw{background:#fff;color:#101413}
+.us{align-self:flex-end;background:#00B37E;color:#101413;border-radius:20px 20px 6px 20px;padding:12px 16px;max-width:78%;font-size:16px;line-height:1.5;font-weight:500}
+.them{align-self:flex-start;background:#fff;border-radius:20px 20px 20px 6px;padding:12px 16px;max-width:78%;font-size:16px;line-height:1.5}
+.qb{display:inline-flex;align-items:center;height:48px;padding:0 20px;border-radius:16px;border:1px solid #B9C2BE;font:inherit;font-size:17px;font-weight:500;background:#fff;color:#101413;text-decoration:none}
+.qb:hover{border-color:#00B37E;background:#E3F5EE;color:#101413}
+.cap{font-size:15px;color:#4A524F;line-height:1.4}
+.stk{background:#FFE066;border-radius:14px;padding:8px 12px;font-weight:500;font-size:14px;display:inline-block}
+.h2{margin:0;font-size:48px;line-height:1.08;font-weight:500;letter-spacing:-.02em}
+.pl{width:44px;height:44px;border-radius:50%;background:#101413;border:none;display:flex;align-items:center;justify-content:center;flex:none;cursor:pointer}
+.ph{border-radius:24px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.nl{color:#101413;text-decoration:none}
+.li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.5}
+.ft a{color:#4A524F;text-decoration:none;font-size:15px}
+</style>
+</helmet>
+<div class="ch" style="width:1440px;height:6964px;box-sizing:border-box;overflow:hidden">
+
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 80px">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#101413;font-weight:500;font-size:22px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34"><path d="M4 8a6 6 0 0 1 6-6h14a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H13l-7 6v-6.5A6 6 0 0 1 4 18z" fill="#00B37E"></path><path d="M14 18a2 2 0 1 1-1.4-1.9V9l7-1.4v8.5a2 2 0 1 1-1.4-1.9V9.6L14 10.5z" fill="#101413"></path></svg>OpenYourSong</a>
+    <nav style="display:flex;gap:32px;font-weight:500;font-size:15px"><a href="#how" class="nl">How it works</a><a href="#listen" class="nl">Examples</a><a href="#group" class="nl">Group gift</a><a href="#pricing" class="nl">Pricing</a></nav>
+    <div style="display:flex;align-items:center;gap:24px"><a href="#" style="font-size:15px;font-weight:500;color:#4A524F;text-decoration:none">Log in</a><a class="btn bk" href="#" style="height:44px;font-size:15px">Start chatting</a></div>
+  </header>
+
+  <section style="display:grid;grid-template-columns:1fr 560px;gap:72px;padding:60px 80px 96px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span class="stk" style="align-self:flex-start">It starts with a chat</span>
+      <h1 style="margin:0;font-size:80px;line-height:1;font-weight:800;letter-spacing:-.03em">Tell us about them like you'd tell a friend. We'll turn it into a song.</h1>
+      <p style="margin:0;font-size:20px;line-height:1.5;max-width:560px">Answer a few questions in a chat, hear a free preview with their name, then send it at the right moment. Works on your phone, no app to install.</p>
+      <div style="display:flex;gap:12px"><a class="btn bm" href="#">Start the chat</a><a class="btn bw" href="#listen">Play an example</a></div>
+      <span style="font-size:15px;font-weight:500">Hear a 30–45 s preview free · $29 if you love it · written and sung with AI</span>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div class="ph" style="height:560px;border-radius:28px"><img src="/_blob/d013d6e315836c683e8ad903fab40d3f" alt="Max smiling as he types the story about Anna into the chat in a café"></div>
+      <figcaption style="display:flex;align-items:center;gap:12px"><button class="pl" aria-label="Play Anna's song preview"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Anna's song, from Max's chat</strong><span style="font-size:14px;color:#4A524F">Preview · 0:40 · tea at 6am and a yellow bike</span></span></figcaption>
+    </figure>
+  </section>
+
+  <section id="how" style="background:#fff;padding:96px 80px;display:grid;grid-template-columns:400px 1fr;gap:80px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2 class="h2">How it works</h2>
+      <p style="margin:0;font-size:18px;line-height:1.55;color:#4A524F">Three messages, roughly. No account needed until you pay, and nothing is lost if you close the tab.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:40px">
+      <div style="display:grid;grid-template-columns:64px 1fr 1fr;gap:24px;align-items:start">
+        <span style="font-size:40px;font-weight:500;color:#00B37E;line-height:1">1</span>
+        <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:24px">Tell the story</strong><span style="font-size:16px;line-height:1.55;color:#4A524F">Who they are, how you met, the joke only you two get. Pick a sound and a voice</span></div>
+        <div class="thr" style="display:flex;flex-direction:column;gap:8px"><div class="them" style="background:#F3F5F4">What should the song remember about Anna?</div><div class="us">Tea at 6am for everyone. The yellow bike from uni</div></div>
+      </div>
+      <div style="height:1px;background:#E1E5E3"></div>
+      <div style="display:grid;grid-template-columns:64px 1fr 1fr;gap:24px;align-items:start">
+        <span style="font-size:40px;font-weight:500;color:#00B37E;line-height:1">2</span>
+        <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:24px">Hear the free preview, check the name</strong><span style="font-size:16px;line-height:1.55;color:#4A524F">The first 30–45 seconds of the real song, with their name in it. If the name sounds wrong, spell it the way it's said and we sing it again</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><div class="them" style="background:#F3F5F4">Is this how you say her name?</div><div style="display:flex;gap:8px;justify-content:flex-end"><span class="qb" style="height:40px;font-size:14px">Sounds right</span><span class="qb" style="height:40px;font-size:14px">Fix it</span></div></div>
+      </div>
+      <div style="height:1px;background:#E1E5E3"></div>
+      <div style="display:grid;grid-template-columns:64px 1fr 1fr;gap:24px;align-items:start">
+        <span style="font-size:40px;font-weight:500;color:#00B37E;line-height:1">3</span>
+        <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:24px">It arrives on the day</strong><span style="font-size:16px;line-height:1.55;color:#4A524F">Pick the date and time in their time zone. We email it, or you send the link yourself in any messenger</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><div class="them" style="background:#F3F5F4">When should Anna get it?</div><div class="us">Sat 14 March, 9:00</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="listen" style="padding:96px 80px;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><h2 class="h2">Listen to a few</h2><span class="cap">Each one started as a short chat</span></div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <div style="display:flex;flex-direction:column;gap:16px"><div class="ph" style="height:360px"><img src="/_blob/f2f411ec00795b0ea6ea67c498d9ebd2" alt="A man in his sixties with a guitar by an old truck"></div><div style="display:flex;gap:12px;align-items:center"><button class="pl" aria-label="Play Sixty miles of Frank"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Sixty miles of Frank</strong><span style="font-size:14px;color:#4A524F">For Dad, 60th birthday · country</span></span></div></div>
+      <div style="display:flex;flex-direction:column;gap:16px"><div class="ph" style="height:360px"><img src="/_blob/622571a5efec9dcfab9862a7f3332a70" alt="Newlyweds laughing on a bus"></div><div style="display:flex;gap:12px;align-items:center"><button class="pl" aria-label="Play Last stop, Lena"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Last stop, Lena</strong><span style="font-size:14px;color:#4A524F">For a bride, wedding · acoustic</span></span></div></div>
+      <div style="display:flex;flex-direction:column;gap:16px"><div class="ph" style="height:360px"><img src="/_blob/b84a9519552c7276a7f67d913a01ed45" alt="A mum making pancakes in a sunny kitchen"></div><div style="display:flex;gap:12px;align-items:center"><button class="pl" aria-label="Play Pancakes for Mum"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Pancakes for Mum</strong><span style="font-size:14px;color:#4A524F">For Mum, Mother's Day · pop</span></span></div></div>
+      <div style="display:flex;flex-direction:column;gap:16px"><div class="ph" style="height:360px"><img src="/_blob/ca7740159a99c62c8060e76efe18a779" alt="An office team bringing a cake to a colleague"></div><div style="display:flex;gap:12px;align-items:center"><button class="pl" aria-label="Play Out of office, Priya"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20"><path d="M6 3l11 7-11 7z" fill="#fff"></path></svg></button><span style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">Out of office, Priya</strong><span style="font-size:14px;color:#4A524F">For a colleague, retirement · rock</span></span></div></div>
+    </div>
+  </section>
+
+  <section style="background:#101413;color:#fff;padding:96px 80px;display:grid;grid-template-columns:400px 1fr;gap:80px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px"><h2 class="h2" style="color:#fff">What's the occasion?</h2><p style="margin:0;font-size:18px;line-height:1.55;color:#B9C2BE">Tap one to start. The chat picks it up from there</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-content:flex-start">
+      <a class="qb" href="#">Birthday</a><a class="qb" href="#">Anniversary</a><a class="qb" href="#">Mother's Day</a><a class="qb" href="#">Father's Day</a><a class="qb" href="#">Wedding</a><a class="qb" href="#">Retirement</a><a class="qb" href="#">Valentine's Day</a><a class="qb" href="#" style="background:#00B37E;border-color:#00B37E">Just because</a>
+    </div>
+  </section>
+
+  <section style="padding:96px 80px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:760px"><h2 class="h2">The gift moment</h2><p style="margin:0;font-size:18px;line-height:1.55;color:#4A524F">Anna gets a link that doesn't spoil anything. She taps Open, the song plays with the lyrics on screen, and she can send Max a video reply</p></div>
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:480px"><img src="/_blob/e354aac9a424c73c0156013efdeaf1bd" alt="A wrapped gift on a sunny bedside table"></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:22px">Max made you something</strong><span style="font-size:16px;line-height:1.55;color:#4A524F">What Anna sees at 9:00 on her birthday. Before then, the page only shows who it's from and when it opens</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="ph" style="height:480px"><img src="/_blob/7f51b06f9dac967318218abfed7fecc2" alt="Anna laughing at her phone as the song plays" style="object-position:50% 22%"></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><strong style="font-size:22px">Her reaction comes back to you</strong><span style="font-size:16px;line-height:1.55;color:#4A524F">If she says yes to the camera, she watches it first, then sends it. Only Max sees it</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="group" style="padding:0 80px 96px">
+    <div style="background:#FFE066;border-radius:32px;display:grid;grid-template-columns:480px 1fr;overflow:hidden">
+      <div class="ph" style="height:400px;border-radius:0"><img src="/_blob/753681caffaf93a756329748141b4104" alt="A family gathered around a phone at the dinner table"></div>
+      <div style="padding:56px;display:flex;flex-direction:column;gap:20px;justify-content:center">
+        <h2 class="h2" style="font-size:40px">One song from the whole group chat</h2>
+        <p style="margin:0;font-size:18px;line-height:1.55;max-width:600px">Share an invite link. Up to 20 friends add a memory and a short note, and the song is built from all of them. One person pays the same price, and the gift says it's from everyone</p>
+        <a class="btn bk" href="#" style="align-self:flex-start;height:48px;font-size:15px">Start a group song</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="background:#fff;padding:96px 80px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><h2 class="h2">Hear it free first. Pay if you love it</h2><span class="cap">One payment, no subscription needed</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div style="border:1px solid #CDD3D0;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><strong style="font-size:24px">Song</strong><span style="font-size:56px;font-weight:500;letter-spacing:-.02em">$29</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#00B37E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>The full song with their name, 2–2.5 min, as an MP3</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#00B37E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>A gift page with the lyrics, opening on your date and time</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#00B37E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Their reaction video, if they choose to record one</span>
+        </div>
+        <a class="btn bw" href="#" style="border:1px solid #101413;margin-top:auto">Start the chat</a>
+      </div>
+      <div style="background:#00B37E;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><strong style="font-size:24px">Bundle</strong><span style="font-size:56px;font-weight:500;letter-spacing:-.02em">$55</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#101413" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Song</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#101413" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>A second version of the song</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#101413" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>A photo slideshow set to the song</span>
+          <span class="li"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10" stroke="#101413" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>A printable lyrics sheet</span>
+        </div>
+        <a class="btn bk" href="#" style="margin-top:auto">Start the chat</a>
+      </div>
+    </div>
+    <span style="font-size:15px;color:#4A524F">The 30–45 s preview with their name is free. You choose Song or Bundle only after you've heard it</span>
+  </section>
+
+  <section style="padding:96px 80px;display:grid;grid-template-columns:400px 1fr;gap:80px">
+    <div style="display:flex;flex-direction:column;gap:20px"><h2 class="h2">Questions people ask</h2><p style="margin:0;font-size:18px;line-height:1.55;color:#4A524F">Something else? Ask in the chat</p></div>
+    <div style="display:flex;flex-direction:column;gap:32px">
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">Is it made with AI?</div><div class="them">Yes. The lyrics and the music are made with AI from your story, and you can edit any section of the lyrics before the music is made</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">What if the name sounds wrong?</div><div class="them">You hear the name sung before you pay. Tap Fix it, spell it the way it's said, and you get an extra try for that</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">Can I hear the whole song before paying?</div><div class="them">You hear the first 30–45 seconds of the same song you'll get, with the name in it. The full song unlocks after payment</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">Who sees the reaction video?</div><div class="them">Only you. They're asked before the camera turns on, and again before the video is sent. They can delete it instead</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">Can I pick the exact time it arrives?</div><div class="them">Yes, any date up to a year ahead, in their time zone. You can change it until the day</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div class="us">What if I don't like the result?</div><div class="them">You get two free remakes after paying. If it still isn't right, we refund you in full within 14 days, as long as the gift hasn't been opened</div></div>
+    </div>
+  </section>
+
+  <section style="padding:0 80px 96px">
+    <div style="background:#101413;color:#fff;border-radius:32px;display:grid;grid-template-columns:1fr 520px;gap:56px;padding:56px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h2 class="h2" style="color:#fff;font-size:56px">Got three minutes and a story? That's enough</h2>
+        <div style="display:flex;gap:12px"><a class="btn bm" href="#">Start the chat</a><a class="btn bw" href="#listen">Play an example</a></div>
+        <span style="font-size:15px;color:#B9C2BE">Free preview with their name · $29 after</span>
+      </div>
+      <div class="ph" style="height:360px"><img src="/_blob/8dc0a0f37bdd55b766f2a195b5837c3e" alt="A woman in headphones laughing at her phone in a café"></div>
+    </div>
+  </section>
+
+  <footer class="ft" style="padding:0 80px 64px;display:flex;flex-direction:column;gap:40px">
+    <div style="height:1px;background:#CDD3D0"></div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <span style="font-weight:500;font-size:18px">OpenYourSong</span>
+      <div style="display:flex;gap:80px">
+        <div style="display:flex;flex-direction:column;gap:12px"><strong style="font-size:15px">Product</strong><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Group gift</a><a href="#">Occasions</a></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><strong style="font-size:15px">Help</strong><a href="#">FAQ</a><a href="#">How it's made</a><a href="#">Contact</a></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><strong style="font-size:15px">Legal</strong><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Refunds</a></div>
+      </div>
+    </div>
+    <span style="font-size:14px;color:#6B7370">Songs are written and sung with AI from your story</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6964}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
