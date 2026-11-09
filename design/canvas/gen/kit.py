@@ -357,7 +357,7 @@ def holidays(mobile=True, country='US'):
 def tag_card(cap=None):
     w = lambda n: soc(n, 22).replace('#111', '#fff')
     top = '<div style="display:flex;align-items:center;gap:10px">%s%s<span class="un" style="margin-left:4px;background:#FFD84D;color:#111;border-radius:6px;padding:4px 10px;font-size:16px;font-weight:500">@openyoursong</span></div>' % (w('Instagram'), w('TikTok'))
-    txt = '<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px;line-height:1.3;color:#fff">Tag us when you post</strong><span style="font-size:14px;line-height:1.45;color:#DADADA">We repost our favourites, with your OK. Your caption is ready, tag included</span></div>'
+    txt = '<div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:18px;line-height:1.3;color:#fff">Tag us when you post</strong><span style="font-size:14px;line-height:1.45;color:#DADADA">We love seeing these and sharing the happiest ones. We always ask first. Your caption is ready, tag included</span></div>'
     return card(top + txt + (caption(cap) if cap else ''), bg='#111', pad=20, gap=14)
 
 def social_m(cap=None, rest=('TikTok', 'X', 'More'), lead='Share to Stories'):

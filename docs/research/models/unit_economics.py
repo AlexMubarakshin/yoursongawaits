@@ -2,7 +2,9 @@
 
 Inputs: appendix/economics-demand.md §8 (funnel, CAC, AOV), appendix/economics-costs.md §b (generation cost),
 Polar fees (polar.sh/docs/merchant-of-record/fees, Starter plan, checked 2026-11-05), decisions in 05-decisions.md.
-Q18 block (2026-11-06, bottom of file): group gift, subscription, RU contour for MVP scope v0.2 (06-prd).
+Q18 block (2026-11-06): group gift, subscription, RU contour for MVP scope v0.2 (06-prd).
+Pricing review block (2026-11-08, bottom of file): annual plan as an upgrade after payment, member price for annual only,
+free extra tries instead of $3, attempts sensitivity, RU prices 990/1 790 ₽.
 Run: python3 models/unit_economics.py
 """
 
@@ -163,10 +165,15 @@ SUB_BEHAVIOUR = dict(            # base [E]
 )
 
 
+MEMBER_PRICE_MONTHLY = False   # pricing review 2026-11-08: member price $19 only on the annual plan (P13)
+
+
 def cheapest_one_song(base, annual, monthly, member, months_per_credit):
     """Cheapest way for a non-subscriber to get exactly one song (gift date known 1-3 months ahead)."""
-    paths = {'base': base, 'annual': annual, 'monthly + member price': monthly + member,
+    paths = {'base': base, 'annual': annual,
              f'monthly x{months_per_credit} for 1 credit': monthly * (months_per_credit + (1 if months_per_credit == 1 else 0))}
+    if MEMBER_PRICE_MONTHLY:
+        paths['monthly + member price'] = monthly + member
     # P13/P14: "first credit at the first renewal" -> with 1 month/credit you pay 2 months; with N>1 you pay N months
     return paths
 
@@ -184,7 +191,8 @@ def sub_value(months_per_credit, fee=payment_fee, cm_repeat=None, song_cogs=SONG
     m = plan['monthly']
     credits = max(0, (months - (1 if months_per_credit == 1 else 0))) / months_per_credit
     used = credits * b['monthly_used_per_credit']
-    monthly = months * (m['price'] * (1 - refunds) - fee(m['price'])) - used * (song_cogs - upgrade) + member_cm
+    member_cm_m = member_cm if MEMBER_PRICE_MONTHLY else 0
+    monthly = months * (m['price'] * (1 - refunds) - fee(m['price'])) - used * (song_cogs - upgrade) + member_cm_m
     counter = b['would_buy'] * cm_repeat
     blend = b['annual_share'] * annual + (1 - b['annual_share']) * monthly
     return dict(annual=annual, monthly=monthly, months=months, used_monthly=used, counter=counter,
@@ -220,7 +228,8 @@ def subscription():
 
 # --- RU contour (D7, P14) ---
 FX = 80.5   # RUB per USD, ЦБ РФ 02.11.2026 (80.5573) [S]
-RU = dict(base=790, bundle=1490, bundle_take=.25, refunds=.04, conv=.15,
+RU = dict(base=990, bundle=1790,   # pricing review 2026-11-08 (was 790/1 490, P14)
+          bundle_take=.25, refunds=.04, conv=.15,
           card_share=.5, card_fee=.038, sbp_fee=.007, vat_on_fee=.22,   # economics-costs §c; VAT 22% on acquiring fee from 2026
           llm_attempt=3.2,   # YandexGPT 5.1 Pro ~0.80 ₽/1k tokens [S] x ~4k tokens (lyrics + moderation) [E]
           extras=5, support=40)
@@ -271,18 +280,18 @@ def ru():
         print(f"  {name}\n    AOV {aov:.0f} ₽ (${aov/FX:.2f}), net {net:.0f} ₽, gen/order {gen:.0f} ₽, CM1 {cm:.0f} ₽ (${cm/FX:.2f}) before tax"
               f"\n    break-even {be} orders/mo (~{be/VISIT_TO_PAY:.0f} visits); $300 from RU alone: {tgt} orders/mo (~{tgt/VISIT_TO_PAY:.0f} visits)")
         print('    orders/mo -> profit ₽ (USD): ' + ', '.join(f"{n}: {ru_profit(n, gpu):,.0f} (${ru_profit(n, gpu)/FX:,.0f})" for n in (0, 10, 20, 40, 80)))
-    print('  Stars (bot) instead of ЮKassa would leave ~380 ₽ of 790 (facts §8) -> not used (D15)')
+    print('  Stars (bot) instead of ЮKassa would leave ~48% of the price (facts §8) -> not used (D15)')
     gpu = RU_GPU['R1 serverless GPU (Cloud.ru ML Inference, scale-to-zero) [S/E]']
     print('  R1 sensitivity (break-even orders/mo | orders for $300 from RU alone):')
-    for label, base, bundle, contrib in (('P14 prices, ИП only for RU', 790, 1490, 57390),
-                                         ('P14 prices, ИП exists anyway (contrib. not incremental)', 790, 1490, 0),
-                                         ('base 590 / bundle 1190', 590, 1190, 57390),
-                                         ('base 990 / bundle 1790', 990, 1790, 57390)):
+    for label, base, bundle, contrib in (('P14 prices 990 / 1790, ИП only for RU', 990, 1790, 57390),
+                                         ('P14 prices, ИП exists anyway (contrib. not incremental)', 990, 1790, 0),
+                                         ('base 790 / bundle 1490 (old P14)', 790, 1490, 57390),
+                                         ('base 590 / bundle 1190', 590, 1190, 57390)):
         RU['base'], RU['bundle'], IP_CONTRIB_Y = base, bundle, contrib
         be = next(n for n in range(0, 2000) if ru_profit(n, gpu) >= 0)
         tgt = next(n for n in range(0, 5000) if ru_profit(n, gpu) >= TARGET * FX)
         print(f"    {label:58}: CM1 {ru_cm1(gpu)[3]:4.0f} ₽ | {be:3} | {tgt:3}")
-    RU['base'], RU['bundle'], IP_CONTRIB_Y = 790, 1490, 57390
+    RU['base'], RU['bundle'], IP_CONTRIB_Y = 990, 1790, 57390
 
 
 # --- Combined: what the $300/month goal needs with the MVP v0.2 scope (base) ---
@@ -308,6 +317,52 @@ def plan_q18(grp):
         print(f"    RU {n_ru:3}: RU {p:+7.0f}$ -> EN {n_en:4.1f} orders (~{n_en/VISIT_TO_PAY:4.0f} visits)")
 
 
+
+# =====================================================================================================
+# Pricing review (2026-11-08): checks behind 06-prd v0.6 (P13, P14, P27, FR-6.1, FR-16.11).
+# =====================================================================================================
+def pricing_review():
+    print('\nPRICING REVIEW 2026-11-08')
+    # 1. Several songs in one month through the monthly plan + member price (the leak Q18 did not check)
+    for n in (2, 3):
+        leak = 9.99 + n * 19
+        print(f"  {n} songs in one month: base ${n*29:.2f}; monthly 1 mo + member price ${leak:.2f} "
+              f"({1 - leak/(n*29):.0%} cheaper) -> closed: member price only on the annual plan")
+    # 2. Annual plan sold as an upgrade of a paid order (+$30, the $29 counts) instead of a card on the choose screen
+    b = SUB_BEHAVIOUR
+    upg = 30.0
+    extra_used = b['annual_used'] - 1        # the first credit is the song just bought
+    member_cm = b['member_songs'] * (19 * (1 - .04) - payment_fee(19) - SONG_COGS_SUB)
+    up_cm = upg * (1 - .04) - payment_fee(upg) - extra_used * SONG_COGS_SUB + member_cm
+    cm1 = en_cm1(BASE['aov_gross'])
+    print(f"  annual as upgrade after payment: +${upg:.0f} -> CM ${up_cm:.1f} on top of the paid order "
+          f"({extra_used:.1f} more credits used)")
+    for future in (0.3, 1.0, 2.0):
+        print(f"    would have bought {future:.1f} more songs at base within 12 mo -> incremental ${up_cm - future*cm1:+.1f}")
+    # On the choose screen the card competes with the $55 bundle: $59 vs $55 = 3 more songs for $4
+    bundle_cm = en_cm1(55.0); annual_now = 59 * (1 - .04) - payment_fee(59) - SONG_COGS_SUB
+    print(f"  choose screen: buyer moves bundle -> annual: CM now ${bundle_cm:.1f} -> ${annual_now:.1f}, "
+          f"then gives up future base orders; the upgrade keeps the bundle choice intact")
+    # 3. $3 for 3 more tries, deducted from the song price (old P27)
+    fee3 = payment_fee(3); tries3 = 3 * ATT_A
+    print(f"  $3 extra tries: Polar fee ${fee3:.2f} ({fee3/3:.0%}) + 3 tries ${tries3:.2f}; for a buyer the $3 is deducted, "
+          f"so each one costs ${fee3 + tries3:.2f} -> replaced by 2 free tries once per questionnaire")
+    # 4. Attempts per preview user: PRD allows 3 free tries + name fix + 2 free extra + 2nd take on click
+    global ATTEMPTS_PER_PREVIEW_USER
+    a0 = ATTEMPTS_PER_PREVIEW_USER
+    print('  attempts per preview user -> COGS per paid order, CM1 (base):')
+    for a in (1.5, 2.0, 2.5, 3.0):
+        ATTEMPTS_PER_PREVIEW_USER = a
+        row = []
+        for st in ('A  ACE-Step 1.5, serverless GPU', 'L  Google Lyria 3.5'):
+            gen, cogs = cogs_per_paid(BASE, STACK[st])
+            row.append(f"{st.split()[0]} COGS ${cogs:.2f} CM1 ${BASE['aov_gross']*(1-BASE['refunds']) - cogs:.1f}")
+        print(f"    {a:.1f}: " + ' | '.join(row))
+    ATTEMPTS_PER_PREVIEW_USER = a0
+    cap = 15
+    print(f"  daily spend cap ${cap}: ~{cap/(2.0*ATT_A):.0f} preview users/day on stack A, ~{cap/(2.0*STACK['L  Google Lyria 3.5']):.0f} on Lyria (2 attempts each)")
+
+
 if __name__ == '__main__':
     scenarios(); sensitivity(); plan_05()
-    g = group(); subscription(); ru(); plan_q18(g)
+    g = group(); subscription(); ru(); plan_q18(g); pricing_review()

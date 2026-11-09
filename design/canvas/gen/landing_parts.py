@@ -12,11 +12,11 @@ SONGS = [('n1', 'A man in his sixties smiling on the phone on his birthday, cake
 
 def song_card(k, alt, title, sub, name, line, dur, w=None, ph=240):
     ws = 'width:%dpx;flex-shrink:0;' % w if w else ''
-    return ('<article style="%sdisplay:flex;flex-direction:column;gap:14px">'
+    return ('<article style="%sdisplay:flex;flex-direction:column;gap:14px;height:100%%">'
             '<div class="ph" style="height:%dpx;border-radius:20px"><img src="/_blob/%s" alt="%s"></div>'
-            '<div style="display:flex;flex-direction:column;gap:4px"><strong class="un" style="font-size:20px;font-weight:500;line-height:1.2">%s</strong><span class="mut" style="font-size:14px">%s</span></div>'
+            '<div style="display:flex;flex-direction:column;gap:4px;min-height:52px"><strong class="un" style="font-size:20px;font-weight:500;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">%s</strong><span class="mut" style="font-size:14px">%s</span></div>'
             '<p style="margin:0;font-size:16px;line-height:1.45"><span style="background:#FFD84D;padding:0 4px;border-radius:3px;font-weight:500">%s</span>%s</p>'
-            '<div style="display:flex;align-items:center;gap:12px"><button class="play" aria-label="Play %s" style="width:44px;height:44px">%s</button><span class="mut" style="font-size:14px;font-variant-numeric:tabular-nums">%s</span></div></article>') % (ws, ph, B[k], alt, title, sub, name, line, title, PLAY, dur)
+            '<div style="display:flex;align-items:center;gap:12px;margin-top:auto"><button class="play" aria-label="Play %s" style="width:44px;height:44px">%s</button><span class="mut" style="font-size:14px;font-variant-numeric:tabular-nums">%s</span></div></article>') % (ws, ph, B[k], alt, title, sub, name, line, title, PLAY, dur)
 
 def feed(mobile=False):
     head = '<h2 class="un h2" style="margin-bottom:%dpx;%s">Listen to a few first</h2>' % (20 if mobile else 36, 'font-size:30px' if mobile else '')
