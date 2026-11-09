@@ -37,20 +37,22 @@ a{color:#111}a:hover{color:#111;text-decoration-thickness:2px}
 .fl{display:flex;align-items:center;min-height:44px;text-decoration:none}
 </style>
 </helmet>
-<div class="cp" style="width:390px;height:844px;box-sizing:border-box;overflow:hidden;position:relative">
+<div class="cp" style="width:390px;height:980px;box-sizing:border-box;overflow:hidden;position:relative">
   <header style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 8px"><a href="#" aria-label="Back" style="width:44px;height:44px;border-radius:12px;border:1px solid #DADADA;display:flex;align-items:center;justify-content:center;color:#111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#" class="un fl" style="font-weight:500;font-size:18px;color:#111">openyoursong</a><span class="mut" style="width:44px;text-align:right;font-size:14px;font-variant-numeric:tabular-nums">1/4</span></header>
   <div role="progressbar" aria-label="Step 1 of 4" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="display:flex;gap:4px;padding:0 20px 24px"><span style="flex:1;height:4px;border-radius:2px;background:#111"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span><span style="flex:1;height:4px;border-radius:2px;background:#DADADA"></span></div>
   <main style="padding:0 20px;display:flex;flex-direction:column;gap:16px">
     <h1 class="un h1">Who is the song for</h1>
-    <div><label class="lab" for="rn">Their name, as it should be sung</label><input class="inp" id="rn" type="text" value="Anna" maxlength="40"></div>
+    <div><label class="lab" for="rn">Their name, as it should be sung</label><input class="inp" id="rn" type="text" value="Anna" maxlength="40"><a href="#" style="display:flex;align-items:center;min-height:44px;font-size:15px;font-size:14px">Said differently than it’s spelled? Add how it sounds</a></div>
     <div><span class="lab">They are your</span><div class="chips"><button class="chip" aria-pressed="false">Partner</button><button class="chip" aria-pressed="false">Wife</button><button class="chip" aria-pressed="false">Husband</button><button class="chip" aria-pressed="false">Mum</button><button class="chip" aria-pressed="false">Dad</button><button class="chip on" aria-pressed="true">Friend</button><button class="chip" aria-pressed="false">Sister</button><button class="chip" aria-pressed="false">Brother</button><button class="chip">More</button></div></div>
+    <div><span class="lab">What is the occasion</span><div class="chips"><button class="chip on" aria-pressed="true">Birthday</button><button class="chip" aria-pressed="false">Anniversary</button><button class="chip" aria-pressed="false">Valentine's</button><button class="chip" aria-pressed="false">Mother's Day</button><button class="chip" aria-pressed="false">Father's Day</button><button class="chip" aria-pressed="false">Wedding</button><button class="chip" aria-pressed="false">Graduation</button><button class="chip">More</button></div></div>
+    <div><label class="lab" for="od">When is it</label><input class="inp" id="od" type="text" value="14 March" style="height:52px"><span class="mut" style="display:block;margin-top:6px;font-size:13px">Optional. We plan the delivery around it and remind you in time</span></div>
     
     
   </main>
   <div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #DADADA;padding:16px 20px 24px;display:flex;flex-direction:column;gap:8px"><button class="btn bk" style="width:100%">Continue</button></div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":980}}'>
 class Component extends DCLogic { renderVals(){ return {}; } }
 </script>
 </body>

@@ -13,6 +13,7 @@ Snapshot of the design canvas: https://claude.ai/artifact/PJsrpVDQ8xjsg7SSAkhj1a
   - `kit.py` holds the shared components.
   - The `s_*.py` files hold the flows.
   - Paths inside point to the session scratchpad, so update `PROJ` in `kit.py` before you run them.
+  - `s_v72.py` and `s_v73.py` are standalone patch scripts: they edit the boards in `project/` in place and run once, on the snapshot of the version before.
 
 ## Page "Actual flows", top to bottom
 
